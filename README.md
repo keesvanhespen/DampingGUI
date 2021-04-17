@@ -153,4 +153,4 @@ Will let you save the results to a user defined location. The saved file is in a
 
 ### Who do I talk to? ###
 
-You can contact me at k.m.vanhespen@umcutrecht.nl
+You can contact me at k.m.vanhespen@umcutrecht.nl or by creating an issue on Github.
