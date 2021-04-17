@@ -1,0 +1,26 @@
+Interface  {
+  Inputs  {
+    Field baseIn0 {
+      internalName = LUTColorAtValue.inLUT
+    }
+    Field baseIn1 {
+      internalName = XMarkerListFilter1.inXMarkerList
+    }
+    Field baseIn1 {
+      internalName = XMarkerListContainer2.inXMarkerList
+    }
+  }
+  Outputs  {
+    Field nodeOut0 {
+      internalName = So3DMarkerEditor1.self
+    }
+  }
+  Parameters  {
+    Field So3DMarkerEditor1_scaleLength {
+      internalName = So3DMarkerEditor1.scaleLength
+    }
+    Field XMarkerListContainer2_index {
+      internalName = XMarkerListContainer2.index
+    }
+  }
+}

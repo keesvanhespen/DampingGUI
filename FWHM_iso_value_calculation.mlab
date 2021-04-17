@@ -1,0 +1,453 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module Info {
+  internal  {
+    frame = "6049 2481 112 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2475 462 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info2
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "6053 2215 112 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1524 595 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic010
+    debugLevel = 0
+    arg1 = "1 0 0"
+    arg1X = 1
+    arg1XAsVec = FALSE
+    operation = Smaller
+    arg2 = "4 0 0"
+    arg2X = 4
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Switch1toN {
+  internal  {
+    frame = "6309 2391 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "882 613 171 34"
+        sizeHint = "171 34"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch1toN
+    currentOutput = 1
+  }
+}
+module Switch {
+  internal  {
+    frame = "5957 1751 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "784 625 200 64"
+        sizeHint = "200 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch3
+    currentInput = 1
+    numberOfInputs = 5
+  }
+}
+module Info {
+  internal  {
+    frame = "5861 2387 112 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1222 468 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info3
+  }
+}
+module MirrorSubimage {
+  internal  {
+    frame = "6357 2167 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+    windows  {
+      window _default {
+        geometry = "3109 112 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window _scriptingconsole {
+        geometry = "2147 358 600 500"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MirrorSubimage
+    Center = 0
+    Width = 1
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "5797 1221 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2352 319 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic05
+    debugLevel = 0
+    arg1 = "977.787128712871 0 0"
+    arg1X = 977.787128712871
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "310.1546875 0 0"
+    arg2X = 310.1546875
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "5961 1087 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2506 756 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic06
+    debugLevel = 0
+    arg1 = "667.632441212871 0 0"
+    arg1X = 667.632441212871
+    arg1XAsVec = FALSE
+    operation = Multiply
+    arg2 = "0.5 0 0"
+    arg2X = 0.5
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "6129 1111 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "803 741 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic07
+    debugLevel = 0
+    arg1 = "333.816220606436 0 0"
+    arg1X = 333.816220606436
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "310.1546875 0 0"
+    arg2X = 310.1546875
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "6377 1095 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1249 436 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic08
+    debugLevel = 0
+    arg1 = "643.970908106436 0 0"
+    arg1X = 643.970908106436
+    arg1XAsVec = FALSE
+    operation = Min
+    arg2 = "-10 0 0"
+    arg2X = -10
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module RunPythonScript {
+  internal  {
+    frame = "6221 1327 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2090 299 1556 825"
+        sizeHint = "904 734"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RunPythonScript
+    in0 = ""
+    in1 = ""
+    in2 = ""
+    in3 = ""
+    in4 = ""
+    in5 = ""
+    in6 = ""
+    in7 = ""
+    in8 = ""
+    in9 = ""
+    inComment0 = in0
+    inComment1 = in1
+    inComment2 = in2
+    inComment3 = in3
+    inComment4 = in4
+    inComment5 = in5
+    inComment6 = in6
+    inComment7 = in7
+    inComment8 = in8
+    inComment9 = in9
+    autoApply0 = TRUE
+    autoApply1 = TRUE
+    autoApply2 = TRUE
+    autoApply3 = TRUE
+    autoApply4 = TRUE
+    autoApply5 = TRUE
+    autoApply6 = TRUE
+    autoApply7 = TRUE
+    autoApply8 = TRUE
+    autoApply9 = TRUE
+    out0 = ""
+    out1 = ""
+    out2 = ""
+    out3 = ""
+    out4 = ""
+    out5 = ""
+    out6 = ""
+    out7 = ""
+    out8 = ""
+    out9 = ""
+    outComment0 = out0
+    outComment1 = out1
+    outComment2 = out2
+    outComment3 = out3
+    outComment4 = out4
+    outComment5 = out5
+    outComment6 = out6
+    outComment7 = out7
+    outComment8 = out8
+    outComment9 = out9
+    initCode = "# For backward compatibility, set up CTX as alias for ctx
+CTX = ctx # ctx is the network's context, not RunPythonScript's"
+    wakeUpCode = ""
+    code = "*import numpy
+magnitude = ctx.field("itkOtsuThresholdImageFilter.input0").image()
+in00 = magnitude.getTile( (0,0,0), (magnitude.UseImageExtent,magnitude.UseImageExtent,magnitude.UseImageExtent) )
+ctx.field("Arithmetic08.arg2X").setValue(numpy.max(in00[int((in00.shape[0]-1)/2),...])-10)
+
+magnitude = ctx.field("IntervalThreshold1.output0").image()
+in10 = magnitude.getTile( (0,0,0), (magnitude.UseImageExtent,magnitude.UseImageExtent,magnitude.UseImageExtent) )
+masked = in00*in10
+meanva = numpy.mean(masked[numpy.nonzero(masked)])
+ctx.field("Arithmetic05.arg2X").setValue(meanva)
+ctx.field("Arithmetic07.arg2X").setValue(meanva)
+
+magnitude = ctx.field("itkOtsuThresholdImageFilter.output0").image()
+in10 = magnitude.getTile( (0,0,0), (magnitude.UseImageExtent,magnitude.UseImageExtent,magnitude.UseImageExtent) )
+
+masked2 = in00 * in10
+meanva = numpy.mean(masked2[numpy.nonzero(masked2)])
+ctx.field("Arithmetic05.arg1X").setValue(meanva)*"
+    finalizeCode = ""
+    showFields = TRUE
+    showInitCode = FALSE
+    showWakeUpCode = FALSE
+    showCode = TRUE
+    showFinalizeCode = FALSE
+    showConsole = TRUE
+  }
+}
+module itkOtsuThresholdImageFilter {
+  internal  {
+    frame = "6209 1551 184 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2097 255 288 480"
+        sizeHint = "258 480"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = itkOtsuThresholdImageFilter
+    updateMode = AutoClear
+    applyMode = AutoApply
+    minValue = 56
+    maxValue = 1402
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 0
+    outsideValue = 1
+    insideValue = 0
+    numberOfHistogramBins = 128
+    autoMinimumMaximum = TRUE
+    maskOutput = FALSE
+    maskValue = 1
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module Bypass {
+  internal  {
+    frame = "6229 1727 112 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Bypass2
+    noBypass = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "6337 1647 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1370 617 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold1
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 1
+    threshWidth = 0
+    threshMin = 1
+    threshMax = 1
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "6049 1471 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "908 307 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold2
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 50000.5
+    threshWidth = 99999
+    threshMin = 1
+    threshMax = 100000
+    lowerUserValue = 1
+    innerUserValue = 0
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+connections  {
+  Arithmetic010.arg1X = MirrorSubimage.Width
+  Arithmetic010.arg2X = Info3.sizeZ
+  Switch1toN.currentOutput = Arithmetic010.resultX
+  Switch3.input0 = Switch1toN.output0
+  Switch3.input1 = MirrorSubimage.output0
+  Switch3.currentInput = Arithmetic010.resultX
+  MirrorSubimage.input0 = Switch1toN.output1
+  Arithmetic06.arg1X = Arithmetic05.resultX
+  Arithmetic07.arg1X = Arithmetic06.resultX
+  Arithmetic08.arg1X = Arithmetic07.resultX
+  itkOtsuThresholdImageFilter.input0 = Bypass2.output0
+  itkOtsuThresholdImageFilter.input1 = IntervalThreshold1.output0
+  Bypass2.input0 = Switch3.output0
+  IntervalThreshold1.input0 = Bypass2.output0
+  IntervalThreshold2.input0 = itkOtsuThresholdImageFilter.output0
+}
+networkModel = ""

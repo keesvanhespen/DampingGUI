@@ -1,0 +1,368 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module TubularTracking {
+  internal  {
+    frame = "5274 3483 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1048 229 314 571"
+        sizeHint = "306 571"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = TubularTracking
+    minRadius = 1
+    maxRadius = 4
+    initRadius = 2
+    useInitRadius = TRUE
+    nbrOfSearchAngles = 6
+    maxAngle = 85
+    pruningThreshold = 4
+    terminationThreshold = 3
+    maxNbrSteps = 5
+    maxLength = 30
+    searchDepth = 4
+    minBranchingDistance = 5
+    stepLengthFactor = 0.5
+    windowSizeFactor = 5
+    allowBranching = FALSE
+    growBidirectional = TRUE
+    useMultipleHypotheses = TRUE
+    toggleMaxSteps = FALSE
+    toggleMaxLength = TRUE
+  }
+}
+module MPRPath {
+  internal  {
+    frame = "5489 2809 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "987 411 442 680"
+        sizeHint = "442 680"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "35 188 694 819"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MPRPath2
+    rotation = "-0.977717979953073 -0.0988535345732246 -0.185190524538543 1.40445573576699"
+    translation = "6.71045307788137 -3.5056951894087 -4.66365374106774"
+    plane = "0.263282341313856 0.173728589701998 -0.948947198674642 5.58326546961508"
+    enablePlaneEdit = FALSE
+    autoCenter = FALSE
+    fillValue = 0
+    outputSizeMode = AspectRatio
+    fieldOfView = 15
+    outputSize = 80
+    aspectRatio = 1
+    fieldOfViewX = 100
+    fieldOfViewY = 100
+    outputSizeX = 256
+    outputSizeY = 256
+    slabMode = SizeInSlices
+    slabSize = 1
+    pageSizeX = 128
+    pageSizeY = 128
+    useUpVector = FALSE
+    upVector = "0 1 0"
+    disableDirectVoxelCopy = FALSE
+    inputSliceNo = 0
+    interpolation = Trilinear
+    borderHandling = UseFillValue
+    memoryAccess = Global
+    enableSlabProjection = FALSE
+    depthSlabRenderMode = Maximum
+    timeSlabRenderMode = Maximum
+    timeSlabStart = 0
+    timeSlabSize = 1
+    enableCurrentSlice = FALSE
+    currentSlice = 0
+    currentSliceRounded = 0
+    numberOfSlices = 0
+    currentSliceMin = 0
+    currentSliceMax = 0
+    snapCurrentSliceToIntegerIfOrthogonal = TRUE
+    currentKeyFrame = 0
+    maxKeyFrame = 0
+    pathAngle = 0
+    alignAlongPath = FALSE
+    curvedMprSlabSize = 1
+    markersOnFrames = TRUE
+    curvedMprSlabMode = SizeInSlices
+    useKeyFrameDistanceForSliceThickness = TRUE
+    showUpVectors = FALSE
+    showFrame = TRUE
+    upVectorColor = "0.66 0 0"
+    imageColor = "0 0 0"
+    borderColor = "1 1 1"
+    borderOn = FALSE
+    drawImageOn = FALSE
+    manipulatorOn = FALSE
+    clipPlaneOn = FALSE
+    flipClipPlane = FALSE
+    clipPlaneOffset = 0
+    axesOn = FALSE
+    alphaFactor = 1
+    zBuffer = FALSE
+    blendMode = BLEND_SCREEN
+  }
+}
+module PathToKeyFrame {
+  internal  {
+    frame = "5376 2938 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1160 143 320 603"
+        sizeHint = "320 603"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = PathToKeyFrame1
+    numSmoothes = 1
+    outputResolution = 1
+    autoPathDir = FALSE
+    allowReverseView = FALSE
+    pathShift = "0 0 0"
+    projectionMode = Off
+    viewDir = "0 1 0"
+    viewLatitude = 0
+    viewLongitude = 0
+    useOverridePathDir = FALSE
+    overridePathDir = "0 0 0"
+    useOverridePathCenter = FALSE
+    overridePathCenter = "0 0 0"
+    projectPathAngle = 312.5
+    pathPositionRelative = 0
+    inputPathPositionRelative = 0
+    originalPathIndex = 0
+    resampledPathIndex = 0
+  }
+}
+module XMarkerListFilter {
+  internal  {
+    frame = "5366 3611 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1126 341 460 626"
+        sizeHint = "460 626"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListFilter
+    filterMode = Include
+    filterType = FALSE
+    filterPosition = FALSE
+    filterName = FALSE
+    filterVectorLength = FALSE
+    markerTypes = ""
+    markerName = ""
+    minVectorLength = 0
+    maxVectorLength = 1
+    useMinVectorLength = FALSE
+    useMaxVectorLength = TRUE
+    filterX = TRUE
+    filterY = TRUE
+    filterZ = TRUE
+    filterC = FALSE
+    filterT = FALSE
+    filterU = FALSE
+    allowSwapMinMax = TRUE
+    minValues = "0 0 0 0 0 0"
+    maxValues = "1 1 1 0 0 0"
+    maxNumMarkers = 2
+    numFilteredMarkers = 0
+    autoUpdate = TRUE
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "5281 2633 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoSeparator1
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module SoDrawStyle {
+  internal  {
+    frame = "5193 2801 112 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "893 568 183 124"
+        sizeHint = "149 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoDrawStyle1
+    style = FILLED
+    pointSize = 0
+    lineWidth = 5
+    linePattern = 65535
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "5272 3324 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1272 417 513 497"
+        sizeHint = "500 497"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer1
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "0 0 0"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module XMarkerShortestPath {
+  internal  {
+    frame = "5308 3065 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1963 727 347 268"
+        sizeHint = "265 268"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 330 601 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerShortestPath1
+    autoUpdateToggle = FALSE
+    startPoint = "0 0 0"
+    endPoint = "0 0 0"
+    minConnectionDistance = 0
+    maxConnectionDistance = 2
+    distanceExponent = 1
+    insertEndPoint = FALSE
+    insertStartPoint = FALSE
+  }
+}
+module SoVascularSystem {
+  internal  {
+    frame = "5113 3285 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "783 311 369 639"
+        sizeHint = "369 639"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoVascularSystem1
+    interactionProviderID = ""
+    autoApply = TRUE
+    complexity = 0.60000002
+    pointSize = 1
+    lineWidth = 1
+    textureScaleX = 0.5
+    textureScaleY = 0.5
+    recursionDepth = -1
+    showLines = FALSE
+    labelMode = GENERAL_LABEL
+    textureMode = SIZE_ALMOST_EQUAL
+    textureCoordinateMode = FOR_ALL_ELEMENTS
+    radiusMode = MIN_DIST
+    displayMode = DISPLAY_SURFACE
+    radiusScale = 1
+    radiusFixedSize = 1
+    visible = TRUE
+    texture = FALSE
+    numSmoothingPasses = 3
+    overallSmoothness = 0.69999999
+    smoothIndependently = FALSE
+    radiusSmoothness = 0.69999999
+    skeletonSmoothness = 0.69999999
+    endCapScaling = 1
+    useGeneralColor = FALSE
+    generalColor = "1 1 1"
+    useIntegerLUT = TRUE
+    useAlternativeTransparency = TRUE
+    alternativeTransparencyColor = "0 0 0"
+    selectedCoordinate = "0 0 0"
+    snapMode = SNAP_TO_SKELETON
+    enableSelection = TRUE
+    continuousHitCheck = FALSE
+    cursorShape = CROSS_CURSOR
+    enableInteractivePreviewMode = FALSE
+    enableRecursiveHighlighting = TRUE
+    highlightMode = HIGHLIGHT_OFF
+    interactivePreviewColor = "1 1 0"
+    interactivePreviewAlpha = 0.5
+    selectionTolerance = 2
+    useMinRadiusCutOff = FALSE
+    minRadiusCutOffValue = 1
+    cutOffColor = "1 1 1"
+    cutOffAlpha = 1
+    useDirectGraph = TRUE
+    workDirectlyOnInputGraph = TRUE
+    useSkeletonColors = TRUE
+  }
+}
+connections  {
+  TubularTracking.inputInitPoints = XMarkerListFilter.outXMarkerList
+  MPRPath2.frames = PathToKeyFrame1.outputKeys
+  PathToKeyFrame1.inputKeys = XMarkerShortestPath1.outputXMarkerList
+  SoSeparator1.children = "SoDrawStyle1.self MPRPath2.outputSlice"
+  XMarkerListContainer1.inXMarkerList = TubularTracking.outputTrackedPoints
+  XMarkerShortestPath1.inputXMarkerList = XMarkerListContainer1.outXMarkerList
+  SoVascularSystem1.inputGraph = TubularTracking.outputGraph
+}
+networkModel = ""

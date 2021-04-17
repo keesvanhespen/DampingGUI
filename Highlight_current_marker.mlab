@@ -1,0 +1,285 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module So3DMarkerEditor {
+  internal  {
+    frame = "3985 460 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2298 524 542 340"
+        sizeHint = "542 340"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = So3DMarkerEditor1
+    interactionProviderID = ""
+    scaleSize = 1
+    scaleLength = 1
+    color = "0.783194720745087 0.042374063283205 0.485496610403061"
+    ambientColor = "0 0 0"
+    specularColor = "0 0 0"
+    enableVector = TRUE
+    drawingOn = TRUE
+    editingOn = TRUE
+    selectingOn = TRUE
+    deleteOnClick = FALSE
+    addOnClick = TRUE
+    edit3DOn = FALSE
+    edit3DVector = TRUE
+    useManagedInteraction = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    colorMode = COLOR_BY_INDEX
+    markerType = 0
+    textColorMode = COLOR_TEXT
+    textMode = TEXT_OFF
+    textColor = "1 1 1"
+    textShadow = FALSE
+    textBackgroundColor = "0.5 0.5 0.5"
+    textBackgroundAlpha = 0
+    textFontType = SoExtText2::HELVETICA_10
+    vectorArrow = VECTOR_AND_SPHERE
+    lineStyle = Solid
+    drawMode = DrawModeGeometry
+    geometryComplexity = VERY_HIGH
+    numMarkersThresholdForFastRendering = 5000
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "-13.4823560254209 -9.72228782197111 9.13016221685079"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "1.26944595975037 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module LUTColorAtValue {
+  internal  {
+    frame = "4308 477 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "811 437 334 387"
+        sizeHint = "328 387"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LUTColorAtValue
+    onInputChangeBehavior = Update
+    inIndex = 63
+    inExpandIndexRange = TRUE
+    outColor = "0.783194720745087 0.042374063283205 0.485496610403061"
+    outAlpha = 1
+  }
+}
+module XMarkerListFilter {
+  internal  {
+    frame = "4053 660 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1112 438 460 626"
+        sizeHint = "460 626"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListFilter1
+    filterMode = Include
+    filterType = FALSE
+    filterPosition = FALSE
+    filterName = FALSE
+    filterVectorLength = TRUE
+    markerTypes = ""
+    markerName = ""
+    minVectorLength = 1.26943595975037
+    maxVectorLength = 1.26945595975037
+    useMinVectorLength = TRUE
+    useMaxVectorLength = TRUE
+    filterX = TRUE
+    filterY = TRUE
+    filterZ = TRUE
+    filterC = FALSE
+    filterT = FALSE
+    filterU = FALSE
+    allowSwapMinMax = TRUE
+    minValues = "-10.5348913586785 -26.5674084607913 -8.23188185326358 0 0 0"
+    maxValues = "-10.5348913586785 -26.5674084607913 -8.23188185326358 0 0 0"
+    maxNumMarkers = -1
+    numFilteredMarkers = 1
+    autoUpdate = TRUE
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "4408 669 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1006 539 513 497"
+        sizeHint = "500 497"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer2
+    listString = ""
+    index = 9
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "-13.4823560254209 -9.72228782197111 9.13016221685079"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "1.26944595975037 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4229 636 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "744 510 460 241"
+        sizeHint = "447 241"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic07
+    debugLevel = 0
+    arg1 = "1.26944595975037 0 0"
+    arg1X = 1.26944595975037
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "1e-05 0 0"
+    arg2X = 1e-05
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4237 740 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "755 789 460 241"
+        sizeHint = "447 241"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic08
+    debugLevel = 0
+    arg1 = "1.26944595975037 0 0"
+    arg1X = 1.26944595975037
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "1e-05 0 0"
+    arg2X = 1e-05
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module BaseBypass {
+  internal  {
+    frame = "3917 565 136 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "324 138 258 94"
+        sizeHint = "258 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BaseBypass
+    bypass = TRUE
+    noBypass = FALSE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "3833 677 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "845 171 460 241"
+        sizeHint = "447 241"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic0
+    debugLevel = 0
+    arg1 = "1.26945595975037 0 0"
+    arg1X = 1.26945595975037
+    arg1XAsVec = FALSE
+    operation = Equal
+    arg2 = "1e-05 0 0"
+    arg2X = 1e-05
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+connections  {
+  So3DMarkerEditor1.inXMarkerList = BaseBypass.baseOut0
+  So3DMarkerEditor1.color = LUTColorAtValue.outColor
+  XMarkerListFilter1.minVectorLength = Arithmetic08.resultX
+  XMarkerListFilter1.maxVectorLength = Arithmetic07.resultX
+  Arithmetic07.arg1X = XMarkerListContainer2.vecXYZ
+  Arithmetic08.arg1X = XMarkerListContainer2.vecXYZ
+  BaseBypass.baseIn0 = XMarkerListFilter1.outXMarkerList
+  BaseBypass.noBypass = Arithmetic0.resultX
+  Arithmetic0.arg1X = XMarkerListFilter1.maxVectorLength
+  Arithmetic0.arg2X = Arithmetic07.arg2X
+}
+networkModel = ""

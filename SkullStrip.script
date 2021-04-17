@@ -1,0 +1,30 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = Mask.input0
+    }
+    Field input0 {
+      internalName = Switch2.input0
+    }
+    Field input0 {
+      internalName = OtsuThreshold1.input0
+    }
+    Field input0 {
+      internalName = RectMaskImage.inImage
+    }
+    Field input0 {
+      internalName = IntervalThreshold1.input0
+    }
+  }
+  Outputs  {
+    Field output0 {
+      internalName = Switch2.output0
+    }
+  }
+  Parameters {
+    Field ApplySkullStrip{
+      internalName = BoolInt.boolValue
+      value = True
+    }
+  }
+}

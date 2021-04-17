@@ -1,0 +1,484 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module MPRPath {
+  internal  {
+    frame = "3313 877 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2991 517 437 680"
+        sizeHint = "442 680"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = MPRPath3
+    rotation = "0.474218446640373 0.880023859280165 0.0259782979356968 3.11787743284543"
+    translation = "4.31379291039337 13.5623075952091 -73.2067194453959"
+    plane = "0.833913723463545 0.548947411062578 0.0569617565289201 6.87234142125154"
+    enablePlaneEdit = FALSE
+    autoCenter = FALSE
+    fillValue = 0
+    outputSizeMode = AspectRatio
+    fieldOfView = 15
+    outputSize = 80
+    aspectRatio = 1
+    fieldOfViewX = 100
+    fieldOfViewY = 100
+    outputSizeX = 256
+    outputSizeY = 256
+    slabMode = SizeInSlicesNegativeFirst
+    slabSize = 1
+    pageSizeX = 128
+    pageSizeY = 128
+    useUpVector = FALSE
+    upVector = "0 1 0"
+    disableDirectVoxelCopy = FALSE
+    inputSliceNo = 0
+    interpolation = Trilinear
+    borderHandling = UseFillValue
+    memoryAccess = Global
+    enableSlabProjection = FALSE
+    depthSlabRenderMode = Maximum
+    timeSlabRenderMode = Maximum
+    timeSlabStart = 0
+    timeSlabSize = 1
+    enableCurrentSlice = FALSE
+    currentSlice = 0
+    currentSliceRounded = 0
+    numberOfSlices = 0
+    currentSliceMin = 0
+    currentSliceMax = 0
+    snapCurrentSliceToIntegerIfOrthogonal = TRUE
+    currentKeyFrame = 2
+    maxKeyFrame = 8
+    pathAngle = 0
+    alignAlongPath = FALSE
+    curvedMprSlabSize = 1
+    markersOnFrames = TRUE
+    curvedMprSlabMode = SizeInSlices
+    useKeyFrameDistanceForSliceThickness = TRUE
+    showUpVectors = FALSE
+    showFrame = TRUE
+    upVectorColor = "1 1 1"
+    imageColor = "1 1 1"
+    borderColor = "1 1 1"
+    borderOn = TRUE
+    drawImageOn = FALSE
+    manipulatorOn = FALSE
+    clipPlaneOn = FALSE
+    flipClipPlane = FALSE
+    clipPlaneOffset = 0
+    axesOn = FALSE
+    alphaFactor = 1
+    zBuffer = FALSE
+    blendMode = BLEND_REPLACE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "3501 689 88 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2558 501 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MPR_AP
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 256
+    modifyX = FALSE
+    y = 0
+    sy = 256
+    modifyY = FALSE
+    z = 0
+    sz = 8
+    modifyZ = FALSE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 22
+    modifyT = FALSE
+    u = 1
+    su = 1
+    modifyU = TRUE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module PythonImage {
+  internal  {
+    frame = "3377 597 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = MPR_velocity
+  }
+}
+module SetWorldMatrix {
+  internal  {
+    frame = "3501 477 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "743 463 506 335"
+        sizeHint = "449 335"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SetWorldMatrix
+    center = "0 0 0"
+    scaleOrientation = "0 0 1 0"
+    scale = "1 1 1"
+    rotation = "0 0 1 0"
+    translation = "0 0 0"
+    sourceUsage = Ignore
+    referenceUsage = Forward
+    elementaryUsage = Ignore
+    invertResult = FALSE
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "3385 693 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1181 170 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MPR_RL
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 256
+    modifyX = FALSE
+    y = 0
+    sy = 256
+    modifyY = FALSE
+    z = 0
+    sz = 8
+    modifyZ = FALSE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 22
+    modifyT = FALSE
+    u = 0
+    su = 1
+    modifyU = TRUE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "3289 685 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1469 314 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MPR_FH
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 256
+    modifyX = FALSE
+    y = 0
+    sy = 256
+    modifyY = FALSE
+    z = 0
+    sz = 8
+    modifyZ = FALSE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 22
+    modifyT = FALSE
+    u = 2
+    su = 1
+    modifyU = TRUE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module Info {
+  internal  {
+    frame = "3805 929 120 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1201 508 547 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info
+  }
+}
+module DecomposeVector4 {
+  internal  {
+    frame = "3633 797 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "803 867 422 60"
+        sizeHint = "422 60"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = DecomposeVector41
+    v = "0.833913723463545 0.548947411062578 0.0569617565289201 6.87234142125154"
+  }
+}
+module View3D {
+  internal  {
+    frame = "3665 525 144 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = View3D
+    autoViewAll = TRUE
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    lutType = Ramp
+    currentTimePoint = 0
+    staticSamplingRate = 1
+    quality = 1
+    filterVolumeData = FilterLinear
+    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
+    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
+    lutEditorRelativeLut = FALSE
+    lutEditorColorInterpolation = InterpolateRGB
+    lutEditorAlphaFactor = 1
+    orientationProjectionType = PERSPECTIVE
+    orientationLocation = LOWER_RIGHT
+    orientationOn = TRUE
+    orientationModel = CUBE
+    greyCenter = 0.5
+    greyWidth = 0.5
+    alphaFactor = 1
+    colorFactor = "1 1 1"
+    camType = TRUE
+    camPosition = "194.42822265625 -378.746307373047 67.7337341308594"
+    camOrientation = "0.934440433979034 0.240476414561272 0.262663811445236 1.54235064983368"
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    camFar = 546.26605
+    camNear = 264.49319
+    camFocal = 405.23923
+    camHeight = 0.78539801
+    decoration = FALSE
+    annotations = TRUE
+    background = TRUE
+    mode = VolumeRendering
+    interactiveQuality = Medium
+  }
+  internalFields  {
+    renderer.gradientQuality = GradientQualityAutomatic
+    renderer.enhancementAlphaMix = 0.25
+    renderer.boundaryEnhancement = FALSE
+    renderer.boundaryEnhancementFactor = 1
+    renderer.boundaryEnhancementExponent = 1
+    renderer.boundaryEnhancementGradientBias = 0
+    renderer.silhouetteEnhancement = FALSE
+    renderer.silhouetteEnhancementExponent = 1
+    renderer.silhouetteEnhancementFactor = 1
+    renderer.toneShading = FALSE
+    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
+    renderer.toneShadingColdColor = "0 0 0.400000005960464"
+    renderer.toneShadingWarmDiffuse = 0.60000002
+    renderer.toneShadingColdDiffuse = 0.2
+    renderer.toneShadingAngle = 45
+    renderer.materialAmbient = 0.60000002
+    renderer.materialDiffuse = 1
+    renderer.materialSpecular = 1
+    renderer.materialSpecularity = 32
+    renderer.light1Enabled = TRUE
+    renderer.light1DiffuseIntensity = 1
+    renderer.light1SpecularIntensity = 1
+    renderer.light1Color = "1 1 1"
+    renderer.light1PolarPhi = 45
+    renderer.light1PolarRho = 0
+    renderer.light2Enabled = FALSE
+    renderer.light2DiffuseIntensity = 1
+    renderer.light2SpecularIntensity = 1
+    renderer.light2Color = "1 1 1"
+    renderer.light2PolarPhi = 0
+    renderer.light2PolarRho = 0
+    renderer.light3Enabled = FALSE
+    renderer.light3DiffuseIntensity = 1
+    renderer.light3SpecularIntensity = 1
+    renderer.light3Color = "1 1 1"
+    renderer.light3PolarPhi = -45
+    renderer.light3PolarRho = 0
+    renderer.sizeOutputX = 109
+    renderer.sizeOutputY = 91
+    renderer.sizeOutputZ = 80
+    renderer.subVolumeStartX = 0
+    renderer.subVolumeStartY = 0
+    renderer.subVolumeStartZ = 0
+    renderer.subVolumeEndX = 109
+    renderer.subVolumeEndY = 91
+    renderer.subVolumeEndZ = 80
+    clip.hideGeometry = FALSE
+    clip.on = FALSE
+    clip.left = FALSE
+    clip.right = FALSE
+    clip.top = FALSE
+    clip.bottom = FALSE
+    clip.rear = FALSE
+    clip.front = FALSE
+    clip.translation0 = "1 0 0"
+    clip.translation1 = "-1 0 0"
+    clip.translation2 = "0 1 0"
+    clip.translation3 = "0 -1 0"
+    clip.translation4 = "0 0 1"
+    clip.translation5 = "0 0 -1"
+    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
+    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
+    clip.rotation2 = "0 0 -1 3.1415901184082"
+    clip.rotation3 = "0 0 1 0"
+    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
+    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
+  }
+}
+module PythonImage {
+  internal  {
+    frame = "3273 517 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = PythonImage1
+  }
+}
+module PythonImage {
+  internal  {
+    frame = "3301 1093 104 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = PythonImage
+  }
+}
+module Bypass {
+  internal  {
+    frame = "3549 1005 104 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Bypass
+    noBypass = FALSE
+  }
+}
+module SetWorldMatrix {
+  internal  {
+    frame = "3325 989 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2218 499 506 335"
+        sizeHint = "449 335"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = SetWorldMatrix1
+    center = "0 0 0"
+    scaleOrientation = "0 0 1 0"
+    scale = "1 1 1"
+    rotation = "0 0 1 0"
+    translation = "0 0 0"
+    sourceUsage = Ignore
+    referenceUsage = Forward
+    elementaryUsage = Ignore
+    invertResult = FALSE
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module MatrixArithmetic {
+  internal  {
+    frame = "3841 805 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2345 325 1473 706"
+        sizeHint = "590 560"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = MatrixArithmetic2
+    matrixA = "0.776254589816739 0.0859232354779788 -0.020416317063487 -142.695460364816
+-0.0422260614936276 0.517032286498794 0.598183328303904 -80.5645101931205
+0.0774420941491124 -0.579349959447397 0.530811909011119 4.99384035875825
+0 0 0 1"
+    matrixB = "1 0 0 0
+0 0 -1 0
+0 1 0 0
+0 0 0 1"
+    operation = Multiply
+    scalarValue = 0
+    inputVectorD = "0 0 0 0"
+  }
+}
+connections  {
+  MPRPath3.input0 = SetWorldMatrix1.output0
+  MPR_AP.input0 = MPRPath3.output1
+  SetWorldMatrix.input0 = MPR_velocity.output0
+  SetWorldMatrix.input1 = MPR_AP.output0
+  MPR_RL.input0 = MPRPath3.output1
+  MPR_FH.input0 = MPRPath3.output1
+  DecomposeVector41.v = MPRPath3.plane
+  SetWorldMatrix1.input0 = PythonImage.output0
+  SetWorldMatrix1.input1 = Bypass.output0
+  MatrixArithmetic2.matrixA = Info.worldMatrix
+}
+networkModel = ""

@@ -1,0 +1,67 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = View3D1.inImage
+    }
+    Field input1 {
+      internalName = Draw_Box.input0
+    }
+    Field input2 {
+      internalName = WEMIsoSurface.input0
+    }
+    Field input2 {
+      internalName = FieldListener.inImage
+    }
+    Field nodeIn0 {
+      internalName = View3D1.inInvPostLUT
+    }
+    Field nodeIn1 {
+      internalName = SoGroup1.child
+    }
+    Field nodeIn2 {
+      internalName = SoExaminerViewer.child
+    }
+    Field nodeIn3 {
+      internalName = SoExaminerViewer.child
+    }
+    Field nodeIn4 {
+      internalName = Bypass_tub.child
+    }
+    Field nodeIn5 {
+      internalName = Bypass_dtf.child
+    }
+
+    Field baseIn0 {
+      internalName = Draw_Box.frames
+    }
+  }
+  Outputs {    Field baseOut0 {
+    internalName = SoExaminerViewer.self
+    }}
+  Parameters  {
+    Field SoExaminerViewer_height {
+      internalName = SoExaminerViewer.height
+    }
+    Field SoExaminerViewer_position {
+      internalName = SoExaminerViewer.position
+    }
+    Field SoExaminerViewer_orientation {
+      internalName = SoExaminerViewer.orientation
+    }
+    Field SoExaminerViewer_nearDistance {
+      internalName = SoExaminerViewer.nearDistance
+    }
+    Field SoExaminerViewer_farDistance {
+      internalName = SoExaminerViewer.farDistance
+    }
+    Field SoExaminerViewer_focalDistance {
+      internalName = SoExaminerViewer.focalDistance
+    }
+    Field Draw_Box_currentKeyFrame {
+      internalName = Draw_Box.currentKeyFrame
+    }
+    Field FOV {
+      internalName = Draw_Box.fieldOfView
+    }  
+  }
+}

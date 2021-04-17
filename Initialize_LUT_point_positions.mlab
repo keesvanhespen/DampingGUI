@@ -1,0 +1,178 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module OtsuThreshold {
+  internal  {
+    frame = "1391 3006 144 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "864 571 206 118"
+        sizeHint = "206 118"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OtsuThreshold
+    binSize = 128
+    autoApply = TRUE
+    backgroundThreshold = -1
+    threshold = 64
+  }
+}
+module ImageStatistics {
+  internal  {
+    frame = "1395 2806 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2096 320 498 593"
+        sizeHint = "498 593"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageStatistics
+    innerMin = 0
+    innerMax = 800000
+    updateMode = AutoUpdate
+    perSlice = FALSE
+    currentSlice = 0
+    lowerWidth = 0
+    upperWidth = 0
+    useMask = TRUE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "1299 2646 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1321 419 460 355"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic02
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Histogram {
+  internal  {
+    frame = "1421 2654 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1176 128 400 378"
+        sizeHint = "400 378"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Histogram
+    useMask = TRUE
+    xRange = "Dynamic Min/Max"
+    maskMode = Weights
+    curveType = Line
+    curveStyle = 0
+    curveTitle = ""
+    updateMode = AutoUpdate
+    useStepFunction = TRUE
+    useBinSizeOneRepresentation = TRUE
+    useBackgroundValue = TRUE
+    backgroundValue = 0
+    binSize = 1
+    maxBinCount = 25000000
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "1368 2527 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2467 444 515 450"
+        sizeHint = "515 450"
+        wasOpen = no
+      }
+      window Editor {
+        geometry = "326 248 503 411"
+        sizeHint = "503 411"
+        wasOpen = no
+      }
+      window _scriptingconsole {
+        geometry = "667 380 600 500"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "2521 229 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor
+    rangeMin = 0
+    rangeMax = 4095
+    viewMin = 0
+    viewMax = 4095
+    window = 1
+    level = 0.5
+    allowNewPoints = FALSE
+    updateLutWhileDragging = FALSE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 1 1 1, 244.241760253906 0.282353013753891 0.282353013753891 0.282353013753891, 594.617492675781 1 1 1, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 244.241760253906 0, 594.617492675781 1, 4095 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 4095
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = FALSE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+connections  {
+  ImageStatistics.input1 = OtsuThreshold.output0
+  Arithmetic02.arg1X = ImageStatistics.totalMean
+  Arithmetic02.arg2X = ImageStatistics.totalStdDev
+  Histogram.input1 = OtsuThreshold.output0
+  SoLUTEditor.inHistogram = Histogram.outputHistogramCurve
+}
+networkModel = ""

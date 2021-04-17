@@ -1,0 +1,23 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = Bypass.input0
+    }
+    Field input0 {
+      internalName = Info.input0
+    }
+    Field baseIn0 {
+      internalName = MPRPath3.frames
+    }
+  }
+  Outputs  {
+    Field output0 {
+      internalName = SetWorldMatrix.output0
+    }
+  }
+  Parameters {
+    Field FOV {
+      internalName = MPRPath3.fieldOfView
+    }
+  }
+}

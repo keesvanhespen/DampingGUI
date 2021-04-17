@@ -1,0 +1,446 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module SoCSOIsoEditor {
+  internal  {
+    frame = "6013 1109 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1031 303 294 226"
+        sizeHint = "294 226"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1281 317 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window "CSO Creation Parameters" {
+        geometry = "780 452 384 356"
+        sizeHint = "375 356"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOIsoEditor
+    extensionId = iso
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOIsoEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = FALSE
+    pointerPositionEpsilonForCreatingCSO = 1
+    createCursor = CROSS_FREEFORM_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = FALSE
+    addCSOToGroupMode = GROUP_BY_LABEL
+    addCSOToGroupLabel = 13
+    addCSOToGroupId = 4
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 4
+    defaultPathPointColor = "0 0.666666686534882 0"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_NONE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "0 0.666666686534882 0"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    interpolateContour = TRUE
+    smoothingMode = SMOOTHING_MODE_SPLINE_APPROXIMATION
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "5957 949 200 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1250 545 394 369"
+        sizeHint = "394 369"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOExtensibleEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 16
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = PRESSED
+    alt = RELEASED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    creatorExtensionId = __default
+    alwaysCreateNewCSOs = FALSE
+    alwaysModifyExistingCSOs = FALSE
+    keyCommandsEnabled = TRUE
+    enableRemoveAll = FALSE
+    interactOnlyWithSelectedCSO = FALSE
+    renderLeftOverCSOsWithDefaultRenderer = FALSE
+    allowSelectionWithDefaultRenderer = TRUE
+    renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
+    updateCSOIdUnderMouseCursor = FALSE
+    updateImageStatisticsOnFinishInteraction = FALSE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "5821 1061 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "313 804 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic09
+    debugLevel = 0
+    arg1 = "13 0 0"
+    arg1X = 13
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "1 0 0"
+    arg2X = 1
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module BoolArithmetic {
+  internal  {
+    frame = "6205 909 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1299 497 193 276"
+        sizeHint = "193 276"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolArithmetic4
+    inputBool1 = FALSE
+    inputBool2 = FALSE
+    operation = Or
+  }
+}
+module SoCSOManualCorrectionEditor {
+  internal  {
+    frame = "6349 1133 200 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1251 256 481 880"
+        sizeHint = "349 880"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 330 557 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window "CSO Creation Parameters" {
+        geometry = "1388 546 384 356"
+        sizeHint = "375 356"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOManualCorrectionEditor
+    extensionId = ""
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOManualCorrectionEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = TRUE
+    pointerPositionEpsilonForCreatingCSO = 1
+    createCursor = CROSS_FREEFORM_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = FALSE
+    addCSOToGroupMode = GROUP_BY_LABEL
+    addCSOToGroupLabel = 13
+    addCSOToGroupId = 4
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 4
+    defaultPathPointColor = "0 0.666666686534882 0"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_NONE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "0 0.666666686534882 0"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    generateSeedPointsWhileDragging = FALSE
+    insertSeedPointByClickingOnPathPointList = TRUE
+    insertSeedPointCursor = CROSS_PLUS_CURSOR
+    canCloseCursor = CROSS_LINK_CURSOR
+    pointDensityMode = DENSITY_SCREEN_PIXEL
+    densityFactor = 0.1
+    shouldRenderAll = TRUE
+    editAllTimePoints = FALSE
+    interactionMode = INTERACTION_AUTOMATIC
+    keepingMode = KEEP_LARGEST
+    keepingModeFallback = KEEP_LARGEST
+    referencePoint = "0 0 0"
+    generationMode = GENERATION_MODE_GENERATE_NEW
+    generateSecondary = FALSE
+    overwriteType = FALSE
+    overwriteVisualization = FALSE
+    closedContourHandlingMode = CLOSED_HANDLING_MODE_REPLACE_CLOSEST
+    closingDistanceFactor = 1
+    interpolationMode = SPLINE_APPROXIMATION
+    minSeedPointDistance = 8
+    useIntersections = TRUE
+    intersectionThreshold = 9.9999997e-05
+    intersectionThresholdStartAndEnd = 1
+    checkForSelfIntersections = TRUE
+    levelCSOs = TRUE
+    resolveEmbeddedCSOs = FALSE
+    resolveIntersectedCSOs = FALSE
+    smoothEditedCSOs = FALSE
+    connectionSmoothRange = 0
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "6337 1013 208 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1078 407 394 369"
+        sizeHint = "394 369"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOExtensibleEditor1
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 16
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = RELEASED
+    alt = PRESSED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    creatorExtensionId = __default
+    alwaysCreateNewCSOs = FALSE
+    alwaysModifyExistingCSOs = FALSE
+    keyCommandsEnabled = TRUE
+    enableRemoveAll = FALSE
+    interactOnlyWithSelectedCSO = FALSE
+    renderLeftOverCSOsWithDefaultRenderer = FALSE
+    allowSelectionWithDefaultRenderer = TRUE
+    renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
+    updateCSOIdUnderMouseCursor = FALSE
+    updateImageStatisticsOnFinishInteraction = FALSE
+  }
+}
+module BoolArithmetic {
+  internal  {
+    frame = "6437 893 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1299 497 193 276"
+        sizeHint = "193 276"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolArithmetic1
+    inputBool1 = FALSE
+    inputBool2 = FALSE
+    operation = Or
+  }
+}
+module SoCSOVisualizationSettings {
+  internal  {
+    frame = "6557 1133 184 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "781 297 832 667"
+        sizeHint = "372 667"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOVisualizationSettings
+    autoApply = TRUE
+    shouldUseAntiAliasing = TRUE
+    globalAlphaFactor = 1
+    showCSOsOnAllTimePoints = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    orientationFilterMode = ORIENTATION_MODE_ALL
+    parallelThicknessMode = PARALLEL_THICKNESS_MODE_RELATIVE_TO_SLICE
+    showParallelThickness = 0.2
+    ghostingDepthInVoxel = 0
+    voxelSlabAugment = 0
+    shouldRenderShadow = FALSE
+    shadowColor = "0 0 0"
+    shadowAlpha = 1
+    shadowLineWidth = 1
+    shouldRenderSeedPoints = TRUE
+    shouldRenderPathPoints = TRUE
+    shouldOverwriteSeedPointsSettings = FALSE
+    shouldUsePathPointColorForSeedPoints = FALSE
+    shouldRenderSeedPointsOnlyForSelectedCSOs = FALSE
+    shouldUsePathPointColorForSeedPoints = FALSE
+    shouldUseStylePaletteLookUpForSeedPoints = FALSE
+    stylePaletteLookUpSeedPoints = CSOId
+    useSeedPointOnSliceStyle = TRUE
+    useSeedPointOnSliceSize = FALSE
+    useSeedPointOnSliceColor = TRUE
+    useSeedPointOnSliceAlpha = FALSE
+    seedPointOnSliceStyle = SEED_POINT_STYLE_RECTANGLE
+    seedPointOnSliceSize = 3
+    seedPointOnSliceColor = "0.137254908680916 1 0.0431372560560703"
+    seedPointOnSliceAlpha = 1
+    useSeedPointBelowSliceStyle = TRUE
+    useSeedPointBelowSliceSize = FALSE
+    useSeedPointBelowSliceColor = TRUE
+    useSeedPointBelowSliceAlpha = FALSE
+    seedPointBelowSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointBelowSliceSize = 3
+    seedPointBelowSliceColor = "0.388235300779343 0.20392157137394 1"
+    seedPointBelowSliceAlpha = 1
+    useSeedPointAboveSliceStyle = TRUE
+    useSeedPointAboveSliceSize = FALSE
+    useSeedPointAboveSliceColor = FALSE
+    useSeedPointAboveSliceAlpha = FALSE
+    seedPointAboveSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointAboveSliceSize = 3
+    seedPointAboveSliceColor = "1 1 1"
+    seedPointAboveSliceAlpha = 1
+    shouldOverwritePathPointsSettings = TRUE
+    shouldUseStylePaletteLookUpForPathPoints = FALSE
+    stylePaletteLookUpPathPoints = CSOId
+    usePathPointsOnSliceLineStyle = FALSE
+    usePathPointsOnSliceLineWidth = TRUE
+    usePathPointsOnSliceColor = TRUE
+    usePathPointsOnSliceAlpha = FALSE
+    pathPointsOnSliceLineStyle = PATH_POINTS_STYLE_SOLID
+    pathPointsOnSliceLineWidth = 4
+    pathPointsOnSliceColor = "0 0 1"
+    pathPointsOnSliceAlpha = 1
+    usePathPointsBelowSliceLineStyle = TRUE
+    usePathPointsBelowSliceLineWidth = FALSE
+    usePathPointsBelowSliceColor = FALSE
+    usePathPointsBelowSliceAlpha = TRUE
+    pathPointsBelowSliceLineStyle = PATH_POINTS_STYLE_DASHED
+    pathPointsBelowSliceLineWidth = 1
+    pathPointsBelowSliceColor = "1 1 1"
+    pathPointsBelowSliceAlpha = 0.5
+    usePathPointsAboveSliceLineStyle = TRUE
+    usePathPointsAboveSliceLineWidth = FALSE
+    usePathPointsAboveSliceColor = FALSE
+    usePathPointsAboveSliceAlpha = TRUE
+    pathPointsAboveSliceLineStyle = PATH_POINTS_STYLE_DASHED
+    pathPointsAboveSliceLineWidth = 1
+    pathPointsAboveSliceColor = "1 1 1"
+    pathPointsAboveSliceAlpha = 0.5
+    shouldOverwriteSelectionSettings = TRUE
+    selectedPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
+    selectedPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
+    selectedPathPointsBrightenValue = 1.2
+    selectedPathPointsFixedColor = "1 1 0"
+    selectedPathPointsAlpha = 1
+    selectedPathPointsWidenValue = 1
+    selectedPathPointsFixedLineWidth = 2
+    selectedSeedPointColorMode = HIGHLIGHT_MODE_RELATIVE
+    selectedSeedPointSizeMode = HIGHLIGHT_MODE_RELATIVE
+    selectedSeedPointBrightenValue = 1.2
+    selectedSeedPointFixedColor = "1 1 0"
+    selectedSeedPointAlpha = 1
+    selectedSeedPointEnlargeValue = 1
+    selectedSeedPointFixedSize = 2
+    enableMouseOverHighlighting = TRUE
+    mouseOverPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverPathPointsBrightenValue = 1.2
+    mouseOverPathPointsFixedColor = "1 1 0"
+    mouseOverPathPointsAlpha = 1
+    mouseOverPathPointsWidenValue = 1
+    mouseOverPathPointsFixedLineWidth = 2
+    mouseOverSeedPointColorMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverSeedPointSizeMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverSeedPointBrightenValue = 1.2
+    mouseOverSeedPointFixedColor = "1 1 0"
+    mouseOverSeedPointAlpha = 1
+    mouseOverSeedPointEnlargeValue = 1
+    mouseOverSeedPointFixedSize = 2
+    visibleByMode = CSOs
+    visibleIdList = ""
+    invertVisibility = FALSE
+  }
+}
+connections  {
+  SoCSOIsoEditor.addCSOToGroupLabel = Arithmetic09.arg1X
+  SoView2DCSOExtensibleEditor.inExtensions = SoCSOIsoEditor.self
+  BoolArithmetic4.inputBool1 = SoView2DCSOExtensibleEditor.isCreatingNewCSO
+  BoolArithmetic4.inputBool2 = SoView2DCSOExtensibleEditor.isEditingExistingCSO
+  SoCSOManualCorrectionEditor.addCSOToGroupLabel = Arithmetic09.arg1X
+  SoView2DCSOExtensibleEditor1.inExtensions = SoCSOManualCorrectionEditor.self
+  SoView2DCSOExtensibleEditor1.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
+  BoolArithmetic1.inputBool1 = SoView2DCSOExtensibleEditor1.isCreatingNewCSO
+  BoolArithmetic1.inputBool2 = SoView2DCSOExtensibleEditor1.isEditingExistingCSO
+}
+networkModel = ""

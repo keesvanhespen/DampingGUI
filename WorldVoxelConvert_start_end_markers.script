@@ -1,0 +1,25 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = WorldVoxelConvert.input0
+    }
+    Field input0 {
+      internalName = WorldVoxelConvert1.input0
+    }
+    Field baseIn0 {
+      internalName = XMarkerAtIndex1.inputXMarkerList
+    }
+    Field baseIn0 {
+      internalName = XMarkerAtIndex.inputXMarkerList
+    }
+  }
+  Outputs {}
+  Parameters  {
+    Field WorldVoxelConvert_worldPos {
+      internalName = WorldVoxelConvert.worldPos
+    }
+    Field WorldVoxelConvert1_worldPos {
+      internalName = WorldVoxelConvert1.worldPos
+    }
+  }
+}

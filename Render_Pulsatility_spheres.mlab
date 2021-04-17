@@ -1,0 +1,242 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "6285 2187 192 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1293 292 513 497"
+        sizeHint = "500 497"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Visualized_pulsatility_spheres
+    listString = ""
+    index = 18
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "11.2179541356119 -14.3166697004721 11.2673127779365"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "1.9597728394216 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module ComposeVector3 {
+  internal  {
+    frame = "6073 2151 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "836 598 263 64"
+        sizeHint = "263 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComposeVector31
+    x = 1.9597728394216
+    y = 0
+    z = 0
+  }
+}
+module So3DMarkerEditor {
+  internal  {
+    frame = "6237 1951 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "989 487 542 340"
+        sizeHint = "542 340"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = So3DMarkerEditor4
+    interactionProviderID = ""
+    scaleSize = 1
+    scaleLength = 1
+    color = "1 1 1"
+    ambientColor = "0 0 0"
+    specularColor = "0.300000011920929 0.300000011920929 0.300000011920929"
+    enableVector = FALSE
+    drawingOn = TRUE
+    editingOn = TRUE
+    selectingOn = TRUE
+    deleteOnClick = FALSE
+    addOnClick = TRUE
+    edit3DOn = FALSE
+    edit3DVector = FALSE
+    useManagedInteraction = TRUE
+    cursorShape = UNDEFINED_CURSOR
+    colorMode = COLOR_BY_TYPE
+    markerType = 0
+    textColorMode = COLOR_TEXT
+    textMode = TEXT_LENGTH
+    textColor = "1 1 1"
+    textShadow = TRUE
+    textBackgroundColor = "0.5 0.5 0.5"
+    textBackgroundAlpha = 0
+    textFontType = SoExtText2::HELVETICA_18
+    vectorArrow = VECTOR_AND_SPHERE
+    lineStyle = Solid
+    drawMode = DrawModeGeometry
+    geometryComplexity = VERY_HIGH
+    numMarkersThresholdForFastRendering = 5000
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "19.192170321447 -15.062468322415 -1.28434670814633"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "1.02610044904673 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module SoFontStyle {
+  internal  {
+    frame = "6153 2063 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "883 568 168 124"
+        sizeHint = "168 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoFontStyle
+    name = "*"defaultFont"*"
+    size = 20
+    family = SERIF
+    style = NONE
+  }
+}
+module FieldBypass {
+  internal  {
+    frame = "6049 1887 136 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "515 197 459 368"
+        sizeHint = "184 368"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldBypass3
+    inputString0 = TEXT_OFF
+    inputString1 = TEXT_LENGTH
+    inputString2 = ""
+    inputString3 = ""
+    inputString4 = ""
+    inputString5 = ""
+    inputString6 = ""
+    inputString7 = ""
+    inputString8 = ""
+    inputString9 = ""
+    inputString10 = ""
+    inputString11 = ""
+    inputString12 = ""
+    inputString13 = ""
+    inputString14 = ""
+    inputString15 = ""
+    inputString16 = ""
+    inputString17 = ""
+    inputString18 = ""
+    inputString19 = ""
+    inputNumber = 1
+    outputString = TEXT_LENGTH
+    noBypass = FALSE
+    onlyIfChanged = FALSE
+    numberOfInputs = 2
+  }
+}
+module FieldBypass {
+  internal  {
+    frame = "6055 1972 136 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "515 197 459 368"
+        sizeHint = "184 368"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldBypass4
+    inputString0 = 0
+    inputString1 = 1
+    inputString2 = ""
+    inputString3 = ""
+    inputString4 = ""
+    inputString5 = ""
+    inputString6 = ""
+    inputString7 = ""
+    inputString8 = ""
+    inputString9 = ""
+    inputString10 = ""
+    inputString11 = ""
+    inputString12 = ""
+    inputString13 = ""
+    inputString14 = ""
+    inputString15 = ""
+    inputString16 = ""
+    inputString17 = ""
+    inputString18 = ""
+    inputString19 = ""
+    inputNumber = 1
+    outputString = 1
+    noBypass = FALSE
+    onlyIfChanged = FALSE
+    numberOfInputs = 2
+  }
+}
+connections  {
+  Visualized_pulsatility_spheres.vecXYZ = ComposeVector31.v
+  So3DMarkerEditor4.inputNode = SoFontStyle.self
+  So3DMarkerEditor4.inXMarkerList = Visualized_pulsatility_spheres.outXMarkerList
+  So3DMarkerEditor4.scaleLength = FieldBypass4.outputString
+  So3DMarkerEditor4.textMode = FieldBypass3.outputString
+}
+networkModel = ""

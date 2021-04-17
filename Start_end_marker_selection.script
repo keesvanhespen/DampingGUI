@@ -1,0 +1,19 @@
+Interface  {
+  Inputs  {
+    Field baseIn0 {
+      internalName = SoWEMRenderer1.inWEM
+    }
+  }
+  Outputs  {
+    Field nodeOut0 {
+      internalName = SoGroup.self
+    }
+    Field baseOut0 {
+      internalName = So3DMarkerEditor.outXMarkerList
+    }
+    Field nodeOut1 {
+      internalName = SoWEMRenderer1.self
+    }
+  }
+  Parameters {}
+}

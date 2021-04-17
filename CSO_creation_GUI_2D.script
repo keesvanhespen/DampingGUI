@@ -1,0 +1,48 @@
+// write your script here!
+Interface{
+ 
+}
+Window {
+Category  {
+    Panel {
+      module = DirectDicomImport
+
+    }
+    Box{expandY = True
+    Viewer View2D.self {
+      expandY = True
+      type    = SoRenderArea
+    }} expandY = True
+  
+    Horizontal {
+      Button SoView2DMarkerEditor.deleteAll{dependsOn = XMarkerListContainer.numItems
+        title   = "Delete markers"
+      }
+      Button { dependsOn = XMarkerListContainer.numItems
+        title   = "Draw contours"
+        command = contourcreation
+      }
+      
+      Horizontal  {CheckBox Bypass2.noBypass {title = "Disable initial seed location"}}
+      Label "Box size: " {}
+        NumberEdit Arithmetic0.arg1X { step = 1 stepstep=10 expandX = 0}
+    
+}
+  Box "Save"{ Horizontal{Field StringUtils2.string1{title   = "File Name:" dependsOn = CSOConvertToImage.output0 expandY = 0}
+                Button {title = "Save mask" dependsOn = CSOConvertToImage.output0 command = save }}}
+  
+    FieldListener BoolArithmetic4.outputChangedToFalse {command = csolistener}
+    FieldListener BoolArithmetic1.outputChangedToFalse {command = csolistener}
+  FieldListener Arithmetic0.arg1X {command = "*py:ctx.field("CSOManager2.removeAllCSOsAndGroups").touch(); ctx.field("CSOConvertToImage.clear").touch()*"}
+  FieldListener DirectDicomImport.outVolume {command = "*py: ctx.field("XMarkerListContainer.deleteAll").touch()*"}
+  FieldListener MaskToMarkers.outputXMarkerList {command = "*py: if ctx.field("Bypass1.noBypass").value==False: set_initial_candidate(); *"}
+  
+}
+}
+
+
+
+Commands {
+  source      = $(LOCAL_BASENAME).py
+  initCommand = init
+}

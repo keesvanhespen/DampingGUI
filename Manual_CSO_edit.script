@@ -1,0 +1,26 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = SoCSOIsoEditor.inputImage
+    }
+    Field baseIn0 {
+      internalName = SoView2DCSOExtensibleEditor.inCSOList
+    }
+    Field baseIn0 {
+      internalName = SoView2DCSOExtensibleEditor1.inCSOList
+    }
+  }
+  Outputs  {
+    Field nodeOut0 {
+      internalName = SoView2DCSOExtensibleEditor.self
+    }
+    Field nodeOut1 {
+      internalName = SoView2DCSOExtensibleEditor1.self
+    }
+  }
+  Parameters  {
+    Field Arithmetic09_arg1X {
+      internalName = Arithmetic09.arg1X
+    }
+  }
+}

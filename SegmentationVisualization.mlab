@@ -1,0 +1,656 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module MPRPath {
+  internal  {
+    frame = "4768 3257 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2053 394 444 680"
+        sizeHint = "444 680"
+        wasOpen = yes
+      }
+      window _automatic {
+        geometry = "35 188 694 819"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MPRPath1
+    rotation = "0.979713101767937 -0.0799356915070706 -0.183773021544332 3.94727362828095"
+    translation = "-14.0835342407227 -19.9856871962514 -34.2468137145034"
+    plane = "-0.265111867629792 -0.681804846580691 -0.681804846580694 40.7096940285305"
+    enablePlaneEdit = FALSE
+    autoCenter = FALSE
+    fillValue = 0
+    outputSizeMode = AspectRatio
+    fieldOfView = 15
+    outputSize = 80
+    aspectRatio = 1
+    fieldOfViewX = 100
+    fieldOfViewY = 100
+    outputSizeX = 256
+    outputSizeY = 256
+    slabMode = SizeInSlicesForward
+    slabSize = 1
+    pageSizeX = 128
+    pageSizeY = 128
+    useUpVector = FALSE
+    upVector = "0 1 0"
+    disableDirectVoxelCopy = FALSE
+    inputSliceNo = 0
+    interpolation = Trilinear
+    borderHandling = UseFillValue
+    memoryAccess = Global
+    enableSlabProjection = FALSE
+    depthSlabRenderMode = Minimum
+    timeSlabRenderMode = Minimum
+    timeSlabStart = 0
+    timeSlabSize = 1
+    enableCurrentSlice = FALSE
+    currentSlice = 0
+    currentSliceRounded = 0
+    numberOfSlices = 0
+    currentSliceMin = 0
+    currentSliceMax = 0
+    snapCurrentSliceToIntegerIfOrthogonal = TRUE
+    currentKeyFrame = 0
+    maxKeyFrame = 0
+    pathAngle = 0
+    alignAlongPath = FALSE
+    curvedMprSlabSize = 1
+    markersOnFrames = TRUE
+    curvedMprSlabMode = SizeInSlices
+    useKeyFrameDistanceForSliceThickness = TRUE
+    showUpVectors = FALSE
+    showFrame = TRUE
+    upVectorColor = "0 0.66 0"
+    imageColor = "0 0.666666666666667 0"
+    borderColor = "1 1 1"
+    borderOn = FALSE
+    drawImageOn = FALSE
+    manipulatorOn = FALSE
+    clipPlaneOn = FALSE
+    flipClipPlane = FALSE
+    clipPlaneOffset = 0
+    axesOn = FALSE
+    alphaFactor = 0.43799999
+    zBuffer = FALSE
+    blendMode = BLEND_REPLACE
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "4569 3061 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "767 430 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSeparator2
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module SoDrawStyle {
+  internal  {
+    frame = "4416 3257 112 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "893 568 183 124"
+        sizeHint = "149 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoDrawStyle2
+    style = FILLED
+    pointSize = 0
+    lineWidth = 5
+    linePattern = 65535
+  }
+}
+module Info {
+  internal  {
+    frame = "4628 2733 88 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1131 644 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info
+  }
+}
+module Info {
+  internal  {
+    frame = "4748 2989 88 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "989 670 847 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info1
+  }
+}
+module CSOAffineTransformationModificator {
+  internal  {
+    frame = "4828 2449 232 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2024 500 1045 638"
+        sizeHint = "361 638"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOAffineTransformationModificator
+    updateMode = Off
+    autoApply = FALSE
+    emptyGroupBeforeGeneration = FALSE
+    addCSOToGroupMode = AddToGroupByLabel
+    addCSOToGroupWithLabel = ""
+    addCSOToGroupWithId = -1
+    id = 0
+    pathPointStyle = LineStyleSolid
+    pathPointWidth = 1
+    pathPointColor = "1 1 0"
+    pathPointAlpha = 1
+    seedPointStyle = MarkerModeRect
+    seedPointSize = 2
+    seedPointColor = "0 1 0"
+    seedPointAlpha = 1
+    voxelWriteMode = VoxelWriteModeModule
+    voxelWriteValue = 1024
+    csoIdList = 900
+    workDirectlyOnInputList = TRUE
+    useUndoRedo = TRUE
+    changeSettingsForModifiedCSOs = FALSE
+    listenToFinishingNotifications = TRUE
+    listenToSelectionNotifications = TRUE
+    matrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module MatrixArithmetic {
+  internal  {
+    frame = "4932 2729 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2467 483 1104 660"
+        sizeHint = "590 560"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MatrixArithmetic
+    matrixA = "0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0"
+    matrixB = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    operation = Multiply
+    scalarValue = 0
+    inputVectorD = "0 0 0 0"
+  }
+}
+module MatrixArithmetic {
+  internal  {
+    frame = "4736 2857 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2403 230 590 560"
+        sizeHint = "590 560"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MatrixArithmetic1
+    matrixA = "0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0"
+    matrixB = "-0.123361065128716 0.0365059117113798 1.44357447718015 14.7683955898184
+-0.112982426515412 -0.134160034829899 -0.701396315005775 -2.69808019145185
+0.0846951528069839 -0.125796078891836 1.16695494610527 -28.7791954156058
+0 0 0 1"
+    operation = Inverse
+    scalarValue = 0
+    inputVectorD = "0 0 0 0"
+  }
+}
+module CSOManager {
+  internal  {
+    frame = "5025 2957 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2203 487 1212 601"
+        sizeHint = "692 565"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOManager
+    workDirectlyOnInputCSOList = FALSE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeFixed
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "1 1 0.600000023841858"
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "0 1 0"
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveNever
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 16
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numSelectedCSOs = 0
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = ""
+    csoTabSelected = FALSE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = TRUE
+    csoVisualsTabSelected = FALSE
+    groupCommonTabSelected = TRUE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = FALSE
+    notificationControlTabSelected = FALSE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = FALSE
+    defaultCSOCommonTabSelected = TRUE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = FALSE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4132 2857 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "825 188 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic09
+    debugLevel = 0
+    arg1 = "0.5 0.5 0.5"
+    arg1X = 0.5
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "0.5 0.5 0.5"
+    arg2X = 0.5
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "4328 2913 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "489 650 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert1
+    voxelX = 0
+    voxelY = 0
+    voxelZ = 0
+    worldX = 0.5
+    worldY = 0.5
+    worldZ = 0.5
+    voxelPos = "0 0 0"
+    worldPos = "0.5 0.5 0.5"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = TRUE
+    keepConstant = Voxel
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "4212 2993 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1364 184 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert
+    voxelX = 0
+    voxelY = 0
+    voxelZ = 0
+    worldX = 0.5
+    worldY = 0.5
+    worldZ = 0.5
+    voxelPos = "0 0 0"
+    worldPos = "0.5 0.5 0.5"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = TRUE
+    keepConstant = Voxel
+  }
+}
+module CSOAffineTransformationModificator {
+  internal  {
+    frame = "5136 2433 240 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2139 375 1045 661"
+        sizeHint = "361 638"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOAffineTransformationModificator1
+    updateMode = Off
+    autoApply = FALSE
+    emptyGroupBeforeGeneration = FALSE
+    addCSOToGroupMode = AddToGroupByLabel
+    addCSOToGroupWithLabel = ""
+    addCSOToGroupWithId = -1
+    id = 0
+    pathPointStyle = LineStyleSolid
+    pathPointWidth = 1
+    pathPointColor = "1 1 0"
+    pathPointAlpha = 1
+    seedPointStyle = MarkerModeRect
+    seedPointSize = 2
+    seedPointColor = "0 1 0"
+    seedPointAlpha = 1
+    voxelWriteMode = VoxelWriteModeModule
+    voxelWriteValue = 1024
+    csoIdList = 900
+    workDirectlyOnInputList = TRUE
+    useUndoRedo = TRUE
+    changeSettingsForModifiedCSOs = FALSE
+    listenToFinishingNotifications = TRUE
+    listenToSelectionNotifications = TRUE
+    matrix = "0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0"
+  }
+}
+module AffineMatrixComposition {
+  internal  {
+    frame = "4588 2601 200 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1392 372 339 517"
+        sizeHint = "339 517"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AffineMatrixComposition
+    onInputChangeBehavior = Update
+    inTranslation = "0 0 0 1"
+    inRotation = "0 0 0 1"
+    inScale = "1 1 1 1"
+    inStretch = "0 0 0 1"
+    inSignDeterminant = 1
+  }
+}
+module ComposeVector4 {
+  internal  {
+    frame = "4232 2729 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "893 480 341 64"
+        sizeHint = "341 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComposeVector4
+    x = 0
+    y = 0
+    z = 0
+    d = 1
+  }
+}
+module CSOConvertTo3DMask {
+  internal  {
+    frame = "5432 2401 192 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1163 319 440 593"
+        sizeHint = "440 593"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOConvertTo3DMask
+    updateMode = AutoClear
+    autoApply = FALSE
+    foregroundValue = 4095
+    backgroundValue = 0
+    useImageValues = FALSE
+    fillSurface = TRUE
+    copyInputImage = FALSE
+    listenInteractionNotifications = FALSE
+    listenInteractionFinished = TRUE
+    useAlwaysForegroundValueOfModule = FALSE
+    useAntiAliasing = TRUE
+    quality = 0.40000001
+    useOnlyFirstCSOForStartScanning = FALSE
+    useOnlySeedPoints = TRUE
+    resolveEmbeddedCSOs = TRUE
+    useSplineApproximationSmoothing = TRUE
+    additionalPointLocation = Auto
+    resolveIntersections = TRUE
+    regularizationStrength = 0
+    regularizationStrength2 = 47.099998
+    innerPointScale = 0.25
+    maxNumPoints = 10000
+    supportOpenCSOs = FALSE
+    numThreads = 4
+    codePath = SSE3
+    logging = FALSE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "5360 2185 112 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "917 620 120 20"
+        sizeHint = "100 20"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Bypass3
+    noBypass = FALSE
+  }
+}
+module Switch {
+  internal  {
+    frame = "5528 2177 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "251 582 200 64"
+        sizeHint = "200 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch
+    currentInput = 0
+    numberOfInputs = 5
+  }
+}
+connections  {
+  SoSeparator2.children = "SoDrawStyle2.self MPRPath1.outputSlice"
+  Info.input0 = MPRPath1.output0
+  Info1.input0 = MPRPath1.output1
+  CSOAffineTransformationModificator.inCSOList = CSOManager.outCSOList
+  CSOAffineTransformationModificator.matrix = AffineMatrixComposition.outMatrix
+  MatrixArithmetic.matrixA = Info.worldMatrix
+  MatrixArithmetic.matrixB = MatrixArithmetic1.outputMatrixC
+  MatrixArithmetic1.matrixA = Info1.worldMatrix
+  Arithmetic09.arg1 = WorldVoxelConvert1.worldPos
+  Arithmetic09.arg2 = WorldVoxelConvert.worldPos
+  WorldVoxelConvert1.input0 = MPRPath1.output1
+  WorldVoxelConvert.input0 = MPRPath1.output1
+  WorldVoxelConvert.voxelZ = MPRPath1.currentKeyFrame
+  CSOAffineTransformationModificator1.inCSOList = CSOManager.outCSOList
+  CSOAffineTransformationModificator1.csoIdList = CSOAffineTransformationModificator.csoIdList
+  CSOAffineTransformationModificator1.matrix = MatrixArithmetic.outputMatrixC
+  AffineMatrixComposition.inTranslation = ComposeVector4.v
+  ComposeVector4.x = Arithmetic09.resultX
+  ComposeVector4.y = Arithmetic09.resultY
+  ComposeVector4.z = Arithmetic09.resultZ
+  CSOConvertTo3DMask.inCSOList = CSOManager.outCSOList
+  Bypass3.input0 = CSOConvertTo3DMask.output0
+  Switch.input1 = CSOConvertTo3DMask.output0
+  Switch.currentInput = Bypass3.noBypass
+}
+networkModel = ""

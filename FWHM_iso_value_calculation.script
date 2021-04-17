@@ -1,0 +1,22 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = Info2.input0
+    }
+    Field input0 {
+      internalName = Switch1toN.input0
+    }
+    Field input0 {
+      internalName = Info3.input0
+    }
+  }
+  Outputs {
+   
+    }
+  
+  Parameters {    
+    Field isovalue0{
+      internalName = Arithmetic08.resultX
+    }
+  }
+}

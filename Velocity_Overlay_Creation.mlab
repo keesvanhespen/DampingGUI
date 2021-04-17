@@ -1,0 +1,275 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module SoLUTEditor {
+  internal  {
+    frame = "5369 1100 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1074 556 515 450"
+        sizeHint = "515 450"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor2
+    rangeMin = 0
+    rangeMax = 80
+    viewMin = 0
+    viewMax = 80
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 0.0352941006422043 0.564706027507782 0.949020028114319, 0.995850622653961 0.184313729405403 0 0.529411792755127, 11.1999998092651 0.384313732385635 0 0.643137276172638, 23.2000007629395 0.572549045085907 0 0.650980412960052, 34.4000015258789 0.729411780834198 0.184313729405403 0.541176497936249, 45.5999984741211 0.847058832645416 0.356862753629684 0.411764711141586, 56.7999992370605 0.933333337306976 0.537254929542542 0.286274522542953, 68.8000030517578 0.964705884456635 0.74117648601532 0.152941182255745, 80 0.894117653369904 0.980392158031464 0.0823529437184334 ]"
+    alphaPoints = "[ 0 0, 0.995850622653961 1, 11.1999998092651 1, 23.2000007629395 1, 34.4000015258789 1, 45.5999984741211 1, 56.7999992370605 1, 68.8000030517578 1, 80 1 ]"
+    alphaFactor = 10
+    newRangeMin = 0
+    newRangeMax = 80
+    newRangeMode = ScaleFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module Histogram {
+  internal  {
+    frame = "5551 1221 128 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "852 398 400 378"
+        sizeHint = "400 378"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Histogram2
+    useMask = TRUE
+    xRange = "Image Min/Max"
+    maskMode = Weights
+    curveType = Line
+    curveStyle = 0
+    curveTitle = ""
+    updateMode = AutoUpdate
+    useStepFunction = FALSE
+    useBinSizeOneRepresentation = TRUE
+    useBackgroundValue = FALSE
+    backgroundValue = 0
+    binSize = 1
+    maxBinCount = 25000000
+  }
+}
+module Arithmetic1 {
+  internal  {
+    frame = "5677 1348 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "826 598 285 64"
+        sizeHint = "283 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic13
+    function = DivideImgConst
+    constant = 1
+  }
+}
+module Mask {
+  internal  {
+    frame = "5677 1076 136 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "3308 728 441 124"
+        sizeHint = "353 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Mask
+    mode = MaskedOriginalInv
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    blending = 1
+    background = 0
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "5387 1261 136 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "742 474 468 313"
+        sizeHint = "450 313"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MinMaxScan
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferredIntType = PreferUnsigned
+  }
+}
+module ImageSwitch {
+  internal  {
+    frame = "5569 884 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1118 957 565 91"
+        sizeHint = "565 91"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageSwitch
+    numberOfInputs = 2
+    currentInput = 1
+    numberOfOutputs = 1
+    currentOutput = 0
+  }
+}
+module BoolArithmetic {
+  internal  {
+    frame = "5597 764 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1280 192 193 276"
+        sizeHint = "193 276"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolArithmetic2
+    inputBool1 = TRUE
+    inputBool2 = FALSE
+    operation = Identity
+  }
+}
+module SoView2DOverlay {
+  internal  {
+    frame = "5165 908 168 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "514 230 436 472"
+        sizeHint = "436 472"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DOverlay
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = TRUE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = TRUE
+    clipToSlice = TRUE
+    cursorShape = UNDEFINED_CURSOR
+    overlayName = ""
+    cacheTextures = TRUE
+    blendMode = BLEND_BLEND
+    overwriteCurrentTimePoint = FALSE
+    timePoint = 0
+    maxTimePoint = 21
+    filterMode = FILTER_LINEAR
+    inheritFilterMode = TRUE
+    lutPrecision = VIEW2D_LUT_AUTO
+    alphaFactor = 1
+    baseColor = "1 1 1"
+    useWorldCoords = TRUE
+    applyLut = TRUE
+    isCheckerTiling = FALSE
+    checkerTileSize = 2
+    areCheckerTilesInverted = FALSE
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "4781 1061 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "240 754 700 296"
+        sizeHint = "635 296"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener
+    mode = Parameter
+    inParameter = 80
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+connections  {
+  SoLUTEditor2.inHistogram = Histogram2.outputHistogramCurve
+  SoLUTEditor2.newRangeMax = MinMaxScan.trueMaxValue
+  SoLUTEditor2.applyNewRange = FieldListener.updateDone
+  Histogram2.input0 = Arithmetic13.output0
+  Mask.input1 = Arithmetic13.output0
+  Mask.blending = SoView2DOverlay.drawingOn
+  MinMaxScan.input0 = Arithmetic13.output0
+  ImageSwitch.input1 = Mask.output0
+  ImageSwitch.currentInput = SoView2DOverlay.drawingOn
+  BoolArithmetic2.inputBool1 = ImageSwitch.currentInput
+  SoView2DOverlay.image = Arithmetic13.output0
+  FieldListener.inParameter = SoLUTEditor2.newRangeMax
+}
+networkModel = ""

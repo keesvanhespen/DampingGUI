@@ -1,0 +1,467 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module Mask {
+  internal  {
+    frame = "1664 2405 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1170 542 441 124"
+        sizeHint = "353 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Mask
+    mode = MaskedOriginal
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    blending = 0.5
+    background = 0
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "1877 2261 104 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1145 511 208 243"
+        sizeHint = "208 243"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt
+    boolValue = TRUE
+    invBoolValue = FALSE
+    intValue = 1
+    offValue = 0
+    onValue = 1
+    defaultBool = Unchanged
+  }
+}
+module Switch {
+  internal  {
+    frame = "2100 2361 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "867 598 200 64"
+        sizeHint = "200 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch2
+    currentInput = 1
+    numberOfInputs = 2
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "2145 2245 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1014 843 700 296"
+        sizeHint = "635 296"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener1
+    mode = MLImage
+    inParameter = ""
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "1864 2829 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1353 605 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology2
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitErosion
+  }
+}
+module OtsuThreshold {
+  internal  {
+    frame = "1966 3171 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "864 571 206 118"
+        sizeHint = "206 118"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OtsuThreshold1
+    binSize = 256
+    autoApply = TRUE
+    backgroundThreshold = 0
+    threshold = 416
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "2032 3029 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "3052 497 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology3
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 5
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitDilation
+  }
+}
+module RectMaskImage {
+  internal  {
+    frame = "1856 3085 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3015 587 519 325"
+        sizeHint = "519 325"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RectMaskImage
+    xPos = 0.5
+    yPos = 0.5
+    zPos = 0.5
+    cPos = 0.5
+    tPos = 0.5
+    uPos = 0.5
+    xPosUnit = Relative
+    yPosUnit = Relative
+    zPosUnit = Relative
+    cPosUnit = Relative
+    tPosUnit = Relative
+    uPosUnit = Relative
+    xSize = 0.60000002
+    ySize = 0.5
+    zSize = 0.40000001
+    cSize = 1
+    tSize = 1
+    uSize = 1
+    xSizeUnit = Relative
+    ySizeUnit = Relative
+    zSizeUnit = Relative
+    cSizeUnit = Relative
+    tSizeUnit = Relative
+    uSizeUnit = Relative
+    rectValMode = UserDef
+    rectVal = 1
+    borderValMode = UserDef
+    borderVal = 0
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module Arithmetic2 {
+  internal  {
+    frame = "1800 2957 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "791 583 353 94"
+        sizeHint = "353 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic22
+    function = Max
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    constant = 0
+    autoReplicate = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1773 3156 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1193 220 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold1
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = IntervalMin
+    centerWidthSet = FALSE
+    threshCenter = 50450
+    threshWidth = 99100
+    threshMin = 900
+    threshMax = 100000
+    lowerUserValue = 1
+    innerUserValue = 0
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module itkVotingBinaryHoleFillingImageFilter {
+  internal  {
+    frame = "2012 2837 240 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "838 420 342 420"
+        sizeHint = "258 420"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = itkVotingBinaryHoleFillingImageFilter1
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 1
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 0
+    majorityThreshold = 1
+    radius = "3 3 1"
+    backgroundValue = 0
+    foregroundValue = 1
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "1872 2733 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1353 605 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology1
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitErosion
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "1848 2661 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1353 605 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology4
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitErosion
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "1795 2546 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1353 605 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology5
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitErosion
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "1923 2446 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1353 605 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology6
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitErosion
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "1955 2532 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1353 605 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology7
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitErosion
+  }
+}
+connections  {
+  Mask.input1 = BitMorphology6.output0
+  Switch2.input1 = Mask.output0
+  Switch2.currentInput = BoolInt.intValue
+  FieldListener1.inImage = Switch2.output0
+  BitMorphology2.input0 = itkVotingBinaryHoleFillingImageFilter1.output0
+  BitMorphology3.input0 = OtsuThreshold1.output0
+  Arithmetic22.input0 = RectMaskImage.outImage
+  Arithmetic22.input1 = BitMorphology3.output0
+  itkVotingBinaryHoleFillingImageFilter1.input0 = Arithmetic22.output0
+  BitMorphology1.input0 = BitMorphology2.output0
+  BitMorphology4.input0 = BitMorphology1.output0
+  BitMorphology5.input0 = BitMorphology4.output0
+  BitMorphology6.input0 = BitMorphology7.output0
+  BitMorphology7.input0 = BitMorphology5.output0
+}
+networkModel = ""

@@ -1,0 +1,950 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module CSOIsoGenerator {
+  internal  {
+    frame = "6593 205 176 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1205 187 361 597"
+        sizeHint = "361 589"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOIsoGenerator2
+    updateMode = Off
+    autoApply = FALSE
+    emptyGroupBeforeGeneration = FALSE
+    addCSOToGroupMode = AddToGroupByLabel
+    addCSOToGroupWithLabel = 16
+    addCSOToGroupWithId = -1
+    id = 0
+    pathPointStyle = LineStyleSolid
+    pathPointWidth = 4
+    pathPointColor = "0 0.666666666666667 0"
+    pathPointAlpha = 1
+    seedPointStyle = MarkerModeNone
+    seedPointSize = 2
+    seedPointColor = "0 1 0"
+    seedPointAlpha = 1
+    voxelWriteMode = VoxelWriteModeModule
+    voxelWriteValue = 1024
+    allowUndo = FALSE
+    sendCSOEvents = FALSE
+    isoValue = 634.79889
+    interpolate = TRUE
+    timePoint = 21
+    generateForAllTimepoints = FALSE
+    smoothingMode = SmoothingModeSplineInterpolation
+    useMinimumNumberSeeds = FALSE
+    minimumNumberSeedPoints = 100
+    keepingMode = KeepingModeAll
+    autoDescription = None
+    ensureClockwiseOrientation = FALSE
+    useSmooth = TRUE
+    numSmoothPasses = 10
+    smoothFactor = 0.1
+    smoothRange = 7
+    reduceCSOsToOnlyOneSeedPoint = FALSE
+    autoClear = FALSE
+    creationMode = Single
+    startCondition = Always
+    startPosition = "-14.2967595382164 -9.57676524896128 -17.5107004823051"
+  }
+}
+module CSOManager {
+  internal  {
+    frame = "6497 677 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2088 497 1343 687"
+        sizeHint = "692 565"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOManager2
+    workDirectlyOnInputCSOList = FALSE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeBrighten
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0
+    selectionFixedColor = "1 1 0.600000023841858"
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "0 1 0"
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveNever
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 0
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numSelectedCSOs = 1
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = 8
+    csoTabSelected = TRUE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = TRUE
+    csoVisualsTabSelected = FALSE
+    groupCommonTabSelected = TRUE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = FALSE
+    notificationControlTabSelected = FALSE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = TRUE
+    defaultCSOCommonTabSelected = FALSE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = TRUE
+  }
+}
+module CSOConvertToImage {
+  internal  {
+    frame = "6285 621 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3395 586 440 508"
+        sizeHint = "440 508"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOConvertToImage
+    updateMode = Off
+    autoApply = FALSE
+    foregroundValue = 1
+    backgroundValue = 0
+    useImageValues = TRUE
+    fillSurface = TRUE
+    copyInputImage = FALSE
+    listenInteractionNotifications = FALSE
+    listenInteractionFinished = TRUE
+    boundingBoxMargin = 0
+    useAlwaysForegroundValueOfModule = FALSE
+    voxelizeCSO = FALSE
+    removeOutsideVoxels = FALSE
+    useAntiAliasing = FALSE
+    useGlobalSubsample = TRUE
+    antiAliasSubSample = 4
+    antiAliasSubSampleX = 4
+    antiAliasSubSampleY = 4
+    antiAliasSubSampleZ = 4
+    removeBorderVoxelsByVolume = FALSE
+    removeBorderVoxelVolumeThreshold = 0.6
+    ignoreTimePoints = FALSE
+    drawToAllTimePoints = FALSE
+    createMarkerList = FALSE
+    markerGenerationMode = CSOMarkerGenerationModeFromVoxels
+    outputTypeMode = Automatic
+    createCSOVoxelSet = FALSE
+    voxelSetMode = VoxelSetModeReplaceMax
+    generationMode = GenerationModeComplete
+    useFastModeForParallelCSOs = TRUE
+    numThreads = 1
+    timePointIndexForBoundingBox = -1
+    removeOutsideVoxelsMode = Disabled
+  }
+}
+module SoView2DCSOEditor {
+  internal  {
+    frame = "6493 381 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1175 288 620 622"
+        sizeHint = "620 622"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = FALSE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 24
+    needsValidVoxel = TRUE
+    button1 = RELEASED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = RELEASED
+    control = RELEASED
+    alt = RELEASED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    shouldListenToRepaintEvents = TRUE
+    shouldListenToSelectionChangedEvents = TRUE
+    shouldListenToFinishedEvents = TRUE
+    generalInteractionMode = INTERACTION_MODE_EDIT
+    generalInteractionModeToggleKey = TOGGLE_MODE_NONE
+    movingOn = FALSE
+    shouldLimitCSOMovement = FALSE
+    moveRatio = 0.5
+    useAntiAliasing = TRUE
+    useInterpolationTargetColor = TRUE
+    interpolationTargetColor = "1 0 0"
+    showCSOsOnAllTimePoints = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    showBoundingBox = FALSE
+    boundingBoxAlpha = 0.5
+    boundingBoxColor = "1 1 1"
+    showOnlyParallelCSOs = FALSE
+    showParallelThickness = 0.1
+    shouldLevelCSO = FALSE
+    useStylePalette = FALSE
+    stylePaletteUseIndexAs = USE_INDEX_FOR_CSO
+    labelShowMode = LABEL_SHOW_NONE
+    combineLabelsForGroupsOnSlice = FALSE
+    labelAlignmentMode = LABEL_ALIGN_CENTER
+    labelUnitScale = LABEL_UNIT_SCALE_MM
+    showLabelUnits = TRUE
+    labelFontSize = 12
+    labelUseTextShadow = TRUE
+    labelMarginX = 2
+    labelMarginY = 2
+    ghostMode = GHOST_NONE
+    ghostUnitMode = GHOST_UNIT_SLICE
+    ghostStyleAlpha = TRUE
+    ghostStyleStipple = TRUE
+    ghostStyleLineWidth = FALSE
+    ghostStyleBrighten = FALSE
+    ghostDepth = 5
+    ghostFadeOutAlpha = 0
+    generalLabelColor = "1 1 1"
+    generalLabelAlpha = 1
+    labelColorMode = COLOR_GENERAL
+    useTessellation = FALSE
+    useHoleCorrection = FALSE
+    useHoleCorrectionForGroupsOnly = FALSE
+    tessellationColorMode = COLOR_AS_CSO
+    tessellationColor = "0.899999976158142 0.5 0.899999976158142"
+    tessellationAlpha = 0.2
+    useFillingFromSide = FALSE
+    fillingFromSideLineWidthMode = SIDE_FILLING_WIDTH_AUTOMATIC
+    fillingFromSideManualLineWidthX = 1
+    fillingFromSideManualLineWidthY = 1
+    usePathPointColorForSeedPoints = FALSE
+    showSeedPoints = TRUE
+    globalAlphaFactor = 1
+    overwriteSelectionVisualizationSettings = FALSE
+    selectionColoringMode = SELECTION_COLOR_MODE_BRIGHTEN
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "0 0.666666686534882 0"
+    selectionLineWidthMode = SELECTION_LINE_WIDEN
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 1
+    selectedSeedPointColoringMode = SELECTED_SEED_POINT_COLOR_MODE_BRIGHTEN
+    selectedSeedPointBrightenColor = 0.2
+    selectedSeedPointFixedColor = "1 1 0.600000023841858"
+    selectedSeedPointAlpha = 1
+    selectedSeedPointSizeMode = SELECTED_SEED_POINT_ENLARGE
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    tessellationWindingRule = WR_ODD
+    selectGroupsParsProToto = TRUE
+    highlightSelectedGroups = FALSE
+    setPastedCSOsSelected = TRUE
+    combinePastedCSOsToGroupsOfOriginalCSOs = FALSE
+    enableMouseOverHighlighting = FALSE
+    mouseOverColorMode = HIGHLIGHT_COLOR_MODE_FIXED
+    mouseOverColorBrightenValue = 0.80000001
+    mouseOverColorColor = "1 1 1"
+    mouseOverLineWidthMode = HIGHLIGHT_LINE_WIDEN
+    mouseOverLineWidthWidenValue = 0
+    mouseOverLineWidthLineWidth = 1
+    currentlyUnderMouseCursorCSOId = 0
+    useIconFile = FALSE
+    iconFile = $(MLAB_MeVisLab_Standard)/Modules/Resources/Images/markerIcons.tif
+    cutCopyKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    copyKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    pasteKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    undoKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    redoKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    deleteSeedPointKeyModifier = EDIT_OP_KEY_MOD_NONE
+    deleteCSOKeyModifier = EDIT_OP_KEY_MOD_SHIFT
+    multiSelectionKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    enableMultiSelection = FALSE
+    cutCopyKey = EDIT_OP_KEY_X
+    copyKey = EDIT_OP_KEY_C
+    pasteKey = EDIT_OP_KEY_V
+    undoKey = EDIT_OP_KEY_Z
+    redoKey = EDIT_OP_KEY_Y
+    deleteSeedPointKey = EDIT_OP_KEY_DELETE
+    deleteCSOKey = EDIT_OP_KEY_DELETE
+    nextInteractionStatus = INTERACTIVE_MODE_START_CSO
+    shouldUpdateInteractionStateAndCSOId = TRUE
+    shouldTouchItselfInEvalEvent = TRUE
+    forceStartNewCSOKeyModifier = EDIT_OP_KEY_MOD_NONE
+    forceStartNewCSOKey = EDIT_OP_KEY_F
+    shouldOnlyInteractWithSelectedCSO = FALSE
+    showParallelDotProductLimitRadian = 0
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "6237 293 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1105 516 700 296"
+        sizeHint = "635 296"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener
+    mode = MLImage
+    inParameter = ""
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+module CSOSave {
+  internal  {
+    frame = "6701 517 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1064 571 500 168"
+        sizeHint = "500 168"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOSave
+    taskVerboseLogging = FALSE
+    fileName = "C:/Users/khespen/Documents/2. Qflow/2. Data/New folder/B006/savedstate4"
+    autoApply = FALSE
+    saveSuccess = TRUE
+    binary = TRUE
+    listenToFinishedNotifications = FALSE
+  }
+}
+module StringListContainer {
+  internal  {
+    frame = "5837 693 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "513 601 838 377"
+        sizeHint = "424 377"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringListContainer
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+  }
+}
+module CSOInfo {
+  internal  {
+    frame = "6681 421 80 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "3341 217 368 845"
+        sizeHint = "368 845"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOInfo
+    updateMode = AutoUpdate
+    autoApply = FALSE
+    csoShowMode = ById
+    csoShowByIndexOrId = 374
+    csoShowPrivateValues = TRUE
+    groupShowMode = LastSelected
+    groupShowByIndexOrId = 12
+    shouldGenerateCSOStringOutput = FALSE
+    shouldGenerateCSOGroupStringOutput = FALSE
+    showCSOType = TRUE
+    showCSOSubType = TRUE
+    showCSOCreatorId = TRUE
+    showCSODescription = FALSE
+    showCSONumSeedPoints = TRUE
+    showCSONumPathPoints = TRUE
+    showCSOLength = FALSE
+    showCSOArea = FALSE
+    showCSOGrouping = TRUE
+    showCSOClosedState = TRUE
+    showCSOInPlane = TRUE
+    showCSOSelfIntersecting = FALSE
+    showGroupDescription = FALSE
+    showGroupNumCSO = TRUE
+    showGroupCSOIds = TRUE
+    listenToRepaintNotifications = FALSE
+    listenToFinishingNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    listenToCSOCurrentlyUnderMouseNotifications = TRUE
+  }
+}
+module ImageSave {
+  internal  {
+    frame = "6081 285 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2496 507 408 500"
+        sizeHint = "401 500"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageSave
+    taskVerboseLogging = FALSE
+    filename = "C:/Users/khespen/Documents/2. Qflow/2. Data/New folder/B006/savedstate4_cso_contour_velocity_image.dcm"
+    format = DICOM
+    comment = MeVisLab
+    allowOverwrite = TRUE
+    autoFilename = FALSE
+    sourceName = ""
+    postfix = .result1
+    dicomNameUsed = TRUE
+    dicomMetaHeader = TRUE
+    dicomDerived = TRUE
+    dicomDerivedImageType = "OTHER\\MEVISLAB"
+    dicomDiscardTags = None
+    dicomStoreTimeInfo = None
+    dicomSetWindow = FALSE
+    dicomWindowCenter = 0
+    dicomWindowWidth = 0
+    dicomIgnoreHalfVoxelShift = FALSE
+    tiffCompression = None
+    tiffTileX = 128
+    tiffTileY = 128
+    tiffTileXAuto = TRUE
+    tiffTileYAuto = TRUE
+    tiffLinearRGB = FALSE
+    saveDicomHeaderOnly = FALSE
+    pngCompression = Default
+    pngInterlaced = FALSE
+    jpegQuality = 75
+    jpegProgressive = FALSE
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "5901 373 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "804 315 326 631"
+        sizeHint = "326 631"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = TRUE
+    datatype = "unsigned int16"
+    changePageSize = FALSE
+    pageSizeX = 32
+    pageSizeY = 32
+    pageSizeZ = 1
+    pageSizeC = 1
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGrayValue = FALSE
+    minGrayValue = 0
+    changeMaxGrayValue = FALSE
+    maxGrayValue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module Arithmetic1 {
+  internal  {
+    frame = "6073 557 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "826 598 285 64"
+        sizeHint = "283 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic1
+    function = Multiply
+    constant = 100
+  }
+}
+module DicomTagModify {
+  internal  {
+    frame = "6133 445 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "708 389 518 482"
+        sizeHint = "518 482"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DicomTagModify
+    tagName0 = RescaleSlope
+    tagValue0 = 0.01
+    removeTag0 = FALSE
+    tagVR0 = DS
+    stdTagVR0 = TRUE
+    tagName1 = RescaleIntercept
+    tagValue1 = 0
+    removeTag1 = FALSE
+    tagVR1 = DS
+    stdTagVR1 = TRUE
+    tagName2 = ""
+    tagValue2 = ""
+    removeTag2 = FALSE
+    tagVR2 = ""
+    stdTagVR2 = FALSE
+    tagName3 = ""
+    tagValue3 = ""
+    removeTag3 = FALSE
+    tagVR3 = ""
+    stdTagVR3 = FALSE
+    tagName4 = ""
+    tagValue4 = ""
+    removeTag4 = FALSE
+    tagVR4 = ""
+    stdTagVR4 = FALSE
+    tagName5 = ""
+    tagValue5 = ""
+    removeTag5 = FALSE
+    tagVR5 = ""
+    stdTagVR5 = FALSE
+    discardSource = None
+    useTagsString = FALSE
+    modifyTagsString = ""
+    removeTagsString = ""
+    synchronizeTagsString = ""
+    trimSpaces = TRUE
+    autoApply = TRUE
+    updateMode = AutoUpdate
+  }
+}
+module SoCSOIsoEditor {
+  internal  {
+    frame = "6653 661 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "820 517 294 226"
+        sizeHint = "294 226"
+        wasOpen = no
+      }
+      window "CSO Creation Parameters" {
+        geometry = "780 452 384 356"
+        sizeHint = "375 356"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOIsoEditor
+    extensionId = iso
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOIsoEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = FALSE
+    pointerPositionEpsilonForCreatingCSO = 1
+    createCursor = CROSS_FREEFORM_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = TRUE
+    addCSOToGroupMode = GROUP_NONE
+    addCSOToGroupLabel = ""
+    addCSOToGroupId = -1
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 1
+    defaultPathPointColor = "1 1 1"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_NONE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "1 1 1"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    interpolateContour = TRUE
+    smoothingMode = SMOOTHING_MODE_SPLINE_APPROXIMATION
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "6341 397 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "760 512 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert
+    voxelX = 40
+    voxelY = 40
+    voxelZ = 34
+    worldX = 40
+    worldY = 40
+    worldZ = 34
+    voxelPos = "40 40 34"
+    worldPos = "40 40 34"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module CSOManager {
+  internal  {
+    frame = "6817 501 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1038 724 692 565"
+        sizeHint = "692 565"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOManager
+    workDirectlyOnInputCSOList = FALSE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeFixed
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "1 1 0.600000023841858"
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "0 1 0"
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveNever
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 0
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numSelectedCSOs = 0
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = ""
+    csoTabSelected = FALSE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = FALSE
+    csoVisualsTabSelected = FALSE
+    groupCommonTabSelected = FALSE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = FALSE
+    notificationControlTabSelected = FALSE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = FALSE
+    defaultCSOCommonTabSelected = FALSE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = FALSE
+  }
+}
+module CSOLoad {
+  internal  {
+    frame = "6549 797 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1008 313 500 138"
+        sizeHint = "500 138"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOLoad
+    taskVerboseLogging = FALSE
+    fileName = "C:/Users/Kees van Hespen/Desktop/Qflow/V8940/DICOM/ICA1RC4_varFWHM2.cso.cso"
+    autoApply = FALSE
+  }
+}
+module CSOConvertToImage {
+  internal  {
+    frame = "6405 525 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2842 534 440 508"
+        sizeHint = "440 508"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOConvertToImage1
+    updateMode = Off
+    autoApply = FALSE
+    foregroundValue = 1
+    backgroundValue = 0
+    useImageValues = TRUE
+    fillSurface = TRUE
+    copyInputImage = FALSE
+    listenInteractionNotifications = FALSE
+    listenInteractionFinished = TRUE
+    boundingBoxMargin = 0
+    useAlwaysForegroundValueOfModule = FALSE
+    voxelizeCSO = FALSE
+    removeOutsideVoxels = FALSE
+    useAntiAliasing = FALSE
+    useGlobalSubsample = TRUE
+    antiAliasSubSample = 4
+    antiAliasSubSampleX = 4
+    antiAliasSubSampleY = 4
+    antiAliasSubSampleZ = 4
+    removeBorderVoxelsByVolume = FALSE
+    removeBorderVoxelVolumeThreshold = 0.6
+    ignoreTimePoints = FALSE
+    drawToAllTimePoints = FALSE
+    createMarkerList = FALSE
+    markerGenerationMode = CSOMarkerGenerationModeFromVoxels
+    outputTypeMode = Automatic
+    createCSOVoxelSet = FALSE
+    voxelSetMode = VoxelSetModeReplaceMax
+    generationMode = GenerationModeComplete
+    useFastModeForParallelCSOs = TRUE
+    numThreads = 1
+    timePointIndexForBoundingBox = -1
+    removeOutsideVoxelsMode = Disabled
+  }
+}
+connections  {
+  CSOIsoGenerator2.inCSOList = CSOManager2.outCSOList
+  CSOManager2.inCSOList = CSOLoad.outCSOList
+  CSOConvertToImage.inCSOList = CSOManager2.outCSOList
+  SoView2DCSOEditor.inCSOList = CSOManager2.outCSOList
+  FieldListener.inImage = CSOConvertToImage.output0
+  CSOSave.inCSOList = CSOManager2.outCSOList
+  CSOInfo.inCSOList = CSOManager2.outCSOList
+  ImageSave.input0 = ImagePropertyConvert.output0
+  ImagePropertyConvert.input0 = DicomTagModify.output0
+  Arithmetic1.input0 = CSOConvertToImage.output0
+  DicomTagModify.input0 = Arithmetic1.output0
+  WorldVoxelConvert.input0 = CSOConvertToImage.output0
+  CSOManager.inCSOList = CSOManager2.outCSOList
+  CSOConvertToImage1.inCSOList = CSOManager2.outCSOList
+}
+networkModel = ""

@@ -1,0 +1,3606 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module SoCSOIsoEditor {
+  internal  {
+    frame = "-459 1053 120 56"
+    moduleGroupName = Manual_edit_CSOs
+    windows  {
+      window _default {
+        geometry = "1031 303 294 226"
+        sizeHint = "294 226"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1281 317 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOIsoEditor
+    extensionId = iso
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOIsoEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = FALSE
+    pointerPositionEpsilonForCreatingCSO = 1
+    createCursor = CROSS_FREEFORM_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = FALSE
+    addCSOToGroupMode = GROUP_BY_LABEL
+    addCSOToGroupLabel = 0
+    addCSOToGroupId = 4
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 4
+    defaultPathPointColor = "0 0.666666686534882 0"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_NONE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "0 0.666666686534882 0"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    interpolateContour = TRUE
+    smoothingMode = SMOOTHING_MODE_SPLINE_APPROXIMATION
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "-515 893 200 56"
+    moduleGroupName = Manual_edit_CSOs
+    windows  {
+      window _default {
+        geometry = "1003 731 394 369"
+        sizeHint = "394 369"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOExtensibleEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 16
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = RELEASED
+    control = PRESSED
+    alt = RELEASED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    creatorExtensionId = __default
+    alwaysCreateNewCSOs = FALSE
+    alwaysModifyExistingCSOs = FALSE
+    keyCommandsEnabled = TRUE
+    enableRemoveAll = FALSE
+    interactOnlyWithSelectedCSO = FALSE
+    renderLeftOverCSOsWithDefaultRenderer = FALSE
+    allowSelectionWithDefaultRenderer = TRUE
+    renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
+    updateCSOIdUnderMouseCursor = FALSE
+    updateImageStatisticsOnFinishInteraction = FALSE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "-651 1005 104 72"
+    moduleGroupName = Manual_edit_CSOs
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "313 804 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic09
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "1 0 0"
+    arg2X = 1
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module BoolArithmetic {
+  internal  {
+    frame = "-291 957 120 72"
+    moduleGroupName = Manual_edit_CSOs
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1299 497 193 276"
+        sizeHint = "193 276"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolArithmetic4
+    inputBool1 = FALSE
+    inputBool2 = FALSE
+    operation = Or
+  }
+}
+module SoCSOManualCorrectionEditor {
+  internal  {
+    frame = "-123 1077 200 56"
+    moduleGroupName = Manual_edit_CSOs
+    windows  {
+      window _default {
+        geometry = "1251 256 481 880"
+        sizeHint = "349 880"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 330 557 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window "CSO Creation Parameters" {
+        geometry = "1388 546 384 356"
+        sizeHint = "375 356"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOManualCorrectionEditor
+    extensionId = ""
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOManualCorrectionEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = TRUE
+    pointerPositionEpsilonForCreatingCSO = 1
+    createCursor = CROSS_FREEFORM_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = FALSE
+    addCSOToGroupMode = GROUP_BY_LABEL
+    addCSOToGroupLabel = 0
+    addCSOToGroupId = 4
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 4
+    defaultPathPointColor = "0 0.666666686534882 0"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_NONE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "0 0.666666686534882 0"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    generateSeedPointsWhileDragging = FALSE
+    insertSeedPointByClickingOnPathPointList = TRUE
+    insertSeedPointCursor = CROSS_PLUS_CURSOR
+    canCloseCursor = CROSS_LINK_CURSOR
+    pointDensityMode = DENSITY_SCREEN_PIXEL
+    densityFactor = 0.1
+    shouldRenderAll = TRUE
+    editAllTimePoints = FALSE
+    interactionMode = INTERACTION_AUTOMATIC
+    keepingMode = KEEP_LARGEST
+    keepingModeFallback = KEEP_LARGEST
+    referencePoint = "0 0 0"
+    generationMode = GENERATION_MODE_GENERATE_NEW
+    generateSecondary = FALSE
+    overwriteType = FALSE
+    overwriteVisualization = FALSE
+    closedContourHandlingMode = CLOSED_HANDLING_MODE_REPLACE_CLOSEST
+    closingDistanceFactor = 1
+    interpolationMode = SPLINE_APPROXIMATION
+    minSeedPointDistance = 8
+    useIntersections = TRUE
+    intersectionThreshold = 9.9999997e-05
+    intersectionThresholdStartAndEnd = 1
+    checkForSelfIntersections = TRUE
+    levelCSOs = TRUE
+    resolveEmbeddedCSOs = FALSE
+    resolveIntersectedCSOs = FALSE
+    smoothEditedCSOs = FALSE
+    connectionSmoothRange = 0
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "-135 957 208 56"
+    moduleGroupName = Manual_edit_CSOs
+    windows  {
+      window _default {
+        geometry = "1078 407 394 369"
+        sizeHint = "394 369"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOExtensibleEditor1
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 16
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = RELEASED
+    alt = PRESSED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    creatorExtensionId = __default
+    alwaysCreateNewCSOs = FALSE
+    alwaysModifyExistingCSOs = FALSE
+    keyCommandsEnabled = TRUE
+    enableRemoveAll = FALSE
+    interactOnlyWithSelectedCSO = FALSE
+    renderLeftOverCSOsWithDefaultRenderer = FALSE
+    allowSelectionWithDefaultRenderer = TRUE
+    renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
+    updateCSOIdUnderMouseCursor = FALSE
+    updateImageStatisticsOnFinishInteraction = FALSE
+  }
+}
+module BoolArithmetic {
+  internal  {
+    frame = "-35 837 120 72"
+    moduleGroupName = Manual_edit_CSOs
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1299 497 193 276"
+        sizeHint = "193 276"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolArithmetic1
+    inputBool1 = FALSE
+    inputBool2 = FALSE
+    operation = Or
+  }
+}
+module SoCSOVisualizationSettings {
+  internal  {
+    frame = "85 1077 184 56"
+    moduleGroupName = Manual_edit_CSOs
+    windows  {
+      window _default {
+        geometry = "781 297 832 667"
+        sizeHint = "372 667"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOVisualizationSettings
+    autoApply = TRUE
+    shouldUseAntiAliasing = TRUE
+    globalAlphaFactor = 1
+    showCSOsOnAllTimePoints = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    orientationFilterMode = ORIENTATION_MODE_ALL
+    parallelThicknessMode = PARALLEL_THICKNESS_MODE_RELATIVE_TO_SLICE
+    showParallelThickness = 0.2
+    ghostingDepthInVoxel = 0
+    voxelSlabAugment = 0
+    shouldRenderShadow = FALSE
+    shadowColor = "0 0 0"
+    shadowAlpha = 1
+    shadowLineWidth = 1
+    shouldRenderSeedPoints = TRUE
+    shouldRenderPathPoints = TRUE
+    shouldOverwriteSeedPointsSettings = FALSE
+    shouldUsePathPointColorForSeedPoints = FALSE
+    shouldRenderSeedPointsOnlyForSelectedCSOs = FALSE
+    shouldUsePathPointColorForSeedPoints = FALSE
+    shouldUseStylePaletteLookUpForSeedPoints = FALSE
+    stylePaletteLookUpSeedPoints = CSOId
+    useSeedPointOnSliceStyle = TRUE
+    useSeedPointOnSliceSize = FALSE
+    useSeedPointOnSliceColor = TRUE
+    useSeedPointOnSliceAlpha = FALSE
+    seedPointOnSliceStyle = SEED_POINT_STYLE_RECTANGLE
+    seedPointOnSliceSize = 3
+    seedPointOnSliceColor = "0.137254908680916 1 0.0431372560560703"
+    seedPointOnSliceAlpha = 1
+    useSeedPointBelowSliceStyle = TRUE
+    useSeedPointBelowSliceSize = FALSE
+    useSeedPointBelowSliceColor = TRUE
+    useSeedPointBelowSliceAlpha = FALSE
+    seedPointBelowSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointBelowSliceSize = 3
+    seedPointBelowSliceColor = "0.388235300779343 0.20392157137394 1"
+    seedPointBelowSliceAlpha = 1
+    useSeedPointAboveSliceStyle = TRUE
+    useSeedPointAboveSliceSize = FALSE
+    useSeedPointAboveSliceColor = FALSE
+    useSeedPointAboveSliceAlpha = FALSE
+    seedPointAboveSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointAboveSliceSize = 3
+    seedPointAboveSliceColor = "1 1 1"
+    seedPointAboveSliceAlpha = 1
+    shouldOverwritePathPointsSettings = TRUE
+    shouldUseStylePaletteLookUpForPathPoints = FALSE
+    stylePaletteLookUpPathPoints = CSOId
+    usePathPointsOnSliceLineStyle = FALSE
+    usePathPointsOnSliceLineWidth = TRUE
+    usePathPointsOnSliceColor = TRUE
+    usePathPointsOnSliceAlpha = FALSE
+    pathPointsOnSliceLineStyle = PATH_POINTS_STYLE_SOLID
+    pathPointsOnSliceLineWidth = 4
+    pathPointsOnSliceColor = "0 0 1"
+    pathPointsOnSliceAlpha = 1
+    usePathPointsBelowSliceLineStyle = TRUE
+    usePathPointsBelowSliceLineWidth = FALSE
+    usePathPointsBelowSliceColor = FALSE
+    usePathPointsBelowSliceAlpha = TRUE
+    pathPointsBelowSliceLineStyle = PATH_POINTS_STYLE_DASHED
+    pathPointsBelowSliceLineWidth = 1
+    pathPointsBelowSliceColor = "1 1 1"
+    pathPointsBelowSliceAlpha = 0.5
+    usePathPointsAboveSliceLineStyle = TRUE
+    usePathPointsAboveSliceLineWidth = FALSE
+    usePathPointsAboveSliceColor = FALSE
+    usePathPointsAboveSliceAlpha = TRUE
+    pathPointsAboveSliceLineStyle = PATH_POINTS_STYLE_DASHED
+    pathPointsAboveSliceLineWidth = 1
+    pathPointsAboveSliceColor = "1 1 1"
+    pathPointsAboveSliceAlpha = 0.5
+    shouldOverwriteSelectionSettings = TRUE
+    selectedPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
+    selectedPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
+    selectedPathPointsBrightenValue = 1.2
+    selectedPathPointsFixedColor = "1 1 0"
+    selectedPathPointsAlpha = 1
+    selectedPathPointsWidenValue = 1
+    selectedPathPointsFixedLineWidth = 2
+    selectedSeedPointColorMode = HIGHLIGHT_MODE_RELATIVE
+    selectedSeedPointSizeMode = HIGHLIGHT_MODE_RELATIVE
+    selectedSeedPointBrightenValue = 1.2
+    selectedSeedPointFixedColor = "1 1 0"
+    selectedSeedPointAlpha = 1
+    selectedSeedPointEnlargeValue = 1
+    selectedSeedPointFixedSize = 2
+    enableMouseOverHighlighting = TRUE
+    mouseOverPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverPathPointsBrightenValue = 1.2
+    mouseOverPathPointsFixedColor = "1 1 0"
+    mouseOverPathPointsAlpha = 1
+    mouseOverPathPointsWidenValue = 1
+    mouseOverPathPointsFixedLineWidth = 2
+    mouseOverSeedPointColorMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverSeedPointSizeMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverSeedPointBrightenValue = 1.2
+    mouseOverSeedPointFixedColor = "1 1 0"
+    mouseOverSeedPointAlpha = 1
+    mouseOverSeedPointEnlargeValue = 1
+    mouseOverSeedPointFixedSize = 2
+    visibleByMode = CSOs
+    visibleIdList = ""
+    invertVisibility = FALSE
+  }
+}
+module CSOIsoGenerator {
+  internal  {
+    frame = "1481 877 176 72"
+    moduleGroupName = CSO_generation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "3036 352 361 597"
+        sizeHint = "361 589"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOIsoGenerator2
+    updateMode = Off
+    autoApply = FALSE
+    emptyGroupBeforeGeneration = FALSE
+    addCSOToGroupMode = AddToGroupByLabel
+    addCSOToGroupWithLabel = 0
+    addCSOToGroupWithId = -1
+    id = 0
+    pathPointStyle = LineStyleSolid
+    pathPointWidth = 4
+    pathPointColor = "0 0.666666666666667 0"
+    pathPointAlpha = 1
+    seedPointStyle = MarkerModeNone
+    seedPointSize = 2
+    seedPointColor = "0 1 0"
+    seedPointAlpha = 1
+    voxelWriteMode = VoxelWriteModeModule
+    voxelWriteValue = 1024
+    allowUndo = FALSE
+    sendCSOEvents = FALSE
+    isoValue = 217.60336
+    interpolate = TRUE
+    timePoint = 23
+    generateForAllTimepoints = FALSE
+    smoothingMode = SmoothingModeSplineApproximation
+    useMinimumNumberSeeds = TRUE
+    minimumNumberSeedPoints = 100
+    keepingMode = KeepingModeInner
+    autoDescription = None
+    ensureClockwiseOrientation = FALSE
+    useSmooth = TRUE
+    numSmoothPasses = 10
+    smoothFactor = 0.1
+    smoothRange = 7
+    reduceCSOsToOnlyOneSeedPoint = FALSE
+    autoClear = FALSE
+    creationMode = Single
+    startCondition = Always
+    startPosition = "-13.3834457397461 -7.34178924560547 -42.773796081543"
+  }
+}
+module CSOManager {
+  internal  {
+    frame = "1485 1495 144 72"
+    moduleGroupName = CSO_generation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2322 426 1343 687"
+        sizeHint = "692 565"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOManager2
+    workDirectlyOnInputCSOList = FALSE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeBrighten
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0
+    selectionFixedColor = "1 1 0.600000023841858"
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "0 1 0"
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveNever
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 6
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numSelectedCSOs = 0
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = ""
+    csoTabSelected = FALSE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = FALSE
+    csoVisualsTabSelected = TRUE
+    groupCommonTabSelected = FALSE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = TRUE
+    notificationControlTabSelected = FALSE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = TRUE
+    defaultCSOCommonTabSelected = TRUE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = FALSE
+  }
+}
+module CSOConvertToImage {
+  internal  {
+    frame = "949 1213 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "988 351 440 508"
+        sizeHint = "440 508"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOConvertToImage
+    updateMode = Off
+    autoApply = FALSE
+    foregroundValue = 1
+    backgroundValue = 0
+    useImageValues = FALSE
+    fillSurface = TRUE
+    copyInputImage = FALSE
+    listenInteractionNotifications = FALSE
+    listenInteractionFinished = TRUE
+    boundingBoxMargin = 0
+    useAlwaysForegroundValueOfModule = FALSE
+    voxelizeCSO = FALSE
+    removeOutsideVoxels = FALSE
+    useAntiAliasing = FALSE
+    useGlobalSubsample = TRUE
+    antiAliasSubSample = 4
+    antiAliasSubSampleX = 4
+    antiAliasSubSampleY = 4
+    antiAliasSubSampleZ = 4
+    removeBorderVoxelsByVolume = FALSE
+    removeBorderVoxelVolumeThreshold = 0.6
+    ignoreTimePoints = FALSE
+    drawToAllTimePoints = FALSE
+    createMarkerList = FALSE
+    markerGenerationMode = CSOMarkerGenerationModeFromVoxels
+    outputTypeMode = Automatic
+    createCSOVoxelSet = FALSE
+    voxelSetMode = VoxelSetModeReplaceMax
+    generationMode = GenerationModeComplete
+    useFastModeForParallelCSOs = TRUE
+    numThreads = 1
+    timePointIndexForBoundingBox = -1
+    removeOutsideVoxelsMode = Disabled
+  }
+}
+module SoView2DCSOEditor {
+  internal  {
+    frame = "1369 1031 152 56"
+    moduleGroupName = CSO_generation
+    windows  {
+      window _default {
+        geometry = "1175 288 620 622"
+        sizeHint = "620 622"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = FALSE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 24
+    needsValidVoxel = TRUE
+    button1 = RELEASED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = RELEASED
+    control = RELEASED
+    alt = RELEASED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    shouldListenToRepaintEvents = TRUE
+    shouldListenToSelectionChangedEvents = TRUE
+    shouldListenToFinishedEvents = TRUE
+    generalInteractionMode = INTERACTION_MODE_EDIT
+    generalInteractionModeToggleKey = TOGGLE_MODE_NONE
+    movingOn = FALSE
+    shouldLimitCSOMovement = FALSE
+    moveRatio = 0.5
+    useAntiAliasing = TRUE
+    useInterpolationTargetColor = TRUE
+    interpolationTargetColor = "1 0 0"
+    showCSOsOnAllTimePoints = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    showBoundingBox = FALSE
+    boundingBoxAlpha = 0.5
+    boundingBoxColor = "1 1 1"
+    showOnlyParallelCSOs = FALSE
+    showParallelThickness = 0.1
+    shouldLevelCSO = FALSE
+    useStylePalette = FALSE
+    stylePaletteUseIndexAs = USE_INDEX_FOR_CSO
+    labelShowMode = LABEL_SHOW_NONE
+    combineLabelsForGroupsOnSlice = FALSE
+    labelAlignmentMode = LABEL_ALIGN_CENTER
+    labelUnitScale = LABEL_UNIT_SCALE_MM
+    showLabelUnits = TRUE
+    labelFontSize = 12
+    labelUseTextShadow = TRUE
+    labelMarginX = 2
+    labelMarginY = 2
+    ghostMode = GHOST_NONE
+    ghostUnitMode = GHOST_UNIT_SLICE
+    ghostStyleAlpha = TRUE
+    ghostStyleStipple = TRUE
+    ghostStyleLineWidth = FALSE
+    ghostStyleBrighten = FALSE
+    ghostDepth = 5
+    ghostFadeOutAlpha = 0
+    generalLabelColor = "1 1 1"
+    generalLabelAlpha = 1
+    labelColorMode = COLOR_GENERAL
+    useTessellation = FALSE
+    useHoleCorrection = FALSE
+    useHoleCorrectionForGroupsOnly = FALSE
+    tessellationColorMode = COLOR_AS_CSO
+    tessellationColor = "0.899999976158142 0.5 0.899999976158142"
+    tessellationAlpha = 0.2
+    useFillingFromSide = FALSE
+    fillingFromSideLineWidthMode = SIDE_FILLING_WIDTH_AUTOMATIC
+    fillingFromSideManualLineWidthX = 1
+    fillingFromSideManualLineWidthY = 1
+    usePathPointColorForSeedPoints = FALSE
+    showSeedPoints = TRUE
+    globalAlphaFactor = 1
+    overwriteSelectionVisualizationSettings = FALSE
+    selectionColoringMode = SELECTION_COLOR_MODE_BRIGHTEN
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "0 0.666666686534882 0"
+    selectionLineWidthMode = SELECTION_LINE_WIDEN
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 1
+    selectedSeedPointColoringMode = SELECTED_SEED_POINT_COLOR_MODE_BRIGHTEN
+    selectedSeedPointBrightenColor = 0.2
+    selectedSeedPointFixedColor = "1 1 0.600000023841858"
+    selectedSeedPointAlpha = 1
+    selectedSeedPointSizeMode = SELECTED_SEED_POINT_ENLARGE
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    tessellationWindingRule = WR_ODD
+    selectGroupsParsProToto = TRUE
+    highlightSelectedGroups = FALSE
+    setPastedCSOsSelected = TRUE
+    combinePastedCSOsToGroupsOfOriginalCSOs = FALSE
+    enableMouseOverHighlighting = FALSE
+    mouseOverColorMode = HIGHLIGHT_COLOR_MODE_FIXED
+    mouseOverColorBrightenValue = 0.80000001
+    mouseOverColorColor = "1 1 1"
+    mouseOverLineWidthMode = HIGHLIGHT_LINE_WIDEN
+    mouseOverLineWidthWidenValue = 0
+    mouseOverLineWidthLineWidth = 1
+    currentlyUnderMouseCursorCSOId = 0
+    useIconFile = FALSE
+    iconFile = $(MLAB_MeVisLab_Standard)/Modules/Resources/Images/markerIcons.tif
+    cutCopyKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    copyKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    pasteKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    undoKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    redoKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    deleteSeedPointKeyModifier = EDIT_OP_KEY_MOD_ALT
+    deleteCSOKeyModifier = EDIT_OP_KEY_MOD_NONE
+    multiSelectionKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    enableMultiSelection = FALSE
+    cutCopyKey = EDIT_OP_KEY_X
+    copyKey = EDIT_OP_KEY_C
+    pasteKey = EDIT_OP_KEY_V
+    undoKey = EDIT_OP_KEY_Z
+    redoKey = EDIT_OP_KEY_Y
+    deleteSeedPointKey = EDIT_OP_KEY_V
+    deleteCSOKey = EDIT_OP_KEY_A
+    nextInteractionStatus = INTERACTIVE_MODE_START_CSO
+    shouldUpdateInteractionStateAndCSOId = TRUE
+    shouldTouchItselfInEvalEvent = TRUE
+    forceStartNewCSOKeyModifier = EDIT_OP_KEY_MOD_NONE
+    forceStartNewCSOKey = EDIT_OP_KEY_F
+    shouldOnlyInteractWithSelectedCSO = FALSE
+    showParallelDotProductLimitRadian = 0
+  }
+}
+module CSOInfo {
+  internal  {
+    frame = "1637 1007 80 72"
+    moduleGroupName = CSO_generation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2340 236 930 845"
+        sizeHint = "368 845"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOInfo
+    updateMode = AutoUpdate
+    autoApply = FALSE
+    csoShowMode = ById
+    csoShowByIndexOrId = 24
+    csoShowPrivateValues = TRUE
+    groupShowMode = LastSelected
+    groupShowByIndexOrId = 0
+    shouldGenerateCSOStringOutput = FALSE
+    shouldGenerateCSOGroupStringOutput = FALSE
+    showCSOType = TRUE
+    showCSOSubType = TRUE
+    showCSOCreatorId = TRUE
+    showCSODescription = FALSE
+    showCSONumSeedPoints = TRUE
+    showCSONumPathPoints = TRUE
+    showCSOLength = FALSE
+    showCSOArea = FALSE
+    showCSOGrouping = TRUE
+    showCSOClosedState = TRUE
+    showCSOInPlane = TRUE
+    showCSOSelfIntersecting = FALSE
+    showGroupDescription = FALSE
+    showGroupNumCSO = TRUE
+    showGroupCSOIds = TRUE
+    listenToRepaintNotifications = FALSE
+    listenToFinishingNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    listenToCSOCurrentlyUnderMouseNotifications = TRUE
+  }
+}
+module DirectDicomImport {
+  internal  {
+    frame = "893 2213 168 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1126 418 800 385"
+        sizeHint = "800 385"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 330 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DirectDicomImport
+    tagDumpSize = 10000
+    dumpPrivateTagValues = FALSE
+    numShownBinaryEntries = 8
+    annotate = FALSE
+    regExLineFilter = ""
+    fullUserSrcPaths = ""
+    fullTargetPath = ""
+    useRelativeCachePaths = FALSE
+    writeSingleVolumeCacheFiles = FALSE
+    autoCreateCachePath = FALSE
+    cacheFileName = DDICacheFile
+    consoleSizeInKiloBytes = 64
+    outVolume = 1
+    preferCacheBeforeImport = FALSE
+    clearAfterImport = FALSE
+    clearSingleFrameCacheAfterImport = TRUE
+    maxTreeCachedMBs = 250
+    maxTagCachedMBs = 80
+    editDicomCacheSize = FALSE
+    useResultCaching = FALSE
+    suppressedFilesAndSuffixes = ".mlab .db .log .lst .xml .rar .zip .img .exe .inf .svn-base entries all-wcprops .DDI-SMF-TreeCacheFile.dcm"
+    explicitFileTypes = ".1 .2 .3 .4 .5 .6 .7 .8 .9 .bmp .dm3 .dm4 .cnf .cpi .dat .gipl .gsa .hdr .jpg .jpeg .lsm .mhd .mlimage .nhdr .nii .mca .nrrd .pgm .pic .png .pnm .ppm .raw .rd .rek .spe .spr .tif .tiff .txt .uxd .vms .vtk .xy"
+    inputFileList = ""
+    sortMode = NumVoxels
+    sortUpwards = TRUE
+    idxSortTagValue = ""
+    useNumericTagValueSorting = FALSE
+    thumbNailsExt = 40
+    userColumnTag0 = ""
+    userColumnTag1 = ""
+    userColumnTag2 = ""
+    iconBuildMode = UseMiddleSlice
+    icon = FALSE
+    userTag0 = FALSE
+    userTag1 = FALSE
+    userTag2 = FALSE
+    columnConfig = "# Note: Comments must always be prefixed at line start with a '#'.
+
+# Default setting:
+validImage hasIssues fileType voxelType imgExt numVoxels numSlices numTimePoints numSrcFiles modality patientID patientSex patientsName studyID
+
+#modality studyDate acquisitionTime numSlices spacingBetweenSlices studyDescription seriesDescription acquisitionDate imageComments patientsName patientSex patientsBirthDate patientID referringPhysiciansName admittingDiagnosesDescription
+
+# Available values are:
+#userTag0 userTag1 userTag2 validImage hasIssues importTime fileType voxelType imgExt voxelExtent numVoxels numSlices colorImage numTimePoints numSrcFiles firstOrigFile outFileName inputFilterLabel lossy compressionType humanReadableOrientation accessionNumber acquisitionDate acquisitionMatrix acquisitionNumber acquisitionTime aCR_NEMA_AcquisitionsInSeries aCR_NEMA_ImageOrientation aCR_NEMA_ImagePosition admittingDiagnosesDescription angioFlag bitsAllocated bitsStored bodyPartExamined codeMeaning codeValue columns contentDate contentTime contrastBolusAgent contrastBolusStartTime convolutionKernel currentPatientLocation derivationDescription echoTime echoTrainLength exposure exposureTime flipAngle frameOfReferenceUID gantryAngle gantryAngleTolerance gantryDetectorSlew gantryDetectorTilt gantryRotationDirection highBit imageComments imagedNucleus imageOrientationPatient imagePositionPatient imageType imagingFrequency instanceCreationDate instanceCreationTime instanceNumber institutionAddress institutionName inversionTime kVP largestImagePixelValue magneticFieldStrength manufacturer manufacturersModelName mediaStorageSOPInstanceUID modality mRAcquisitionType nameOfPhysiciansReadingStudy numberOfAverages numberOfFrames numberOfPhaseEncodingSteps numberOfTemporalPositions otherPatientNames patientComments patientID patientOrientation patientsAge percentSampling patientSex patientPosition patientsAddress patientsMothersBirthName patientsName patientsTelephoneNumbers patientsWeight patientsBirthDate performedProcedureStepDescription performedProcedureStepStartDate performedProcedureStepStartTime photometricInterpretation physiciansOfRecord pixelRepresentation pixelSpacing protocolName receiveCoilName reconstructionDiameter referringPhysiciansName repetitionTime requestedProcedureDescription requestingPhysician requestingService rescaleIntercept rescaleSlope rescaleType rows samplesPerPixel sAR scanningSequence scanOptions scheduledProcedureStepDescription sequenceName sequenceVariant seriesDate seriesDescription seriesInstanceUID seriesNumber seriesTime sliceLocation sliceThickness smallestImagePixelValue softwareVersions sOPClassUID sOPInstanceUID spacingBetweenSlices stationName studyDate studyDescription studyID studyInstanceUID studyTime windowCenter windowWidth xRayTubeCurrent "
+    dplCalcMinMax = Automatic
+    dplAnon = FALSE
+    dplVerbose = 0
+    specialProcessors = Off
+    minimumNumFramesInVolume = 1
+    dplConfigString0 = "*(
+  {Element = (0008,0060); Name = Modality;  Sort = 1; Part = 1; },
+  {Element = (0008,0020); Name = StudyDate; Sort = 1; Part = 1; },
+  {Element = (0008,0008); Name = ImageType; Sort = 1; Part = 1; },
+  {Element = (0018,1030); Name = ProtocolName; Sort = 1; Part = 1; },
+  {Element = (0018,0050); Name = SliceThickness; Sort = 1; Part = 1; Tolerance = 0.000005; },
+  {Element = (0018,0080); Name = RepetitionTime; Sort = 1; Part = 1; },
+  {Element = (0018,0082); Name = InversionTime; Sort = 1; Part = 1; },
+  {Element = (0018,0091); Name = EchoTrainLength; Sort = 1; Part = 1; },
+  {Element = (0018,1210); Name = ConvolutionKernel; Sort = 1; Part = 1; },
+  {Element = (0018,1314); Name = FlipAngle; Sort = 1; Part = 1; },
+  {Element = (0018,0015); Name = BodyPartExamined; Sort = 1; Part = 1; },
+  {Element = (0028,0008); Name = NumberOfFrames; Sort = 1; Part = 1; },
+  {Element = (0028,0010); Name = Rows; Sort = 1; Part = 1; },
+  {Element = (0028,0011); Name = Columns; Sort = 1; Part = 1; },
+  {Element = (0020,0037); Name = ImageOrientationPatient; Sort = 1; Part = 1; Tolerance = 0.000005; },
+  {Element = (0018,1004); Name = PlateID; Sort = 1; Part = 1; },
+  {Element = (0018,1000); Name = DeviceSerialNumber; Sort = 1; Part = 1; },
+  {Element = (0028,0004); Name = PhotometricInterpretation; Sort = 1; Part = 1; },
+  {Element = (0028,0100); Name = BitsAllocated; Sort = 1; Part = 1; },
+  {Element = (0028,0102); Name = HighBit; Sort = 1; Part = 1; },
+  {Element = (0028,0103); Name = PixelRepresentation; Sort = 1; Part = 1; },
+  {Element = (0018,0020); Name = ScanningSequence; Sort = 1; Part = 1; },
+  {Element = (0018,0023); Name = MRAcquisitionType; Sort = 1; Part = 1; },
+  {Element = (0028,0030); Name = PixelSpacing; Sort = 1; Part = 1; Tolerance = 0.00001; },
+  {Element = (0054,0010); Name = EnergyWindowVector; Sort = 1; Part = 1; },
+  {Element = (0054,0030); Name = PhaseVector; Sort = 1; Part = 1; },
+  {Element = (0054,0060); Name = RRIntervalVector; Sort = 1; Part = 1; },
+  {Element = (0054,0050); Name = RotationVector; Sort = 1; Part = 1; },
+  {Element = (0020,000e); Name = SeriesInstanceUID; Sort = 1; SortCondition = "Modality = NM & !(FrameIncrementPointer = '(0054,0010)')" Part = 1; PartCondition = "Modality = NM & !(FrameIncrementPointer = '(0054,0010)')";       },
+  {Element = (0008,0018); Name = SOPInstanceUID; Sort = 1; SortCondition = "Modality = NM & NumberOfFrames > 1";  Part = 1; PartCondition = "Modality = NM & NumberOfFrames > 1";  },
+  {Element = (0008,0018); Name = SOPInstanceUID; Sort = 1; SortCondition = "Modality = CR | Modality = DR | Modality = MG | Modality = MX"; Part = 1; PartCondition = "Modality = CR | Modality = DR | Modality = MG | Modality = MX";  },
+  {Element = (0008,1090); Name = ManufacturerModelName; Sort = 1; Part = 1; },
+  {Element = (0008,1010); Name = StationName; Sort = 1; Part = 1; },
+  {Element = (0008,0070); Name = Manufacturer; Sort = 1; Part = 1; },
+  {Element = (0018,0020); Name = ScanningSequence; Sort = 1; Part = 1; },
+  {Element = (0018,0085); Name = ImagedNucleus; Sort = 1; Part = 1; },
+  {Element = (0018,0087); Name = MagneticFieldStrength; Sort = 1; Part = 1; },
+  {Element = (0018,1020); Name = SoftwareVersion; Sort = 1; Part = 1; },
+  {Element = (0018,5100); Name = PatientPosition; Sort = 1; Part = 1; },
+  {Element = (0062,000b); Name = ReferencedSegmentNumber; Sort = 1; SortCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; Part = 1;  PartCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; },
+  {Element = (0020,000e); Name = SeriesInstanceUID; Sort = 1; SortCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; Part = 1; PartCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; },
+  {Element = (0020,0013); Name = InstanceNumber; Sort = 1; Part = 0; },
+  {Element = (0008,0030); Name = StudyTime; Sort = 1; Part = 0; },
+  {Element = (0020,0011); Name = SeriesNumber; Sort = 1; Part = 0; },
+  {Element = (0008,0021); Name = SeriesDate; Sort = 1; Part = 0; },
+  {Element = (0008,0031); Name = SeriesTime; Sort = 1; Part = 0; },
+  {Element = (0018,0081); Name = EchoTime; Sort = 1; Part = 0; },
+  {Element = (0018,0024); Name = SequenceName; Sort = 1; Part = 0; },
+  {Element = (0020,0012); Name = AcquisitionNumber; Sort = 1; Part = 0; },
+  {Element = (0018,0022); Name = ScanOptions; Sort = 1; Part = 0; },
+  {Element = (0008,0022); Name = AcquisitionDate; Sort = 1; Part = 0; },
+  {Element = (0008,0032); Name = AcquisitionTime; Sort = 1; Part = 0; },
+  {Element = (0008,0023); Name = ContentDate; Sort = 1; Part = 0; },
+  {Element = (0008,0033); Name = ContentTime; Sort = 1; Part = 0; },
+  {Element = (0020,0032); Name = ImagePositionPatient; Sort = 1; Part = 0; },
+  {Element = (0054,0020); Name = DetectorVector; Sort = 1; Part = 0; },
+  {Element = (0054,0100); Name = TimeSliceVector; Sort = 1; Part = 0; },
+  {Element = (0054,0070); Name = TimeSlotVector; Sort = 1; Part = 0; },
+  {Element = (0054,0080); Name = SliceVector; Sort = 1; Part = 0; },
+  {Element = (0054,0090); Name = AngularViewVector; Sort = 1; Part = 0; },
+)
+*"
+    dplConfigString1 = "*(
+  {Element = (0008,0060); Name = Modality;  Sort = 1; Part = 1; },
+  {Element = (0008,0020); Name = StudyDate; Sort = 1; Part = 1; },
+  {Element = (0008,0008); Name = ImageType; Sort = 1; Part = 1; },
+  {Element = (0018,1030); Name = ProtocolName; Sort = 1; Part = 1; },
+  {Element = (0018,0050); Name = SliceThickness; Sort = 1; Part = 1; Tolerance = 0.000005; },
+  {Element = (0018,0080); Name = RepetitionTime; Sort = 1; Part = 1; },
+  {Element = (0018,0082); Name = InversionTime; Sort = 1; Part = 1; },
+  {Element = (0018,0091); Name = EchoTrainLength; Sort = 1; Part = 1; },
+  {Element = (0018,1210); Name = ConvolutionKernel; Sort = 1; Part = 1; },
+  {Element = (0018,1314); Name = FlipAngle; Sort = 1; Part = 1; },
+  {Element = (0018,0015); Name = BodyPartExamined; Sort = 1; Part = 1; },
+  {Element = (0028,0008); Name = NumberOfFrames; Sort = 1; Part = 1; },
+  {Element = (0028,0010); Name = Rows; Sort = 1; Part = 1; },
+  {Element = (0028,0011); Name = Columns; Sort = 1; Part = 1; },
+  {Element = (0020,0037); Name = ImageOrientationPatient; Sort = 1; Part = 1; Tolerance = 0.000005; },
+  {Element = (0018,1004); Name = PlateID; Sort = 1; Part = 1; },
+  {Element = (0018,1000); Name = DeviceSerialNumber; Sort = 1; Part = 1; },
+  {Element = (0028,0004); Name = PhotometricInterpretation; Sort = 1; Part = 1; },
+  {Element = (0028,0100); Name = BitsAllocated; Sort = 1; Part = 1; },
+  {Element = (0028,0102); Name = HighBit; Sort = 1; Part = 1; },
+  {Element = (0028,0103); Name = PixelRepresentation; Sort = 1; Part = 1; },
+  {Element = (0018,0020); Name = ScanningSequence; Sort = 1; Part = 1; },
+  {Element = (0018,0023); Name = MRAcquisitionType; Sort = 1; Part = 1; },
+  {Element = (0028,0030); Name = PixelSpacing; Sort = 1; Part = 1; Tolerance = 0.00001; },
+  {Element = (0054,0010); Name = EnergyWindowVector; Sort = 1; Part = 1; },
+  {Element = (0054,0030); Name = PhaseVector; Sort = 1; Part = 1; },
+  {Element = (0054,0060); Name = RRIntervalVector; Sort = 1; Part = 1; },
+  {Element = (0054,0050); Name = RotationVector; Sort = 1; Part = 1; },
+  {Element = (0020,000e); Name = SeriesInstanceUID; Sort = 1; SortCondition = "Modality = NM & !(FrameIncrementPointer = '(0054,0010)')" Part = 1; PartCondition = "Modality = NM & !(FrameIncrementPointer = '(0054,0010)')";       },
+  {Element = (0008,0018); Name = SOPInstanceUID; Sort = 1; SortCondition = "Modality = NM & NumberOfFrames > 1";  Part = 1; PartCondition = "Modality = NM & NumberOfFrames > 1";  },
+  {Element = (0008,0018); Name = SOPInstanceUID; Sort = 1; SortCondition = "Modality = CR | Modality = DR | Modality = MG | Modality = MX"; Part = 1; PartCondition = "Modality = CR | Modality = DR | Modality = MG | Modality = MX";  },
+  {Element = (0008,1090); Name = ManufacturerModelName; Sort = 1; Part = 1; },
+  {Element = (0008,1010); Name = StationName; Sort = 1; Part = 1; },
+  {Element = (0008,0070); Name = Manufacturer; Sort = 1; Part = 1; },
+  {Element = (0018,0020); Name = ScanningSequence; Sort = 1; Part = 1; },
+  {Element = (0018,0085); Name = ImagedNucleus; Sort = 1; Part = 1; },
+  {Element = (0018,0087); Name = MagneticFieldStrength; Sort = 1; Part = 1; },
+  {Element = (0018,1020); Name = SoftwareVersion; Sort = 1; Part = 1; },
+  {Element = (0018,5100); Name = PatientPosition; Sort = 1; Part = 1; },
+  {Element = (0062,000b); Name = ReferencedSegmentNumber; Sort = 1; SortCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; Part = 1;  PartCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; },
+  {Element = (0020,000e); Name = SeriesInstanceUID; Sort = 1; SortCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; Part = 1; PartCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; },
+  {Element = (0020,0013); Name = InstanceNumber; Sort = 1; Part = 0; },
+  {Element = (0008,0030); Name = StudyTime; Sort = 1; Part = 0; },
+  {Element = (0020,0011); Name = SeriesNumber; Sort = 1; Part = 0; },
+  {Element = (0008,0021); Name = SeriesDate; Sort = 1; Part = 0; },
+  {Element = (0008,0031); Name = SeriesTime; Sort = 1; Part = 0; },
+  {Element = (0018,0081); Name = EchoTime; Sort = 1; Part = 0; },
+  {Element = (0018,0024); Name = SequenceName; Sort = 1; Part = 0; },
+  {Element = (0020,0012); Name = AcquisitionNumber; Sort = 1; Part = 0; },
+  {Element = (0018,0022); Name = ScanOptions; Sort = 1; Part = 0; },
+  {Element = (0008,0022); Name = AcquisitionDate; Sort = 1; Part = 0; },
+  {Element = (0008,0032); Name = AcquisitionTime; Sort = 1; Part = 0; },
+  {Element = (0008,0023); Name = ContentDate; Sort = 1; Part = 0; },
+  {Element = (0008,0033); Name = ContentTime; Sort = 1; Part = 0; },
+  {Element = (0020,0032); Name = ImagePositionPatient; Sort = 1; Part = 0; },
+  {Element = (0054,0020); Name = DetectorVector; Sort = 1; Part = 0; },
+  {Element = (0054,0100); Name = TimeSliceVector; Sort = 1; Part = 0; },
+  {Element = (0054,0070); Name = TimeSlotVector; Sort = 1; Part = 0; },
+  {Element = (0054,0080); Name = SliceVector; Sort = 1; Part = 0; },
+  {Element = (0054,0090); Name = AngularViewVector; Sort = 1; Part = 0; },
+)
+*"
+    dplConfigString2 = "*(
+  {Element = (0008,0060); Name = Modality;  Sort = 1; Part = 1; },
+  {Element = (0008,0020); Name = StudyDate; Sort = 1; Part = 1; },
+  {Element = (0008,0008); Name = ImageType; Sort = 1; Part = 1; },
+  {Element = (0018,1030); Name = ProtocolName; Sort = 1; Part = 1; },
+  {Element = (0018,0050); Name = SliceThickness; Sort = 1; Part = 1; Tolerance = 0.000005; },
+  {Element = (0018,0080); Name = RepetitionTime; Sort = 1; Part = 1; },
+  {Element = (0018,0082); Name = InversionTime; Sort = 1; Part = 1; },
+  {Element = (0018,0091); Name = EchoTrainLength; Sort = 1; Part = 1; },
+  {Element = (0018,1210); Name = ConvolutionKernel; Sort = 1; Part = 1; },
+  {Element = (0018,1314); Name = FlipAngle; Sort = 1; Part = 1; },
+  {Element = (0018,0015); Name = BodyPartExamined; Sort = 1; Part = 1; },
+  {Element = (0028,0008); Name = NumberOfFrames; Sort = 1; Part = 1; },
+  {Element = (0028,0010); Name = Rows; Sort = 1; Part = 1; },
+  {Element = (0028,0011); Name = Columns; Sort = 1; Part = 1; },
+  {Element = (0020,0037); Name = ImageOrientationPatient; Sort = 1; Part = 1; Tolerance = 0.000005; },
+  {Element = (0018,1004); Name = PlateID; Sort = 1; Part = 1; },
+  {Element = (0018,1000); Name = DeviceSerialNumber; Sort = 1; Part = 1; },
+  {Element = (0028,0004); Name = PhotometricInterpretation; Sort = 1; Part = 1; },
+  {Element = (0028,0100); Name = BitsAllocated; Sort = 1; Part = 1; },
+  {Element = (0028,0102); Name = HighBit; Sort = 1; Part = 1; },
+  {Element = (0028,0103); Name = PixelRepresentation; Sort = 1; Part = 1; },
+  {Element = (0018,0020); Name = ScanningSequence; Sort = 1; Part = 1; },
+  {Element = (0018,0023); Name = MRAcquisitionType; Sort = 1; Part = 1; },
+  {Element = (0028,0030); Name = PixelSpacing; Sort = 1; Part = 1; Tolerance = 0.00001; },
+  {Element = (0054,0010); Name = EnergyWindowVector; Sort = 1; Part = 1; },
+  {Element = (0054,0030); Name = PhaseVector; Sort = 1; Part = 1; },
+  {Element = (0054,0060); Name = RRIntervalVector; Sort = 1; Part = 1; },
+  {Element = (0054,0050); Name = RotationVector; Sort = 1; Part = 1; },
+  {Element = (0020,000e); Name = SeriesInstanceUID; Sort = 1; SortCondition = "Modality = NM & !(FrameIncrementPointer = '(0054,0010)')" Part = 1; PartCondition = "Modality = NM & !(FrameIncrementPointer = '(0054,0010)')";       },
+  {Element = (0008,0018); Name = SOPInstanceUID; Sort = 1; SortCondition = "Modality = NM & NumberOfFrames > 1";  Part = 1; PartCondition = "Modality = NM & NumberOfFrames > 1";  },
+  {Element = (0008,0018); Name = SOPInstanceUID; Sort = 1; SortCondition = "Modality = CR | Modality = DR | Modality = MG | Modality = MX"; Part = 1; PartCondition = "Modality = CR | Modality = DR | Modality = MG | Modality = MX";  },
+  {Element = (0008,1090); Name = ManufacturerModelName; Sort = 1; Part = 1; },
+  {Element = (0008,1010); Name = StationName; Sort = 1; Part = 1; },
+  {Element = (0008,0070); Name = Manufacturer; Sort = 1; Part = 1; },
+  {Element = (0018,0020); Name = ScanningSequence; Sort = 1; Part = 1; },
+  {Element = (0018,0085); Name = ImagedNucleus; Sort = 1; Part = 1; },
+  {Element = (0018,0087); Name = MagneticFieldStrength; Sort = 1; Part = 1; },
+  {Element = (0018,1020); Name = SoftwareVersion; Sort = 1; Part = 1; },
+  {Element = (0018,5100); Name = PatientPosition; Sort = 1; Part = 1; },
+  {Element = (0062,000b); Name = ReferencedSegmentNumber; Sort = 1; SortCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; Part = 1;  PartCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; },
+  {Element = (0020,000e); Name = SeriesInstanceUID; Sort = 1; SortCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; Part = 1; PartCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; },
+  {Element = (0020,0013); Name = InstanceNumber; Sort = 1; Part = 0; },
+  {Element = (0008,0030); Name = StudyTime; Sort = 1; Part = 0; },
+  {Element = (0020,0011); Name = SeriesNumber; Sort = 1; Part = 0; },
+  {Element = (0008,0021); Name = SeriesDate; Sort = 1; Part = 0; },
+  {Element = (0008,0031); Name = SeriesTime; Sort = 1; Part = 0; },
+  {Element = (0018,0081); Name = EchoTime; Sort = 1; Part = 0; },
+  {Element = (0018,0024); Name = SequenceName; Sort = 1; Part = 0; },
+  {Element = (0020,0012); Name = AcquisitionNumber; Sort = 1; Part = 0; },
+  {Element = (0018,0022); Name = ScanOptions; Sort = 1; Part = 0; },
+  {Element = (0008,0022); Name = AcquisitionDate; Sort = 1; Part = 0; },
+  {Element = (0008,0032); Name = AcquisitionTime; Sort = 1; Part = 0; },
+  {Element = (0008,0023); Name = ContentDate; Sort = 1; Part = 0; },
+  {Element = (0008,0033); Name = ContentTime; Sort = 1; Part = 0; },
+  {Element = (0020,0032); Name = ImagePositionPatient; Sort = 1; Part = 0; },
+  {Element = (0054,0020); Name = DetectorVector; Sort = 1; Part = 0; },
+  {Element = (0054,0100); Name = TimeSliceVector; Sort = 1; Part = 0; },
+  {Element = (0054,0070); Name = TimeSlotVector; Sort = 1; Part = 0; },
+  {Element = (0054,0080); Name = SliceVector; Sort = 1; Part = 0; },
+  {Element = (0054,0090); Name = AngularViewVector; Sort = 1; Part = 0; },
+)
+*"
+    dplConfigString3 = "*(
+  {Element = (0008,0060); Name = Modality;  Sort = 1; Part = 1; },
+  {Element = (0008,0020); Name = StudyDate; Sort = 1; Part = 1; },
+  {Element = (0008,0008); Name = ImageType; Sort = 1; Part = 1; },
+  {Element = (0018,1030); Name = ProtocolName; Sort = 1; Part = 1; },
+  {Element = (0018,0050); Name = SliceThickness; Sort = 1; Part = 1; Tolerance = 0.000005; },
+  {Element = (0018,0080); Name = RepetitionTime; Sort = 1; Part = 1; },
+  {Element = (0018,0082); Name = InversionTime; Sort = 1; Part = 1; },
+  {Element = (0018,0091); Name = EchoTrainLength; Sort = 1; Part = 1; },
+  {Element = (0018,1210); Name = ConvolutionKernel; Sort = 1; Part = 1; },
+  {Element = (0018,1314); Name = FlipAngle; Sort = 1; Part = 1; },
+  {Element = (0018,0015); Name = BodyPartExamined; Sort = 1; Part = 1; },
+  {Element = (0028,0008); Name = NumberOfFrames; Sort = 1; Part = 1; },
+  {Element = (0028,0010); Name = Rows; Sort = 1; Part = 1; },
+  {Element = (0028,0011); Name = Columns; Sort = 1; Part = 1; },
+  {Element = (0020,0037); Name = ImageOrientationPatient; Sort = 1; Part = 1; Tolerance = 0.000005; },
+  {Element = (0018,1004); Name = PlateID; Sort = 1; Part = 1; },
+  {Element = (0018,1000); Name = DeviceSerialNumber; Sort = 1; Part = 1; },
+  {Element = (0028,0004); Name = PhotometricInterpretation; Sort = 1; Part = 1; },
+  {Element = (0028,0100); Name = BitsAllocated; Sort = 1; Part = 1; },
+  {Element = (0028,0102); Name = HighBit; Sort = 1; Part = 1; },
+  {Element = (0028,0103); Name = PixelRepresentation; Sort = 1; Part = 1; },
+  {Element = (0018,0020); Name = ScanningSequence; Sort = 1; Part = 1; },
+  {Element = (0018,0023); Name = MRAcquisitionType; Sort = 1; Part = 1; },
+  {Element = (0028,0030); Name = PixelSpacing; Sort = 1; Part = 1; Tolerance = 0.00001; },
+  {Element = (0054,0010); Name = EnergyWindowVector; Sort = 1; Part = 1; },
+  {Element = (0054,0030); Name = PhaseVector; Sort = 1; Part = 1; },
+  {Element = (0054,0060); Name = RRIntervalVector; Sort = 1; Part = 1; },
+  {Element = (0054,0050); Name = RotationVector; Sort = 1; Part = 1; },
+  {Element = (0020,000e); Name = SeriesInstanceUID; Sort = 1; SortCondition = "Modality = NM & !(FrameIncrementPointer = '(0054,0010)')" Part = 1; PartCondition = "Modality = NM & !(FrameIncrementPointer = '(0054,0010)')";       },
+  {Element = (0008,0018); Name = SOPInstanceUID; Sort = 1; SortCondition = "Modality = NM & NumberOfFrames > 1";  Part = 1; PartCondition = "Modality = NM & NumberOfFrames > 1";  },
+  {Element = (0008,0018); Name = SOPInstanceUID; Sort = 1; SortCondition = "Modality = CR | Modality = DR | Modality = MG | Modality = MX"; Part = 1; PartCondition = "Modality = CR | Modality = DR | Modality = MG | Modality = MX";  },
+  {Element = (0008,1090); Name = ManufacturerModelName; Sort = 1; Part = 1; },
+  {Element = (0008,1010); Name = StationName; Sort = 1; Part = 1; },
+  {Element = (0008,0070); Name = Manufacturer; Sort = 1; Part = 1; },
+  {Element = (0018,0020); Name = ScanningSequence; Sort = 1; Part = 1; },
+  {Element = (0018,0085); Name = ImagedNucleus; Sort = 1; Part = 1; },
+  {Element = (0018,0087); Name = MagneticFieldStrength; Sort = 1; Part = 1; },
+  {Element = (0018,1020); Name = SoftwareVersion; Sort = 1; Part = 1; },
+  {Element = (0018,5100); Name = PatientPosition; Sort = 1; Part = 1; },
+  {Element = (0062,000b); Name = ReferencedSegmentNumber; Sort = 1; SortCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; Part = 1;  PartCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; },
+  {Element = (0020,000e); Name = SeriesInstanceUID; Sort = 1; SortCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; Part = 1; PartCondition = "SOPClassUID = 1.2.840.10008.5.1.4.1.1.66.4"; },
+  {Element = (0020,0013); Name = InstanceNumber; Sort = 1; Part = 0; },
+  {Element = (0008,0030); Name = StudyTime; Sort = 1; Part = 0; },
+  {Element = (0020,0011); Name = SeriesNumber; Sort = 1; Part = 0; },
+  {Element = (0008,0021); Name = SeriesDate; Sort = 1; Part = 0; },
+  {Element = (0008,0031); Name = SeriesTime; Sort = 1; Part = 0; },
+  {Element = (0018,0081); Name = EchoTime; Sort = 1; Part = 0; },
+  {Element = (0018,0024); Name = SequenceName; Sort = 1; Part = 0; },
+  {Element = (0020,0012); Name = AcquisitionNumber; Sort = 1; Part = 0; },
+  {Element = (0018,0022); Name = ScanOptions; Sort = 1; Part = 0; },
+  {Element = (0008,0022); Name = AcquisitionDate; Sort = 1; Part = 0; },
+  {Element = (0008,0032); Name = AcquisitionTime; Sort = 1; Part = 0; },
+  {Element = (0008,0023); Name = ContentDate; Sort = 1; Part = 0; },
+  {Element = (0008,0033); Name = ContentTime; Sort = 1; Part = 0; },
+  {Element = (0020,0032); Name = ImagePositionPatient; Sort = 1; Part = 0; },
+  {Element = (0054,0020); Name = DetectorVector; Sort = 1; Part = 0; },
+  {Element = (0054,0100); Name = TimeSliceVector; Sort = 1; Part = 0; },
+  {Element = (0054,0070); Name = TimeSlotVector; Sort = 1; Part = 0; },
+  {Element = (0054,0080); Name = SliceVector; Sort = 1; Part = 0; },
+  {Element = (0054,0090); Name = AngularViewVector; Sort = 1; Part = 0; },
+)
+*"
+    dplUsedConfig = DefaultConfig
+    relativeDistanceTolerance = 0.25
+    absoluteDistanceTolerance = 0.02
+    positionToleranceMM = 0.0999
+    seriesBasedPreprocessingCondition = FALSE
+    force2DPlusTCondition = "Modality == XA | Modality == US | Modality == RF"
+    logPartingAndSortingInformation = FALSE
+    dplScanRecursively = TRUE
+    decomposeMultiFrameFiles = TRUE
+    copyFullFunctionalGroupSequences = TRUE
+    removePrivateMFSQTag = FALSE
+    forceOrthogonalWorldMatrix = FALSE
+    decomposeTo3DVolumes = FALSE
+    allowMixedPixelTypes = FALSE
+    copyPrivateTopLevelSourceTags = TRUE
+    dplHardOverwriteTagOn0 = FALSE
+    dplHardOverwriteTagId0 = ""
+    dplHardOverwriteTagStr0 = ""
+    dplHardOverwriteTagOn1 = FALSE
+    dplHardOverwriteTagId1 = ""
+    dplHardOverwriteTagStr1 = ""
+    dplHardOverwriteTagOn2 = FALSE
+    dplHardOverwriteTagId2 = ""
+    dplHardOverwriteTagStr2 = ""
+    dplHardOverwriteTagOn3 = FALSE
+    dplHardOverwriteTagId3 = ""
+    dplHardOverwriteTagStr3 = ""
+    dplAllowSortingAccordingToDimensionIndexValues = Auto
+    dplWorkaroundValueForImageOrientationPatientTag = ""
+    composeOtherFilesMode = Single
+    silentTrialFileTypes = ".dat .raw .txt"
+    source = "$(HOME)/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput"
+    guiCachePath = ""
+  }
+}
+module View2D {
+  internal  {
+    frame = "229 173 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2853 262 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 19
+    maxTimePoint = 23
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 9.6000004
+    sliceZoomSynced = 9.6000004
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "451.500122070312 451.500122070312"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 266.554809570312
+    lutWidth = 599
+    annotationOn = FALSE
+    annotationMode = ANNO_MODE_MR
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module SoView2DMarkerEditor {
+  internal  {
+    frame = "321 1989 160 56"
+    moduleGroupName = Marker_selection
+    windows  {
+      window _default {
+        geometry = "1016 416 603 583"
+        sizeHint = "603 583"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DMarkerEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 0 0"
+    selectionTolerance = 3
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = RELEASED
+    button3 = RELEASED
+    shift = PRESSED
+    control = RELEASED
+    alt = RELEASED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = CROSS_CURSOR
+    depthVisibility = 1
+    snapToVoxel = TRUE
+    snapToSlice = TRUE
+    currentType = 0
+    deleteOnClick = FALSE
+    addOnClick = TRUE
+    alphaFactor = 1
+    minimumAlpha = 0.099999927
+    iconFile = $(MLAB_MeVisLab_Standard)/Modules/Resources/Images/markerIcons.tif
+    useIconFile = FALSE
+    iconIdx = 0
+    drawMarkerShapesWithLines = FALSE
+    selectingOn = TRUE
+    alwaysPerformHitTest = FALSE
+    actOnReleaseOnly = FALSE
+    editorMode = EDIT_MARKER
+    colorMode = COLOR_BY_TYPE
+    textColorMode = COLOR_TEXT
+    textMode = TEXT_OFF
+    textPosition = TEXT_POSITION_RIGHT_BELOW
+    textColor = "1 1 1"
+    textShadow = TRUE
+    textFontSize = 12
+    showTextOnlyForSelectedMarker = FALSE
+    cutText = FALSE
+    maxNumberOfLines = 1
+    vectorArrow = VECTOR_END_ARROW
+    vectorLineWidth = 1
+    useAntiAlias = TRUE
+    useVectorLengthAsMarkerSize = FALSE
+    depthVectorDrawMode = DRAW_HIGHLIGHT_SLICE_SEGMENT
+    drawMode = DRAW_MARKER
+    highlightSelection = FALSE
+    selectiveDrawing = FALSE
+    selectionBoxesForCurrentOnly = FALSE
+    cooperative = FALSE
+    overwriteCurrentTimePoint = TRUE
+    newCurrentTimePoint = -1
+    depthVisibilityMode = DEPTH_IN_SLICES
+    cursorShapeDragStartPoint = CROSS_MOVE_CURSOR
+    cursorShapeDragEndPoint = CROSS_MOVE_CURSOR
+    cursorShapeDragResize = CROSS_MOVE_CURSOR
+    cursorShapeDragOffset = MOVE_ALL_CURSOR
+    cursorShapeDragMove = MOVE_ALL_CURSOR
+    cursorShapeDelete = CROSS_MINUS_CURSOR
+    listString = ""
+    index = -1
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = RemoveFirst
+    maxSize = 1
+    useInsertTemplate = FALSE
+    posXYZ = "0 0 0"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "125 2037 152 56"
+    moduleGroupName = Marker_selection
+    windows  {
+      window _default {
+        geometry = "1319 585 1225 497"
+        sizeHint = "500 497"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "-13.3834457397461 -7.34178924560547 -42.773796081543"
+    posC = 0
+    posT = -1
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module XMarkerAtIndex {
+  internal  {
+    frame = "173 1437 120 56"
+    moduleGroupName = Marker_selection
+    windows  {
+      window _default {
+        geometry = "1219 711 481 381"
+        sizeHint = "459 381"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerAtIndex
+    index = 0
+    autoUpdate = TRUE
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "93 1765 136 56"
+    moduleGroupName = Marker_selection
+    windows  {
+      window _default {
+        geometry = "1034 849 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert
+    voxelX = 473
+    voxelY = 494
+    voxelZ = 0
+    worldX = -13.3834457397461
+    worldY = -7.34178924560547
+    worldZ = -42.773796081543
+    voxelPos = "473 494 0"
+    worldPos = "-13.3834457397461 -7.34178924560547 -42.773796081543"
+    voxelMode = FALSE
+    worldMode = TRUE
+    intVoxelCoords = TRUE
+    keepConstant = World
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "1313 1845 96 72"
+    moduleGroupName = GUI_button
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "436 711 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic0
+    debugLevel = 0
+    arg1 = "115 0 0"
+    arg1X = 115
+    arg1XAsVec = FALSE
+    operation = IntDivide
+    arg2 = "2 0 0"
+    arg2X = 2
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module ROISelect {
+  internal  {
+    frame = "653 1485 88 56"
+    moduleGroupName = ROI_selection
+    windows  {
+      window _default {
+        geometry = "1119 698 682 464"
+        sizeHint = "682 392"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 330 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ROISelect
+    editMode = Edit
+    currentPosOn = Navigate
+    editModeFieldDisable = FALSE
+    allTimepoints = TRUE
+    usePreview = FALSE
+    timepoint = 0
+    unit = ""
+    startWorldPos = "-27.6419486999512 -21.1813793182373 -44.9794731140137"
+    startVoxelX = 416
+    startVoxelY = 437
+    startVoxelZ = 0
+    endWorldPos = "0.875062644481659 6.49779367446899 -40.5681228637695"
+    endVoxelX = 530
+    endVoxelY = 551
+    endVoxelZ = 0
+    boxOn = TRUE
+    boxShiftListen = RELEASED
+    boxCtrlListen = IGNORED
+    boxBlend = 0
+    boxColor = "1 0.979525029659271 0.38740399479866"
+    allowDraw = TRUE
+    reset = FALSE
+    currentPos = "-25.8939418792725 -18.3691310882568 -59.6592445373535"
+    currentPosShiftListen = PRESSED
+    currentPosCtrlListen = RELEASED
+    currentPosColor = "1 1 1"
+    layout = LAYOUT_SAGITTAL
+    worldPosition = "-25.8939418792725 -18.3691310882568 -59.6592445373535"
+    useGlobalInputImage = TRUE
+    restriction = MaxMBytesIsotropic
+    limit = 10
+    grayWidth = 0.07750004529953
+    grayCenter = 0.00999999977648258
+    annotationColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationOn = TRUE
+    annotShowAnnot = ANNO_SHOW_HIDE
+    annotFontSize = ANNO_SIZE_AUTO
+    annotShowOrientation = ANNO_ORIENTATION_SIZE_WEIGHTED
+    annotVerticalRuler = TRUE
+    annotHorizontalRuler = FALSE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "577 1605 128 72"
+    moduleGroupName = ROI_selection
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2940 800 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic01
+    debugLevel = 0
+    arg1 = "473 494 0"
+    arg1X = 473
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "57 57 0"
+    arg2X = 57
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module ComposeVector3 {
+  internal  {
+    frame = "1169 1765 128 56"
+    moduleGroupName = GUI_button
+    windows  {
+      window _default {
+        geometry = "893 374 263 64"
+        sizeHint = "263 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComposeVector3
+    x = 57
+    y = 57
+    z = 0
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "745 1597 144 72"
+    moduleGroupName = ROI_selection
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2438 454 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic02
+    debugLevel = 0
+    arg1 = "473 494 0"
+    arg1X = 473
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "57 57 0"
+    arg2X = 57
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "742 -35 104 72"
+    moduleGroupName = FWHM_calculation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1235 378 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic03
+    debugLevel = 0
+    arg1 = "412.949843260188 0 0"
+    arg1X = 412.949843260188
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "22.2568868237637 0 0"
+    arg2X = 22.2568868237637
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "806 -163 104 72"
+    moduleGroupName = FWHM_calculation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1227 791 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic04
+    debugLevel = 0
+    arg1 = "390.692956436424 0 0"
+    arg1X = 390.692956436424
+    arg1XAsVec = FALSE
+    operation = Divide
+    arg2 = "2 0 0"
+    arg2X = 2
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "974 -139 104 72"
+    moduleGroupName = FWHM_calculation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1464 498 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic05
+    debugLevel = 0
+    arg1 = "195.346478218212 0 0"
+    arg1X = 195.346478218212
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "22.2568868237637 0 0"
+    arg2X = 22.2568868237637
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "1118 -155 104 72"
+    moduleGroupName = FWHM_calculation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2395 432 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic06
+    debugLevel = 0
+    arg1 = "217.603365041976 0 0"
+    arg1X = 217.603365041976
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module RunPythonScript {
+  internal  {
+    frame = "1049 109 160 56"
+    moduleGroupName = FWHM_calculation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2196 221 1549 825"
+        sizeHint = "897 734"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RunPythonScript
+    in0 = ""
+    in1 = ""
+    in2 = ""
+    in3 = ""
+    in4 = ""
+    in5 = ""
+    in6 = ""
+    in7 = ""
+    in8 = ""
+    in9 = ""
+    inComment0 = in0
+    inComment1 = in1
+    inComment2 = in2
+    inComment3 = in3
+    inComment4 = in4
+    inComment5 = in5
+    inComment6 = in6
+    inComment7 = in7
+    inComment8 = in8
+    inComment9 = in9
+    autoApply0 = TRUE
+    autoApply1 = TRUE
+    autoApply2 = TRUE
+    autoApply3 = TRUE
+    autoApply4 = TRUE
+    autoApply5 = TRUE
+    autoApply6 = TRUE
+    autoApply7 = TRUE
+    autoApply8 = TRUE
+    autoApply9 = TRUE
+    out0 = ""
+    out1 = ""
+    out2 = ""
+    out3 = ""
+    out4 = ""
+    out5 = ""
+    out6 = ""
+    out7 = ""
+    out8 = ""
+    out9 = ""
+    outComment0 = out0
+    outComment1 = out1
+    outComment2 = out2
+    outComment3 = out3
+    outComment4 = out4
+    outComment5 = out5
+    outComment6 = out6
+    outComment7 = out7
+    outComment8 = out8
+    outComment9 = out9
+    initCode = "# For backward compatibility, set up CTX as alias for ctx
+CTX = ctx # ctx is the network's context, not RunPythonScript's"
+    wakeUpCode = ""
+    code = "*import numpy
+magnitude = ctx.field("itkOtsuThresholdImageFilter.input0").image()
+in00 = magnitude.getTile( (0,0,0), (magnitude.UseImageExtent,magnitude.UseImageExtent,magnitude.UseImageExtent) )
+magnitude = ctx.field("IntervalThreshold1.output0").image()
+in10 = magnitude.getTile( (0,0,0), (magnitude.UseImageExtent,magnitude.UseImageExtent,magnitude.UseImageExtent) )
+masked = in00*in10
+meanva = numpy.mean(masked[numpy.nonzero(masked)])
+ctx.field("Arithmetic03.arg2X").setValue(meanva)
+ctx.field("Arithmetic05.arg2X").setValue(meanva)
+
+magnitude = ctx.field("itkOtsuThresholdImageFilter.output0").image()
+in10 = magnitude.getTile( (0,0,0), (magnitude.UseImageExtent,magnitude.UseImageExtent,magnitude.UseImageExtent) )
+
+masked2 = in00 * in10
+meanva = numpy.mean(masked2[numpy.nonzero(masked2)])
+ctx.field("Arithmetic03.arg1X").setValue(meanva)*"
+    finalizeCode = ""
+    showFields = TRUE
+    showInitCode = FALSE
+    showWakeUpCode = FALSE
+    showCode = TRUE
+    showFinalizeCode = FALSE
+    showConsole = TRUE
+  }
+}
+module itkOtsuThresholdImageFilter {
+  internal  {
+    frame = "1054 293 184 56"
+    moduleGroupName = FWHM_calculation
+    windows  {
+      window _default {
+        geometry = "2097 255 288 480"
+        sizeHint = "258 480"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = itkOtsuThresholdImageFilter
+    updateMode = AutoClear
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 599
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 0
+    outsideValue = 1
+    insideValue = 0
+    numberOfHistogramBins = 128
+    autoMinimumMaximum = TRUE
+    maskOutput = FALSE
+    maskValue = 1
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module Bypass {
+  internal  {
+    frame = "1078 469 104 56"
+    moduleGroupName = FWHM_calculation
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Bypass
+    noBypass = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1186 389 128 56"
+    moduleGroupName = FWHM_calculation
+    windows  {
+      window _default {
+        geometry = "1370 617 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 1
+    threshWidth = 0
+    threshMin = 1
+    threshMax = 1
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "910 229 136 56"
+    moduleGroupName = FWHM_calculation
+    windows  {
+      window _default {
+        geometry = "766 440 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold1
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 50000.5
+    threshWidth = 99999
+    threshMin = 1
+    threshMax = 100000
+    lowerUserValue = 1
+    innerUserValue = 0
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module SubImage {
+  internal  {
+    frame = "901 565 88 56"
+    moduleGroupName = FWHM_calculation
+    windows  {
+      window _default {
+        geometry = "1219 506 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 32
+    modifyX = FALSE
+    y = 0
+    sy = 32
+    modifyY = FALSE
+    z = 0
+    sz = 32
+    modifyZ = FALSE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 23
+    st = 1
+    modifyT = TRUE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module Info {
+  internal  {
+    frame = "653 2113 136 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "3098 642 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "753 1429 144 56"
+    moduleGroupName = ROI_selection
+    windows  {
+      window _default {
+        geometry = "626 521 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert2
+    voxelX = 84
+    voxelY = 84
+    voxelZ = -13
+    worldX = -4.63730428407204
+    worldY = 3.35420880107961
+    worldZ = -80.5032189044633
+    voxelPos = "84 84 -13"
+    worldPos = "-4.63730428407204 3.35420880107961 -80.5032189044633"
+    voxelMode = FALSE
+    worldMode = TRUE
+    intVoxelCoords = TRUE
+    keepConstant = World
+  }
+}
+module CSOInspector {
+  internal  {
+    frame = "1637 1119 112 56"
+    moduleGroupName = CSO_generation
+    windows  {
+      window _default {
+        geometry = "849 531 237 198"
+        sizeHint = "237 198"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOInspector
+    seedPointSizeScaling = 1
+    continuousUpdate = FALSE
+    useDecoration = FALSE
+    showBackground = TRUE
+    autoViewAll = TRUE
+    detail = FALSE
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "185 325 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup1
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "-830 1469 144 56"
+    moduleGroupName = Rectangle_drawing
+    windows  {
+      window _default {
+        geometry = "760 512 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert1
+    voxelX = 416
+    voxelY = 437
+    voxelZ = 0
+    worldX = -27.6419486999512
+    worldY = -21.1813793182373
+    worldZ = -44.9794731140137
+    voxelPos = "416 437 0"
+    worldPos = "-27.6419486999512 -21.1813793182373 -44.9794731140137"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = TRUE
+    keepConstant = Voxel
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "-830 1397 144 56"
+    moduleGroupName = Rectangle_drawing
+    windows  {
+      window _default {
+        geometry = "26 59 324 203"
+        sizeHint = "324 203"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 330 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert3
+    voxelX = 530
+    voxelY = 551
+    voxelZ = 0
+    worldX = 0.875062644481659
+    worldY = 6.49779367446899
+    worldZ = -40.5681228637695
+    voxelPos = "530 551 0"
+    worldPos = "0.875062644481659 6.49779367446899 -40.5681228637695"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = TRUE
+    keepConstant = Voxel
+  }
+}
+module SoView2DRectangle {
+  internal  {
+    frame = "-914 1317 152 56"
+    moduleGroupName = Rectangle_drawing
+    windows  {
+      window _default {
+        geometry = "603 314 428 534"
+        sizeHint = "428 534"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DRectangle1
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 0.979525029659271 0.38740399479866"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = PRESSED
+    button3 = RELEASED
+    shift = IGNORED
+    control = RELEASED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = CROSS_CURSOR
+    startWorldPos = "0.875062644481659 6.49779367446899 -40.5681228637695"
+    endWorldPos = "-27.6419486999512 -21.1813793182373 -44.9794731140137"
+    blendInside = 0
+    blendOnto = 0
+    blendOutside = 0
+    lineBlendInside = 0.80000001
+    lineBlendOnto = 1
+    lineBlendOutside = 0.34999999
+    resetToImage = FALSE
+    selectOutside = TRUE
+    allowDrag = TRUE
+    cooperative = FALSE
+    shadeExterior = 0
+    shadeAllExterior = FALSE
+    lineStyle = SOLID
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "-327 445 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "301 1877 104 56"
+    moduleGroupName = Marker_selection
+    windows  {
+      window _default {
+        geometry = "2578 542 635 296"
+        sizeHint = "635 296"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener
+    mode = Parameter
+    inParameter = "-13.3834457397461 -7.34178924560547 -42.773796081543"
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+module SoKeyGrabber {
+  internal  {
+    frame = "-1183 1101 144 72"
+    moduleGroupName = "Show annotation (editing/redrawing)"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "380 588 369 246"
+        sizeHint = "369 246"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoKeyGrabber
+    on = TRUE
+    key0 = ANY
+    key1 = ANY
+    key2 = ANY
+    key3 = ANY
+    key4 = ANY
+  }
+}
+module StringListContainer {
+  internal  {
+    frame = "-1223 765 144 56"
+    moduleGroupName = "Show annotation (editing/redrawing)"
+    windows  {
+      window _default {
+        geometry = "1141 611 545 377"
+        sizeHint = "424 377"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringListContainer1
+    listString = "[#1 :, #2 :Redrawing, #3 :Editing, #4 :]"
+    index = 0
+    persistent = TRUE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "-1215 901 112 56"
+    moduleGroupName = "Show annotation (editing/redrawing)"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "863 509 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt2
+    boolValue = FALSE
+    invBoolValue = TRUE
+    intValue = 0
+    offValue = 0
+    onValue = 1
+    defaultBool = Unchanged
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "-1063 901 112 56"
+    moduleGroupName = "Show annotation (editing/redrawing)"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "863 505 208 247"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt3
+    boolValue = FALSE
+    invBoolValue = TRUE
+    intValue = 0
+    offValue = 0
+    onValue = 2
+    defaultBool = Unchanged
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "-991 773 112 72"
+    moduleGroupName = "Show annotation (editing/redrawing)"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1097 290 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic010
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "-1143 557 96 56"
+    moduleGroupName = "Show annotation (editing/redrawing)"
+  }
+  fields  {
+    instanceName = SoGroup5
+  }
+}
+module SoView2DAnnotation {
+  internal  {
+    frame = "-1083 661 152 56"
+    moduleGroupName = "Show annotation (editing/redrawing)"
+    windows  {
+      window _default {
+        geometry = "2456 358 777 571"
+        sizeHint = "711 571"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DAnnotation
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = FALSE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = TRUE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    annotationMode = ANNO_MODE_MR
+    showOrientation = ANNO_ORIENTATION_OFF
+    drawNegativeOrientation = FALSE
+    drawPositiveOrientation = FALSE
+    orientationColor = "1 1 1"
+    verticalRuler = FALSE
+    horizontalRuler = FALSE
+    verticalRulerMarginRight = 8
+    horizontalRulerMarginBottom = 8
+    showTechnicalInfo = FALSE
+    showAnnotation = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    minDetailFontSize = 10
+    maxDetailFontSize = 18
+    minShortFontSize = 8
+    maxShortFontSize = 12
+    userDetailFontSize = 12
+    userShortFontSize = 10
+    rulerFontSize = 12
+    textShadow = TRUE
+    rulerShadow = TRUE
+    annotationUserTopLeft = "$(PatientsName)
+$(PatientID) $(PatientsSex)
+$(PatientsBirthDate)"
+    annotationUserTopRight = "$(InstitutionName)
+$(ManufacturersModelName)
+$(Modality)"
+    annotationUserBottomLeft = "slice: $(slice)
+$(SeriesDescription)"
+    annotationUserBottomRight = "User Mode
+acquisition: $(AcquisitionDate)"
+    annotationUserBottomCenter = ""
+    annotationCTTopLeft = "$(PatientsName)
+$(PatientID) $(PatientsSex)
+$(PatientsBirthDate)"
+    annotationCTTopRight = "$(InstitutionName)
+$(ManufacturersModelName)
+$(Modality)"
+    annotationCTBottomLeft = "slice: $(slice)
+timepoint: $(timepoint)
+$(sizex),$(sizey),$(sizez),$(sizec),$(sizet)
+$(voxelx),$(voxely),$(voxelz)
+$(SeriesDescription)"
+    annotationCTBottomRight = "CT Mode
+acquisition: $(AcquisitionDate)"
+    annotationCTBottomCenter = ""
+    annotationMRTopLeft = $(input00)
+    annotationMRTopRight = ""
+    annotationMRBottomLeft = "Slice: $(slice)
+Timepoint: $(timepoint)
+"
+    annotationMRBottomRight = ""
+    annotationMRBottomCenter = ""
+    shortTopLeft = "$(PatientsName)
+$(PatientID)"
+    shortTopRight = $(Modality)
+    shortBottomLeft = "Slice: $(slice)"
+    shortBottomRight = ""
+    shortBottomCenter = ""
+    abreviateChars = -1
+    abreviateShortChars = 16
+    input00 = ""
+    input01 = ""
+    input02 = ""
+    input03 = ""
+    input04 = ""
+    input05 = ""
+    input06 = ""
+    input07 = ""
+    input08 = ""
+    input09 = ""
+    numInput00 = 0
+    numInput01 = 0
+    numInput02 = 0
+    numInput03 = 0
+    numInput04 = 0
+    numInput05 = 0
+    numInput06 = 0
+    numInput07 = 0
+    numInput08 = 0
+    numInput09 = 0
+    fontWidthDummyString = ""
+    targetWidth = 0
+    targetHeight = 0
+    orientationModel = FALSE
+    orientationModelPosition = ANNO_BOTTOM_RIGHT
+    marginTop = 2
+    marginBottom = 2
+    marginLeft = 2
+    marginRight = 2
+    orientationModelRelativeSize = 0.125
+    orientationModelMinSize = 24
+    orientationModelMaxSize = 128
+    orientationModelRelativeVerticalOffset = 0
+    orientationModelMinVerticalOffset = 0
+    orientationModelMaxVerticalOffset = 128
+    orientationModelRelativeHorizontalOffset = 0
+    orientationModelMinHorizontalOffset = 0
+    orientationModelMaxHorizontalOffset = 128
+    orientationModelColor = "1 1 1"
+    orientationAndScaleFromCamera = FALSE
+    drawBackgroundBox = FALSE
+    backgroundColor = "0.200000002980232 0.200000002980232 0.699999988079071"
+    backgroundOpacity = 0.5
+    backgroundEdgeColor = "0.200000002980232 0.200000002980232 0.699999988079071"
+    backgroundEdgeOpacity = 0.5
+  }
+}
+module SoBypass {
+  internal  {
+    frame = "-755 533 120 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1379 384 258 94"
+        sizeHint = "258 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoBypass
+    bypass = TRUE
+    noBypass = FALSE
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "1354 1253 104 56"
+    moduleGroupName = CSO_generation
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "863 509 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt
+    boolValue = TRUE
+    invBoolValue = FALSE
+    intValue = 24
+    offValue = 0
+    onValue = 1
+    defaultBool = Unchanged
+  }
+}
+module SoBypass {
+  internal  {
+    frame = "-279 717 128 56"
+    moduleGroupName = Manual_edit_CSOs
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1379 384 258 94"
+        sizeHint = "258 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoBypass1
+    bypass = TRUE
+    noBypass = FALSE
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "-279 813 96 56"
+    moduleGroupName = Manual_edit_CSOs
+  }
+  fields  {
+    instanceName = SoGroup2
+  }
+}
+module SoView2DAnnotation {
+  internal  {
+    frame = "-155 461 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2456 358 777 571"
+        sizeHint = "711 571"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DAnnotation1
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = FALSE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = TRUE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    annotationMode = ANNO_MODE_MR
+    showOrientation = ANNO_ORIENTATION_OFF
+    drawNegativeOrientation = FALSE
+    drawPositiveOrientation = FALSE
+    orientationColor = "1 1 1"
+    verticalRuler = FALSE
+    horizontalRuler = FALSE
+    verticalRulerMarginRight = 8
+    horizontalRulerMarginBottom = 8
+    showTechnicalInfo = FALSE
+    showAnnotation = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    minDetailFontSize = 10
+    maxDetailFontSize = 18
+    minShortFontSize = 8
+    maxShortFontSize = 12
+    userDetailFontSize = 12
+    userShortFontSize = 10
+    rulerFontSize = 12
+    textShadow = TRUE
+    rulerShadow = TRUE
+    annotationUserTopLeft = "$(PatientsName)
+$(PatientID) $(PatientsSex)
+$(PatientsBirthDate)"
+    annotationUserTopRight = "$(InstitutionName)
+$(ManufacturersModelName)
+$(Modality)"
+    annotationUserBottomLeft = "slice: $(slice)
+$(SeriesDescription)"
+    annotationUserBottomRight = "User Mode
+acquisition: $(AcquisitionDate)"
+    annotationUserBottomCenter = ""
+    annotationCTTopLeft = "$(PatientsName)
+$(PatientID) $(PatientsSex)
+$(PatientsBirthDate)"
+    annotationCTTopRight = "$(InstitutionName)
+$(ManufacturersModelName)
+$(Modality)"
+    annotationCTBottomLeft = "slice: $(slice)
+timepoint: $(timepoint)
+$(sizex),$(sizey),$(sizez),$(sizec),$(sizet)
+$(voxelx),$(voxely),$(voxelz)
+$(SeriesDescription)"
+    annotationCTBottomRight = "CT Mode
+acquisition: $(AcquisitionDate)"
+    annotationCTBottomCenter = ""
+    annotationMRTopLeft = $(input00)
+    annotationMRTopRight = ""
+    annotationMRBottomLeft = "Slice: $(slice)
+Timepoint: $(timepoint)
+"
+    annotationMRBottomRight = ""
+    annotationMRBottomCenter = ""
+    shortTopLeft = "$(PatientsName)
+$(PatientID)"
+    shortTopRight = $(Modality)
+    shortBottomLeft = "Slice: $(slice)"
+    shortBottomRight = ""
+    shortBottomCenter = ""
+    abreviateChars = -1
+    abreviateShortChars = 16
+    input00 = ""
+    input01 = ""
+    input02 = ""
+    input03 = ""
+    input04 = ""
+    input05 = ""
+    input06 = ""
+    input07 = ""
+    input08 = ""
+    input09 = ""
+    numInput00 = 0
+    numInput01 = 0
+    numInput02 = 0
+    numInput03 = 0
+    numInput04 = 0
+    numInput05 = 0
+    numInput06 = 0
+    numInput07 = 0
+    numInput08 = 0
+    numInput09 = 0
+    fontWidthDummyString = ""
+    targetWidth = 0
+    targetHeight = 0
+    orientationModel = FALSE
+    orientationModelPosition = ANNO_BOTTOM_RIGHT
+    marginTop = 2
+    marginBottom = 2
+    marginLeft = 2
+    marginRight = 2
+    orientationModelRelativeSize = 0.125
+    orientationModelMinSize = 24
+    orientationModelMaxSize = 128
+    orientationModelRelativeVerticalOffset = 0
+    orientationModelMinVerticalOffset = 0
+    orientationModelMaxVerticalOffset = 128
+    orientationModelRelativeHorizontalOffset = 0
+    orientationModelMinHorizontalOffset = 0
+    orientationModelMaxHorizontalOffset = 128
+    orientationModelColor = "1 1 1"
+    orientationAndScaleFromCamera = FALSE
+    drawBackgroundBox = FALSE
+    backgroundColor = "0.200000002980232 0.200000002980232 0.699999988079071"
+    backgroundOpacity = 0.5
+    backgroundEdgeColor = "0.200000002980232 0.200000002980232 0.699999988079071"
+    backgroundEdgeOpacity = 0.5
+  }
+}
+module StringUtils {
+  internal  {
+    frame = "1893 1941 88 72"
+    moduleGroupName = "Save name"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2164 139 929 204"
+        sizeHint = "234 204"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringUtils
+    operationType = Replace
+    string1 = "C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_1_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_2_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_3_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_4_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_5_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_6_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_7_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_8_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_9_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_10_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_11_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_12_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_13_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_14_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_15_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_16_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_17_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_18_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_19_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_20_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_21_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_22_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_23_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_24_edited.dcm"
+    string2 = .dcm
+    string3 = _mask.mat
+    string4 = ""
+    string5 = ""
+    string6 = ""
+    stringPrefix = [
+    stringPostfix = ]
+    toggle1 = TRUE
+    toggle2 = TRUE
+    toggle3 = FALSE
+    toggle4 = FALSE
+    toggle5 = FALSE
+    toggle6 = FALSE
+    togglePrefix = FALSE
+    togglePostfix = FALSE
+    separator = ""
+    selectSeparator = 0
+    toggleIgnoreCase = FALSE
+    inPos1 = 0
+    inPos2 = 0
+  }
+}
+module StringSplit {
+  internal  {
+    frame = "1685 1781 88 56"
+    moduleGroupName = "Save name"
+    windows  {
+      window _default {
+        geometry = "2277 345 1284 720"
+        sizeHint = "500 720"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringSplit
+    inString = "C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_1_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_2_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_3_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_4_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_5_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_6_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_7_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_8_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_9_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_10_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_11_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_12_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_13_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_14_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_15_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_16_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_17_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_18_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_19_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_20_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_21_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_22_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_23_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_24_edited.dcm
+"
+    separators = #00
+    trimWhitespace = TRUE
+    selectedSubStringIndex = 0
+    searchSubstring = ""
+    searchIgnoreCase = FALSE
+  }
+}
+module StringUtils {
+  internal  {
+    frame = "1537 1933 96 72"
+    moduleGroupName = "Save name"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "782 465 370 331"
+        sizeHint = "370 331"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringUtils1
+    operationType = Replace
+    string1 = "C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_1_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_2_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_3_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_4_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_5_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_6_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_7_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_8_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_9_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_10_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_11_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_12_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_13_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_14_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_15_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_16_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_17_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_18_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_19_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_20_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_21_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_22_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_23_edited.dcm
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_24_edited.dcm"
+    string2 = "***"
+    string3 = ""
+    string4 = ""
+    string5 = ""
+    string6 = ""
+    stringPrefix = [
+    stringPostfix = ]
+    toggle1 = TRUE
+    toggle2 = TRUE
+    toggle3 = FALSE
+    toggle4 = FALSE
+    toggle5 = FALSE
+    toggle6 = FALSE
+    togglePrefix = FALSE
+    togglePostfix = FALSE
+    separator = ""
+    selectSeparator = 0
+    toggleIgnoreCase = FALSE
+    inPos1 = 0
+    inPos2 = 0
+  }
+}
+module SoMouseGrabber {
+  internal  {
+    frame = "489 389 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "737 385 460 491"
+        sizeHint = "460 491"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMouseGrabber
+    on = TRUE
+    normalized = FALSE
+    clamp = TRUE
+    button1 = RELEASED
+    button2 = PRESSED
+    button3 = RELEASED
+    shift = RELEASED
+    ctrl = RELEASED
+    alt = RELEASED
+    cursorShape = UNDEFINED_CURSOR
+    xmin = 0
+    xmax = 1
+    ymin = 0
+    ymax = 1
+    setEventHandled = FALSE
+    setWheelEventHandled = FALSE
+    flipX = FALSE
+    flipY = FALSE
+    swapXY = FALSE
+    sensitivity = 1
+    wheelOverflow = FALSE
+    wheel = 0
+    wheelStep = 1
+    wheelMin = 0
+    wheelMax = 23
+  }
+}
+module StringUtils {
+  internal  {
+    frame = "1841 1817 96 72"
+    moduleGroupName = "Save name"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2281 590 929 204"
+        sizeHint = "234 204"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringUtils2
+    operationType = Replace
+    string1 = "C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_1_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_2_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_3_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_4_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_5_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_6_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_7_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_8_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_9_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_10_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_11_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_12_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_13_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_14_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_15_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_16_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_17_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_18_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_19_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_20_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_21_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_22_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_23_edited_mask.mat
+C:/Users/khespen/Documents/2. Qflow/2. Data/Utrecht 3T/input (6)/input/study_20181210_083235051/MLoutput/8423242_08_01_QF Bas gd trigger_24_edited_mask.mat"
+    string2 = ""
+    string3 = ""
+    string4 = ""
+    string5 = ""
+    string6 = ""
+    stringPrefix = [
+    stringPostfix = ]
+    toggle1 = TRUE
+    toggle2 = TRUE
+    toggle3 = FALSE
+    toggle4 = FALSE
+    toggle5 = FALSE
+    toggle6 = FALSE
+    togglePrefix = FALSE
+    togglePostfix = FALSE
+    separator = ""
+    selectSeparator = 0
+    toggleIgnoreCase = FALSE
+    inPos1 = 0
+    inPos2 = 0
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1693 2709 136 56"
+    moduleGroupName = set_initial_candidate
+    windows  {
+      window _default {
+        geometry = "3063 281 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold2
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 303.75
+    threshWidth = 569
+    threshMin = 0
+    threshMax = 539.1
+    lowerUserValue = 0
+    innerUserValue = 0
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module DtfSkeletonization {
+  internal  {
+    frame = "1717 2562 160 56"
+    moduleGroupName = set_initial_candidate
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1332 654 330 321"
+        sizeHint = "328 321"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DtfSkeletonization
+    updateSkeletonGraph = FALSE
+    compileGraphVoxels = FALSE
+    objectMinValue = 1
+    cavityVolume = 10
+    maxDistance = 10000
+    useMaxDistance = FALSE
+    autoUpdateMode = AutoUpdate
+    skeletonOnly = TRUE
+  }
+}
+module MaskToMarkers {
+  internal  {
+    frame = "1737 2450 152 56"
+    moduleGroupName = set_initial_candidate
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "821 543 292 174"
+        sizeHint = "292 174"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MaskToMarkers
+    lowerThreshold = 0
+    setType = User
+    type = 0
+    updateMode = AutoUpdate
+    vectorMode = Zero
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "1733 2258 160 56"
+    moduleGroupName = set_initial_candidate
+    windows  {
+      window _default {
+        geometry = "3166 328 513 497"
+        sizeHint = "500 497"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer1
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "0 0 0"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "1429 2426 144 56"
+    moduleGroupName = set_initial_candidate
+    windows  {
+      window _default {
+        geometry = "760 512 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert4
+    voxelX = 504
+    voxelY = 504
+    voxelZ = 0
+    worldX = 504
+    worldY = 504
+    worldZ = 0
+    voxelPos = "504 504 0"
+    worldPos = "504 504 0"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "1249 2482 104 72"
+    moduleGroupName = set_initial_candidate
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1326 506 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic07
+    debugLevel = 0
+    arg1 = "1008 0 0"
+    arg1X = 1008
+    arg1XAsVec = FALSE
+    operation = Divide
+    arg2 = "2 0 0"
+    arg2X = 2
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "1241 2618 104 72"
+    moduleGroupName = set_initial_candidate
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1324 850 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic08
+    debugLevel = 0
+    arg1 = "1008 0 0"
+    arg1X = 1008
+    arg1XAsVec = FALSE
+    operation = Divide
+    arg2 = "2 0 0"
+    arg2X = 2
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module DistanceFromXMarkerList {
+  internal  {
+    frame = "1953 2309 176 56"
+    moduleGroupName = set_initial_candidate
+    windows  {
+      window _default {
+        geometry = "2284 594 257 228"
+        sizeHint = "257 228"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DistanceFromXMarkerList
+    Position = "504 504 0"
+  }
+}
+module DicomFrameTagInfo {
+  internal  {
+    frame = "1521 2965 144 56"
+    moduleGroupName = set_initial_candidate
+    windows  {
+      window _default {
+        geometry = "790 469 354 323"
+        sizeHint = "354 323"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DicomFrameTagInfo
+    tagName = ImageType
+  }
+}
+module StringSplit {
+  internal  {
+    frame = "1257 2981 96 56"
+    moduleGroupName = set_initial_candidate
+    windows  {
+      window _default {
+        geometry = "1351 292 500 720"
+        sizeHint = "500 720"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringSplit1
+    inString = ""
+    separators = "\\"
+    trimWhitespace = TRUE
+    selectedSubStringIndex = 0
+    searchSubstring = ""
+    searchIgnoreCase = FALSE
+  }
+}
+module StringUtils {
+  internal  {
+    frame = "1313 2845 96 72"
+    moduleGroupName = set_initial_candidate
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "499 205 370 334"
+        sizeHint = "370 331"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringUtils3
+    operationType = Compare
+    string1 = ""
+    string2 = FFE
+    string3 = ""
+    string4 = ""
+    string5 = ""
+    string6 = ""
+    stringPrefix = [
+    stringPostfix = ]
+    toggle1 = TRUE
+    toggle2 = TRUE
+    toggle3 = FALSE
+    toggle4 = FALSE
+    toggle5 = FALSE
+    toggle6 = FALSE
+    togglePrefix = FALSE
+    togglePostfix = FALSE
+    separator = ""
+    selectSeparator = 0
+    toggleIgnoreCase = FALSE
+    inPos1 = 0
+    inPos2 = 0
+  }
+}
+module Bypass {
+  internal  {
+    frame = "1673 2877 112 56"
+    moduleGroupName = set_initial_candidate
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "917 620 120 20"
+        sizeHint = "100 20"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "2329 372 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Bypass1
+    noBypass = TRUE
+  }
+}
+module BoolArithmetic {
+  internal  {
+    frame = "1456 2821 112 72"
+    moduleGroupName = set_initial_candidate
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "871 492 193 276"
+        sizeHint = "193 276"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolArithmetic
+    inputBool1 = FALSE
+    inputBool2 = FALSE
+    operation = Identity
+  }
+}
+module Bypass {
+  internal  {
+    frame = "945 2621 112 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "917 620 120 20"
+        sizeHint = "100 20"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Bypass2
+    noBypass = TRUE
+  }
+}
+module ImageStatistics {
+  internal  {
+    frame = "1517 2693 120 56"
+    moduleGroupName = set_initial_candidate
+    windows  {
+      window _default {
+        geometry = "1141 384 491 593"
+        sizeHint = "491 593"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageStatistics
+    innerMin = 0
+    innerMax = 1
+    updateMode = AutoUpdate
+    perSlice = FALSE
+    currentSlice = 0
+    lowerWidth = 0
+    upperWidth = 1
+    useMask = FALSE
+  }
+}
+connections  {
+  SoCSOIsoEditor.inputImage = DirectDicomImport.output0
+  SoCSOIsoEditor.addCSOToGroupLabel = Arithmetic09.arg1X
+  SoView2DCSOExtensibleEditor.inCSOList = CSOManager2.outCSOList
+  SoView2DCSOExtensibleEditor.inExtensions = SoCSOIsoEditor.self
+  BoolArithmetic4.inputBool1 = SoView2DCSOExtensibleEditor.isCreatingNewCSO
+  BoolArithmetic4.inputBool2 = SoView2DCSOExtensibleEditor.isEditingExistingCSO
+  SoCSOManualCorrectionEditor.addCSOToGroupLabel = Arithmetic09.arg1X
+  SoView2DCSOExtensibleEditor1.inCSOList = CSOManager2.outCSOList
+  SoView2DCSOExtensibleEditor1.inExtensions = SoCSOManualCorrectionEditor.self
+  SoView2DCSOExtensibleEditor1.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
+  BoolArithmetic1.inputBool1 = SoView2DCSOExtensibleEditor1.isCreatingNewCSO
+  BoolArithmetic1.inputBool2 = SoView2DCSOExtensibleEditor1.isEditingExistingCSO
+  CSOIsoGenerator2.input0 = ROISelect.outImage
+  CSOIsoGenerator2.inCSOList = CSOManager2.outCSOList
+  CSOIsoGenerator2.isoValue = Arithmetic06.resultX
+  CSOManager2.removeAllCSOsAndGroups = FieldListener.updateDone
+  CSOConvertToImage.input0 = DirectDicomImport.output0
+  CSOConvertToImage.inCSOList = CSOManager2.outCSOList
+  CSOConvertToImage.clear = FieldListener.updateDone
+  SoView2DCSOEditor.inCSOList = CSOManager2.outCSOList
+  CSOInfo.inCSOList = CSOManager2.outCSOList
+  View2D.inImage = DirectDicomImport.output0
+  View2D.inInvPreLUT = SoGroup.self
+  View2D.inInvPostLUT = SoGroup1.self
+  View2D.inInvPostViewer = SoMouseGrabber.self
+  View2D.timePoint = SoMouseGrabber.wheel
+  SoView2DMarkerEditor.inXMarkerList = XMarkerListContainer.outXMarkerList
+  XMarkerAtIndex.inputXMarkerList = XMarkerListContainer.outXMarkerList
+  WorldVoxelConvert.input0 = DirectDicomImport.output0
+  WorldVoxelConvert.worldPos = XMarkerAtIndex.position3D
+  ROISelect.inImage = DirectDicomImport.output0
+  ROISelect.startVoxelX = Arithmetic02.resultX
+  ROISelect.startVoxelY = Arithmetic02.resultY
+  ROISelect.startVoxelZ = Arithmetic02.resultZ
+  ROISelect.endVoxelX = Arithmetic01.resultX
+  ROISelect.endVoxelY = Arithmetic01.resultY
+  ROISelect.endVoxelZ = Arithmetic01.resultZ
+  Arithmetic01.arg1 = WorldVoxelConvert.voxelPos
+  Arithmetic01.arg2 = ComposeVector3.v
+  ComposeVector3.x = Arithmetic0.resultX
+  ComposeVector3.y = Arithmetic0.resultX
+  Arithmetic02.arg1 = WorldVoxelConvert.voxelPos
+  Arithmetic02.arg2 = ComposeVector3.v
+  Arithmetic04.arg1X = Arithmetic03.resultX
+  Arithmetic05.arg1X = Arithmetic04.resultX
+  Arithmetic06.arg1X = Arithmetic05.resultX
+  itkOtsuThresholdImageFilter.input0 = Bypass.output0
+  itkOtsuThresholdImageFilter.input1 = IntervalThreshold.output0
+  Bypass.input0 = SubImage.output0
+  IntervalThreshold.input0 = Bypass.output0
+  IntervalThreshold1.input0 = itkOtsuThresholdImageFilter.output0
+  SubImage.input0 = ROISelect.outImage
+  Info.input0 = DirectDicomImport.output0
+  WorldVoxelConvert2.input0 = ROISelect.outImage
+  CSOInspector.inCSO = CSOManager2.outCSOList
+  SoGroup1.children = "SoView2DMarkerEditor.self SoView2DCSOEditor.self"
+  WorldVoxelConvert1.input0 = DirectDicomImport.output0
+  WorldVoxelConvert1.voxelPos = Arithmetic02.result
+  WorldVoxelConvert1.worldPos = SoView2DRectangle1.endWorldPos
+  WorldVoxelConvert3.input0 = DirectDicomImport.output0
+  WorldVoxelConvert3.voxelPos = Arithmetic01.result
+  WorldVoxelConvert3.worldPos = SoView2DRectangle1.startWorldPos
+  SoView2DRectangle1.drawingOn = SoView2DRectangle1.editingOn
+  SoView2DRectangle1.editingOn = SoView2DRectangle1.drawingOn
+  SoView2DRectangle1.startWorldPos = WorldVoxelConvert3.worldPos
+  SoView2DRectangle1.endWorldPos = WorldVoxelConvert1.worldPos
+  SoView2DRectangle1.blendOnto = SoView2DRectangle1.blendInside
+  SoGroup.children = "SoBypass.self SoView2DRectangle1.self SoBypass1.self SoView2DAnnotation1.self"
+  FieldListener.inParameter = XMarkerListContainer.posXYZ
+  StringListContainer1.index = Arithmetic010.resultX
+  BoolInt2.boolValue = SoKeyGrabber.ctrlPressed
+  BoolInt3.boolValue = SoKeyGrabber.altPressed
+  Arithmetic010.arg1X = BoolInt3.intValue
+  Arithmetic010.arg2X = BoolInt2.intValue
+  SoGroup5.children = "SoView2DAnnotation.self SoKeyGrabber.self"
+  SoView2DAnnotation.input00 = StringListContainer1.name
+  SoBypass.child = SoGroup5.self
+  SoBypass.noBypass = BoolInt.invBoolValue
+  BoolInt.intValue = CSOInfo.numCSOs
+  SoBypass1.child = SoGroup2.self
+  SoBypass1.noBypass = BoolInt.invBoolValue
+  SoGroup2.children = "SoView2DCSOExtensibleEditor.self SoView2DCSOExtensibleEditor1.self"
+  StringUtils.string1 = StringUtils1.result
+  StringSplit.inString = DirectDicomImport.fileListInfo
+  StringUtils1.string1 = StringSplit.subString0
+  SoMouseGrabber.wheelMax = View2D.maxTimePoint
+  StringUtils2.string1 = StringUtils.result
+  IntervalThreshold2.input0 = Bypass1.output0
+  DtfSkeletonization.input0 = IntervalThreshold2.output0
+  MaskToMarkers.input0 = DtfSkeletonization.output0
+  XMarkerListContainer1.inXMarkerList = MaskToMarkers.outputXMarkerList
+  XMarkerListContainer1.index = DistanceFromXMarkerList.Idx
+  WorldVoxelConvert4.input0 = Bypass1.output0
+  WorldVoxelConvert4.voxelX = Arithmetic07.resultX
+  WorldVoxelConvert4.voxelY = Arithmetic08.resultX
+  Arithmetic07.arg1X = Info.sizeX
+  Arithmetic08.arg1X = Info.sizeY
+  DistanceFromXMarkerList.inputXMarkerList = MaskToMarkers.outputXMarkerList
+  DistanceFromXMarkerList.Position = WorldVoxelConvert4.worldPos
+  DicomFrameTagInfo.input0 = Bypass2.output0
+  StringSplit1.inString = DicomFrameTagInfo.sharedTagValue
+  StringUtils3.string1 = StringSplit1.subString4
+  Bypass1.input0 = Bypass2.output0
+  Bypass1.noBypass = BoolArithmetic.negatedOutputBool
+  BoolArithmetic.inputBool1 = StringUtils3.boolResult
+  Bypass2.input0 = DirectDicomImport.output0
+  ImageStatistics.input0 = Bypass1.output0
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 77
+        objectName = GUI_button
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 80
+        objectName = Marker_selection
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 115
+        objectName = Manual_edit_CSOs
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 234
+        objectName = FWHM_calculation
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 134
+        objectName = ROI_selection
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 156
+        objectName = Rectangle_drawing
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 180
+        objectName = CSO_generation
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 192
+        objectName = "Save name"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 207
+        objectName = "Show annotation (editing/redrawing)"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 240
+        objectName = ""
+        parentUniqueId = 0
+        frame = "-591 1777 601 489"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "To open the GUI press: CTRL+R.
+
+Clicking 'Browse' will let you browse for Dicom folders. To load the selected folder, click 'Import' in the GUI.
+
+Select the magnitude FFE, to draw your contours.
+In the image use SHIFT+LMB to select the center of the vessel of interest. A red and yellow square will appear: the red square is the center seed location, and the yellow square denotes the ROI on which Otsu's threshold is applied. The size of the yellow square can be changed, by changing the 'Box size' value. 
+
+When 'Disable initial seed location' is unchecked, the script will automatically try to find the correct seed location for the vessel. It will also automatically draw the contours. If the checkbox is checked, this will not happen, allowing for full manual selection of the seed location.
+
+If you have selected the center, you can draw contours using the 'Draw Contours' button. For each timepoint a contour is drawn, based on the FWHM value of that timepoint.
+
+To save the contours to a .mat file, press the 'Save mask' button.
+
+To manually edit your contour mask:
+
+ALT+LMB will let you edit your ROI.
+CTRL+LMB will redraw the complete contour at the selected iso value.
+
+These edits do not propagate over time points!"
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>To open the GUI press: CTRL+R.</p>
+<p>Clicking 'Browse' will let you browse for Dicom folders. To load the selected folder, click 'Import' in the GUI.</p>
+<p>Select the magnitude FFE, to draw your contours.
+In the image use SHIFT+LMB to select the center of the vessel of interest. A red and yellow square will appear: the red square is the center seed location, and the yellow square denotes the ROI on which Otsu's threshold is applied. The size of the yellow square can be changed, by changing the 'Box size' value.</p>
+<p>When 'Disable initial seed location' is unchecked, the script will automatically try to find the correct seed location for the vessel. It will also automatically draw the contours. If the checkbox is checked, this will not happen, allowing for full manual selection of the seed location.</p>
+<p>If you have selected the center, you can draw contours using the 'Draw Contours' button. For each timepoint a contour is drawn, based on the FWHM value of that timepoint.</p>
+<p>To save the contours to a .mat file, press the 'Save mask' button.</p>
+<p>To manually edit your contour mask:</p>
+<p>ALT+LMB will let you edit your ROI.
+CTRL+LMB will redraw the complete contour at the selected iso value.</p>
+<p>These edits do not propagate over time points!</p>
+
+
+  </body>
+</html>*"
+        titleText = "How to work with the GUI"
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "-586 1782 591 22"
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 209
+        objectName = set_initial_candidate
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}

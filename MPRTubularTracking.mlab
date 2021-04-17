@@ -1,0 +1,1597 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module TubularTracking {
+  internal  {
+    frame = "5197 -1546 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "924 146 306 627"
+        sizeHint = "306 571"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = TubularTracking
+    minRadius = 0.2
+    maxRadius = 5
+    initRadius = 1
+    useInitRadius = TRUE
+    nbrOfSearchAngles = 3
+    maxAngle = 15
+    pruningThreshold = 2
+    terminationThreshold = 3
+    maxNbrSteps = 100
+    maxLength = 7
+    searchDepth = 5
+    minBranchingDistance = 5
+    stepLengthFactor = 0.5
+    windowSizeFactor = 4
+    allowBranching = FALSE
+    growBidirectional = FALSE
+    useMultipleHypotheses = TRUE
+    toggleMaxSteps = FALSE
+    toggleMaxLength = FALSE
+  }
+}
+module View2D {
+  internal  {
+    frame = "5037 -1810 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3122 474 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_CUBIC_POSTCLASS
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 1
+    lutWidth = 1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module SoView2DMarkerEditor {
+  internal  {
+    frame = "5089 -1370 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1004 159 603 583"
+        sizeHint = "603 583"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DMarkerEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = CROSS_PLUS_CURSOR
+    depthVisibility = 1
+    snapToVoxel = TRUE
+    snapToSlice = TRUE
+    currentType = 0
+    deleteOnClick = FALSE
+    addOnClick = TRUE
+    alphaFactor = 1
+    minimumAlpha = 0.1
+    iconFile = $(MLAB_MeVisLab_Standard)/Modules/Resources/Images/markerIcons.tif
+    useIconFile = FALSE
+    iconIdx = 0
+    drawMarkerShapesWithLines = FALSE
+    selectingOn = TRUE
+    alwaysPerformHitTest = FALSE
+    actOnReleaseOnly = FALSE
+    editorMode = EDIT_MARKER
+    colorMode = COLOR_BY_TYPE
+    textColorMode = COLOR_TEXT
+    textMode = TEXT_OFF
+    textPosition = TEXT_POSITION_RIGHT_BELOW
+    textColor = "1 1 1"
+    textShadow = TRUE
+    textFontSize = 12
+    showTextOnlyForSelectedMarker = FALSE
+    cutText = FALSE
+    maxNumberOfLines = 1
+    vectorArrow = VECTOR_END_ARROW
+    vectorLineWidth = 1
+    useAntiAlias = TRUE
+    useVectorLengthAsMarkerSize = FALSE
+    depthVectorDrawMode = DRAW_HIGHLIGHT_SLICE_SEGMENT
+    drawMode = DRAW_VECTOR
+    highlightSelection = TRUE
+    selectiveDrawing = FALSE
+    selectionBoxesForCurrentOnly = FALSE
+    cooperative = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    depthVisibilityMode = DEPTH_IN_SLICES
+    cursorShapeDragStartPoint = CROSS_MOVE_CURSOR
+    cursorShapeDragEndPoint = CROSS_MOVE_CURSOR
+    cursorShapeDragResize = CROSS_MOVE_CURSOR
+    cursorShapeDragOffset = MOVE_ALL_CURSOR
+    cursorShapeDragMove = MOVE_ALL_CURSOR
+    cursorShapeDelete = CROSS_MINUS_CURSOR
+    listString = ""
+    index = -1
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "0 0 0"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "5457 -1858 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup1
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "5517 -2514 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "2842 31 968 1168"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "-146.344970703125 69.0130157470703 -77.4543609619141"
+    orientation = "-0.465419083833694 0.777053773403168 0.423760026693344 3.83809590339661"
+    nearDistance = 183.70767
+    farDistance = 227.52643
+    focalDistance = 190.12831
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = FALSE
+    wheelRotationEnabled = FALSE
+  }
+}
+module SoVascularSystem {
+  internal  {
+    frame = "5717 -1674 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2060 408 606 639"
+        sizeHint = "369 639"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoVascularSystem
+    interactionProviderID = ""
+    autoApply = TRUE
+    complexity = 0.60000002
+    pointSize = 1
+    lineWidth = 1
+    textureScaleX = 0.5
+    textureScaleY = 0.5
+    recursionDepth = -1
+    showLines = FALSE
+    labelMode = GENERAL_LABEL
+    textureMode = SIZE_ALMOST_EQUAL
+    textureCoordinateMode = FOR_ALL_ELEMENTS
+    radiusMode = MIN_DIST
+    displayMode = DISPLAY_SURFACE
+    radiusScale = 1
+    radiusFixedSize = 1
+    visible = TRUE
+    texture = FALSE
+    numSmoothingPasses = 3
+    overallSmoothness = 0.80000007
+    smoothIndependently = FALSE
+    radiusSmoothness = 0.69999999
+    skeletonSmoothness = 0.69999999
+    endCapScaling = 1
+    useGeneralColor = FALSE
+    generalColor = "1 1 1"
+    useIntegerLUT = FALSE
+    useAlternativeTransparency = TRUE
+    alternativeTransparencyColor = "0 0 0"
+    selectedCoordinate = "0 0 0"
+    snapMode = SNAP_TO_SKELETON
+    enableSelection = TRUE
+    continuousHitCheck = FALSE
+    cursorShape = CROSS_CURSOR
+    enableInteractivePreviewMode = FALSE
+    enableRecursiveHighlighting = TRUE
+    highlightMode = HIGHLIGHT_OFF
+    interactivePreviewColor = "1 1 0"
+    interactivePreviewAlpha = 0.5
+    selectionTolerance = 2
+    useMinRadiusCutOff = FALSE
+    minRadiusCutOffValue = 1
+    cutOffColor = "1 1 1"
+    cutOffAlpha = 1
+    useDirectGraph = TRUE
+    workDirectlyOnInputGraph = TRUE
+    useSkeletonColors = TRUE
+  }
+}
+module SoView2DMarkerEditor {
+  internal  {
+    frame = "5417 -1702 160 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "416 471 627 583"
+        sizeHint = "603 583"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = TrackedPoints
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = FALSE
+    fixZOn = TRUE
+    color = "0 0.666666686534882 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    depthVisibility = 1
+    snapToVoxel = FALSE
+    snapToSlice = FALSE
+    currentType = 0
+    deleteOnClick = FALSE
+    addOnClick = FALSE
+    alphaFactor = 1
+    minimumAlpha = 0.1
+    iconFile = $(MLAB_MeVisLab_Standard)/Modules/Resources/Images/markerIcons.tif
+    useIconFile = TRUE
+    iconIdx = 1
+    drawMarkerShapesWithLines = FALSE
+    selectingOn = FALSE
+    alwaysPerformHitTest = FALSE
+    actOnReleaseOnly = FALSE
+    editorMode = EDIT_MARKER
+    colorMode = COLOR_BY_TYPE
+    textColorMode = COLOR_TEXT
+    textMode = TEXT_OFF
+    textPosition = TEXT_POSITION_RIGHT_BELOW
+    textColor = "1 1 1"
+    textShadow = TRUE
+    textFontSize = 12
+    showTextOnlyForSelectedMarker = FALSE
+    cutText = FALSE
+    maxNumberOfLines = 1
+    vectorArrow = VECTOR_END_ARROW
+    vectorLineWidth = 1
+    useAntiAlias = FALSE
+    useVectorLengthAsMarkerSize = FALSE
+    depthVectorDrawMode = DRAW_NONE
+    drawMode = DRAW_DISC
+    highlightSelection = TRUE
+    selectiveDrawing = FALSE
+    selectionBoxesForCurrentOnly = FALSE
+    cooperative = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    depthVisibilityMode = DEPTH_IN_SLICES
+    cursorShapeDragStartPoint = CROSS_MOVE_CURSOR
+    cursorShapeDragEndPoint = CROSS_MOVE_CURSOR
+    cursorShapeDragResize = CROSS_MOVE_CURSOR
+    cursorShapeDragOffset = MOVE_ALL_CURSOR
+    cursorShapeDragMove = MOVE_ALL_CURSOR
+    cursorShapeDelete = CROSS_MINUS_CURSOR
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "0 0 0"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module View2D {
+  internal  {
+    frame = "5237 -1842 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3078 376 605 470"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_NEAREST
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = FALSE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "5477 -1450 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "855 171 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold3
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 1213.5
+    threshWidth = 2307
+    threshMin = 60
+    threshMax = 2367
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module Mask {
+  internal  {
+    frame = "5029 -1482 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "791 568 441 124"
+        sizeHint = "353 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Mask2
+    mode = MaskedOriginal
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    blending = 0.5
+    background = 10
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "5121 -1218 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "836 438 513 516"
+        sizeHint = "500 497"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer3
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = RemoveNew
+    maxSize = 1
+    useInsertTemplate = FALSE
+    posXYZ = "0 0 0.5"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0.5"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module SubImage {
+  internal  {
+    frame = "6113 -378 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2518 290 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage1
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 32
+    modifyX = FALSE
+    y = 0
+    sy = 32
+    modifyY = FALSE
+    z = 0
+    sz = 32
+    modifyZ = FALSE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = TRUE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module RectMaskImage {
+  internal  {
+    frame = "5469 -1194 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "480 496 519 325"
+        sizeHint = "519 325"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RectMaskImage
+    xPos = 0.5
+    yPos = 0.5
+    zPos = 0.5
+    cPos = 0.5
+    tPos = 0.5
+    uPos = 0.5
+    xPosUnit = Relative
+    yPosUnit = Relative
+    zPosUnit = Relative
+    cPosUnit = Relative
+    tPosUnit = Relative
+    uPosUnit = Relative
+    xSize = 0.25
+    ySize = 0.25
+    zSize = 1
+    cSize = 1
+    tSize = 1
+    uSize = 1
+    xSizeUnit = Relative
+    ySizeUnit = Relative
+    zSizeUnit = Relative
+    cSizeUnit = Relative
+    tSizeUnit = Relative
+    uSizeUnit = Relative
+    rectValMode = ImgMax
+    rectVal = 1
+    borderValMode = ImgMin
+    borderVal = 0
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module Mask {
+  internal  {
+    frame = "5381 -1370 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "791 568 441 124"
+        sizeHint = "353 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Mask3
+    mode = MaskedOriginal
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    blending = 0.5
+    background = 10
+  }
+}
+module SoWEMConvertInventor {
+  internal  {
+    frame = "5541 -2002 200 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "842 596 250 69"
+        sizeHint = "250 69"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoWEMConvertInventor
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    progress = 0
+    convertInfo = Ready
+    autoApply = TRUE
+    isProcessing = FALSE
+  }
+}
+module WEMClipPlaneToCSO {
+  internal  {
+    frame = "5405 -2194 184 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1198 283 305 110"
+        sizeHint = "305 110"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMClipPlaneToCSO
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    csoId = 0
+    addCSOToGroupWithLabel = "WEMClipPlaneToCSO Generated CSOs"
+    csoPathPointLineStyle = LineStyleSolid
+    csoPathPointLineWidth = 1
+    csoPathPointColor = "1 1 0"
+    csoPathPointAlpha = 1
+    csoSeedPointMode = MarkerModeRect
+    csoSeedPointSize = 2
+    csoSeedPointColor = "0 1 0"
+    csoSeedPointAlpha = 1
+    csoVoxelWriteMode = VoxelWriteModeModule
+    csoVoxelWriteValue = 1024
+    plane = "0 0 1 63.5"
+  }
+}
+module Info {
+  internal  {
+    frame = "5693 -1214 88 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "869 549 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info
+  }
+}
+module SetWorldMatrix {
+  internal  {
+    frame = "5845 -498 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1235 726 506 335"
+        sizeHint = "449 335"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SetWorldMatrix1
+    center = "0 0 -1"
+    scaleOrientation = "0 0 1 0"
+    scale = "0 0 0"
+    rotation = "0 0 1 0"
+    translation = "0 0 0"
+    sourceUsage = Ignore
+    referenceUsage = Ignore
+    elementaryUsage = Forward
+    invertResult = FALSE
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module ComposeVector3 {
+  internal  {
+    frame = "6013 -1010 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "836 598 263 64"
+        sizeHint = "263 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComposeVector31
+    x = 0
+    y = 0
+    z = 0
+  }
+}
+module SoView2DCSOEditor {
+  internal  {
+    frame = "5005 -2091 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1279 313 620 622"
+        sizeHint = "620 622"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = FALSE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 24
+    needsValidVoxel = TRUE
+    button1 = RELEASED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = RELEASED
+    control = RELEASED
+    alt = RELEASED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    shouldListenToRepaintEvents = TRUE
+    shouldListenToSelectionChangedEvents = TRUE
+    shouldListenToFinishedEvents = TRUE
+    generalInteractionMode = INTERACTION_MODE_EDIT
+    generalInteractionModeToggleKey = TOGGLE_MODE_NONE
+    movingOn = FALSE
+    shouldLimitCSOMovement = FALSE
+    moveRatio = 0.5
+    useAntiAliasing = TRUE
+    useInterpolationTargetColor = TRUE
+    interpolationTargetColor = "1 0 0"
+    showCSOsOnAllTimePoints = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    showBoundingBox = FALSE
+    boundingBoxAlpha = 0.5
+    boundingBoxColor = "1 1 1"
+    showOnlyParallelCSOs = FALSE
+    showParallelThickness = 0.1
+    shouldLevelCSO = FALSE
+    useStylePalette = FALSE
+    stylePaletteUseIndexAs = USE_INDEX_FOR_CSO
+    labelShowMode = LABEL_SHOW_NONE
+    combineLabelsForGroupsOnSlice = FALSE
+    labelAlignmentMode = LABEL_ALIGN_CENTER
+    labelUnitScale = LABEL_UNIT_SCALE_MM
+    showLabelUnits = TRUE
+    labelFontSize = 12
+    labelUseTextShadow = TRUE
+    labelMarginX = 2
+    labelMarginY = 2
+    ghostMode = GHOST_NONE
+    ghostUnitMode = GHOST_UNIT_SLICE
+    ghostStyleAlpha = TRUE
+    ghostStyleStipple = TRUE
+    ghostStyleLineWidth = FALSE
+    ghostStyleBrighten = FALSE
+    ghostDepth = 5
+    ghostFadeOutAlpha = 0
+    generalLabelColor = "1 1 1"
+    generalLabelAlpha = 1
+    labelColorMode = COLOR_GENERAL
+    useTessellation = FALSE
+    useHoleCorrection = FALSE
+    useHoleCorrectionForGroupsOnly = FALSE
+    tessellationColorMode = COLOR_AS_CSO
+    tessellationColor = "0.899999976158142 0.5 0.899999976158142"
+    tessellationAlpha = 0.2
+    useFillingFromSide = FALSE
+    fillingFromSideLineWidthMode = SIDE_FILLING_WIDTH_AUTOMATIC
+    fillingFromSideManualLineWidthX = 1
+    fillingFromSideManualLineWidthY = 1
+    usePathPointColorForSeedPoints = FALSE
+    showSeedPoints = FALSE
+    globalAlphaFactor = 1
+    overwriteSelectionVisualizationSettings = FALSE
+    selectionColoringMode = SELECTION_COLOR_MODE_BRIGHTEN
+    selectionBrightenColor = 0.9000001
+    selectionFixedColor = "0 0.666666686534882 0"
+    selectionLineWidthMode = SELECTION_LINE_WIDEN
+    selectionWidenLineWidth = 0.89999998
+    selectionFixedLineWidth = 1
+    selectedSeedPointColoringMode = SELECTED_SEED_POINT_COLOR_MODE_BRIGHTEN
+    selectedSeedPointBrightenColor = 1.3000002
+    selectedSeedPointFixedColor = "1 1 0.600000023841858"
+    selectedSeedPointAlpha = 1
+    selectedSeedPointSizeMode = SELECTED_SEED_POINT_ENLARGE
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    tessellationWindingRule = WR_ODD
+    selectGroupsParsProToto = TRUE
+    highlightSelectedGroups = FALSE
+    setPastedCSOsSelected = TRUE
+    combinePastedCSOsToGroupsOfOriginalCSOs = FALSE
+    enableMouseOverHighlighting = FALSE
+    mouseOverColorMode = HIGHLIGHT_COLOR_MODE_FIXED
+    mouseOverColorBrightenValue = 0.80000001
+    mouseOverColorColor = "1 1 1"
+    mouseOverLineWidthMode = HIGHLIGHT_LINE_WIDEN
+    mouseOverLineWidthWidenValue = 0
+    mouseOverLineWidthLineWidth = 1
+    currentlyUnderMouseCursorCSOId = 0
+    useIconFile = FALSE
+    iconFile = $(MLAB_MeVisLab_Standard)/Modules/Resources/Images/markerIcons.tif
+    cutCopyKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    copyKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    pasteKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    undoKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    redoKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    deleteSeedPointKeyModifier = EDIT_OP_KEY_MOD_NONE
+    deleteCSOKeyModifier = EDIT_OP_KEY_MOD_SHIFT
+    multiSelectionKeyModifier = EDIT_OP_KEY_MOD_CONTROL
+    enableMultiSelection = FALSE
+    cutCopyKey = EDIT_OP_KEY_X
+    copyKey = EDIT_OP_KEY_C
+    pasteKey = EDIT_OP_KEY_V
+    undoKey = EDIT_OP_KEY_Z
+    redoKey = EDIT_OP_KEY_Y
+    deleteSeedPointKey = EDIT_OP_KEY_DELETE
+    deleteCSOKey = EDIT_OP_KEY_DELETE
+    nextInteractionStatus = INTERACTIVE_MODE_START_CSO
+    shouldUpdateInteractionStateAndCSOId = TRUE
+    shouldTouchItselfInEvalEvent = TRUE
+    forceStartNewCSOKeyModifier = EDIT_OP_KEY_MOD_NONE
+    forceStartNewCSOKey = EDIT_OP_KEY_F
+    shouldOnlyInteractWithSelectedCSO = FALSE
+    showParallelDotProductLimitRadian = 0
+  }
+}
+module SoCSO3DRenderer {
+  internal  {
+    frame = "5401 -2330 144 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoCSO3DRenderer
+    interactionProviderID = ""
+    autoApply = TRUE
+    pathPointWidthOffset = 0
+    seedPointSizeScaling = 1
+    highlightSelectedGroups = TRUE
+    useRenderTimeDelay = FALSE
+    timerDelayMilliSeconds = 100
+    useStylePalette = FALSE
+    useLUT = FALSE
+    stylePaletteUseIndexAs = USE_INDEX_FOR_CSO
+    enableSelection = FALSE
+    performPreHitTest = FALSE
+    cursorShape = POINTING_HAND_CURSOR
+    listenToRepaintNotifications = FALSE
+    listenToFinishingNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    provideVertexProperties = FALSE
+    timepointToRender = -1
+  }
+}
+module Info {
+  internal  {
+    frame = "6437 -846 88 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2177 355 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info1
+  }
+}
+module CSOInfo {
+  internal  {
+    frame = "5729 -2523 80 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2532 149 581 845"
+        sizeHint = "368 845"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOInfo
+    updateMode = AutoUpdate
+    autoApply = FALSE
+    csoShowMode = ByIndex
+    csoShowByIndexOrId = 0
+    csoShowPrivateValues = TRUE
+    groupShowMode = LastSelected
+    groupShowByIndexOrId = 0
+    shouldGenerateCSOStringOutput = FALSE
+    shouldGenerateCSOGroupStringOutput = FALSE
+    showCSOType = TRUE
+    showCSOSubType = TRUE
+    showCSOCreatorId = TRUE
+    showCSODescription = FALSE
+    showCSONumSeedPoints = TRUE
+    showCSONumPathPoints = TRUE
+    showCSOLength = FALSE
+    showCSOArea = FALSE
+    showCSOGrouping = TRUE
+    showCSOClosedState = TRUE
+    showCSOInPlane = TRUE
+    showCSOSelfIntersecting = FALSE
+    showGroupDescription = FALSE
+    showGroupNumCSO = TRUE
+    showGroupCSOIds = TRUE
+    listenToRepaintNotifications = FALSE
+    listenToFinishingNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    listenToCSOCurrentlyUnderMouseNotifications = TRUE
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "4913 -1338 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2449 231 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert1
+    voxelX = 0
+    voxelY = 0
+    voxelZ = 0.5
+    worldX = 0
+    worldY = 0
+    worldZ = 0.5
+    voxelPos = "0 0 0.5"
+    worldPos = "0 0 0.5"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "5445 -946 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1299 729 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic09
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Divide
+    arg2 = "2 0 0"
+    arg2X = 2
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "4817 -1434 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1233 504 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert3
+    voxelX = 0
+    voxelY = 0
+    voxelZ = 1
+    worldX = 0
+    worldY = 0
+    worldZ = 1
+    voxelPos = "0 0 1"
+    worldPos = "0 0 1"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4917 -1210 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "744 510 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic011
+    debugLevel = 0
+    arg1 = "0 0 1"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "0 0 0.5"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module MatrixArithmetic {
+  internal  {
+    frame = "5677 -1418 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1186 403 801 560"
+        sizeHint = "590 560"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MatrixArithmetic
+    matrixA = "0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0"
+    matrixB = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    operation = Multiply
+    scalarValue = 0
+    inputVectorD = "0 0 0 0"
+  }
+}
+module ComposePlane {
+  internal  {
+    frame = "6069 -2018 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1013 333 307 94"
+        sizeHint = "297 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComposePlane
+    point = "0 0 63.5"
+    normal = "0 0 0.5"
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "5985 -1634 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2449 231 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert4
+    voxelX = 0
+    voxelY = 0
+    voxelZ = 63.5
+    worldX = 0
+    worldY = 0
+    worldZ = 63.5
+    voxelPos = "0 0 63.5"
+    worldPos = "0 0 63.5"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module SoView2DScene {
+  internal  {
+    frame = "6289 -1778 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoView2DScene
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = TRUE
+    cursorShape = UNDEFINED_CURSOR
+    sendEventsToScene = FALSE
+    slabSize = 1
+    slabMode = USE_VIEW2D_SLAB_SIZE
+    lightingModel = BASE_COLOR
+  }
+}
+module SoRenderSurfaceIntersection {
+  internal  {
+    frame = "6097 -1738 192 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "777 467 332 537"
+        sizeHint = "277 537"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoRenderSurfaceIntersection
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    color = "1 1 1"
+    alpha = 1
+    lineWidth = 2
+    albedoMix = 1
+    lineStyle = SOLID
+    planeOffset = 0
+    planePosition = SlabCenter
+    lineStyleScale = 1
+    fillInside = TRUE
+    insideColor = "1 1 1"
+    insideAlpha = 0.5
+    insideAlbedoMix = 1
+    useGeometryShader = TRUE
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "6145 -570 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "981 450 700 296"
+        sizeHint = "635 296"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener1
+    mode = MLImage
+    inParameter = ""
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+module OrthoReformat3 {
+  internal  {
+    frame = "5741 -754 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "831 502 272 256"
+        sizeHint = "272 256"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoReformat3
+    useGlobalInputImage = FALSE
+  }
+}
+module Info {
+  internal  {
+    frame = "6053 -686 88 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2196 377 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info4
+  }
+}
+module MatrixArithmetic {
+  internal  {
+    frame = "6241 -898 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2449 448 801 560"
+        sizeHint = "590 560"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MatrixArithmetic1
+    matrixA = "0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0"
+    matrixB = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    operation = Inverse
+    scalarValue = 0
+    inputVectorD = "0 0 0 0"
+  }
+}
+module Info {
+  internal  {
+    frame = "6309 -710 88 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2206 502 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info5
+  }
+}
+module MatrixArithmetic {
+  internal  {
+    frame = "5801 -1178 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2448 310 801 560"
+        sizeHint = "590 560"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MatrixArithmetic2
+    matrixA = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    matrixB = "0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0"
+    operation = Multiply
+    scalarValue = 0
+    inputVectorD = "0 0 0 0"
+  }
+}
+module MatrixArithmetic {
+  internal  {
+    frame = "6457 -954 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1266 382 590 560"
+        sizeHint = "590 560"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MatrixArithmetic3
+    matrixA = "0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0"
+    matrixB = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    operation = Inverse
+    scalarValue = 0
+    inputVectorD = "0 0 0 0"
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "5125 -2235 200 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "770 446 394 369"
+        sizeHint = "394 369"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOExtensibleEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = FALSE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 16
+    needsValidVoxel = TRUE
+    button1 = RELEASED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    creatorExtensionId = __default
+    alwaysCreateNewCSOs = FALSE
+    alwaysModifyExistingCSOs = FALSE
+    keyCommandsEnabled = TRUE
+    enableRemoveAll = FALSE
+    interactOnlyWithSelectedCSO = FALSE
+    renderLeftOverCSOsWithDefaultRenderer = TRUE
+    allowSelectionWithDefaultRenderer = TRUE
+    renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
+    updateCSOIdUnderMouseCursor = FALSE
+    updateImageStatisticsOnFinishInteraction = FALSE
+  }
+}
+connections  {
+  TubularTracking.input0 = Mask2.output0
+  TubularTracking.input1 = RectMaskImage.outImage
+  TubularTracking.inputInitPoints = SoView2DMarkerEditor.outXMarkerList
+  View2D.inImage = OrthoReformat3.output2
+  View2D.inInvPreLUT = SoView2DScene.self
+  View2D.inInvPostLUT = SoView2DMarkerEditor.self
+  SoView2DMarkerEditor.inXMarkerList = XMarkerListContainer3.outXMarkerList
+  SoGroup1.children = "TrackedPoints.self SoVascularSystem.self"
+  SoExaminerViewer.children = "SoVascularSystem.self SoCSO3DRenderer.self"
+  SoVascularSystem.inputGraph = TubularTracking.outputGraph
+  TrackedPoints.inXMarkerList = TubularTracking.outputTrackedPoints
+  View2D1.inImage = OrthoReformat3.output2
+  View2D1.inInvPostLUT = SoView2DCSOEditor.self
+  View2D1.inInvPostViewer = SoView2DCSOExtensibleEditor.self
+  IntervalThreshold3.input0 = Mask3.output0
+  Mask2.input0 = OrthoReformat3.output2
+  Mask2.input1 = IntervalThreshold3.output0
+  XMarkerListContainer3.posXYZ = WorldVoxelConvert1.worldPos
+  XMarkerListContainer3.vecXYZ = Arithmetic011.result
+  RectMaskImage.inImage = OrthoReformat3.output2
+  Mask3.input0 = OrthoReformat3.output2
+  Mask3.input1 = RectMaskImage.outImage
+  SoWEMConvertInventor.inScene = SoVascularSystem.self
+  WEMClipPlaneToCSO.inWEM = SoWEMConvertInventor.outWEM
+  WEMClipPlaneToCSO.plane = ComposePlane.plane
+  Info.input0 = SubImage1.output0
+  SetWorldMatrix1.input0 = SubImage1.output0
+  SetWorldMatrix1.scale = ComposeVector31.v
+  ComposeVector31.x = Info.voxelSizeX
+  ComposeVector31.y = Info.voxelSizeY
+  ComposeVector31.z = Info.voxelSizeZ
+  SoView2DCSOEditor.inCSOList = WEMClipPlaneToCSO.outCSOList
+  SoCSO3DRenderer.inCSOList = WEMClipPlaneToCSO.outCSOList
+  CSOInfo.inCSOList = WEMClipPlaneToCSO.outCSOList
+  WorldVoxelConvert1.input0 = OrthoReformat3.output2
+  WorldVoxelConvert1.voxelX = Arithmetic09.resultX
+  WorldVoxelConvert1.voxelY = Arithmetic09.resultX
+  Arithmetic09.arg1X = Info.sizeX
+  WorldVoxelConvert3.input0 = OrthoReformat3.output2
+  WorldVoxelConvert3.voxelX = Arithmetic09.resultX
+  WorldVoxelConvert3.voxelY = Arithmetic09.resultX
+  Arithmetic011.arg1 = WorldVoxelConvert3.worldPos
+  Arithmetic011.arg2 = WorldVoxelConvert1.worldPos
+  MatrixArithmetic.matrixA = MatrixArithmetic2.outputMatrixC
+  MatrixArithmetic.matrixB = MatrixArithmetic1.outputMatrixC
+  ComposePlane.point = WorldVoxelConvert4.worldPos
+  ComposePlane.normal = Arithmetic011.result
+  WorldVoxelConvert4.input0 = SetWorldMatrix1.output0
+  SoView2DScene.sceneGraph = SoRenderSurfaceIntersection.self
+  SoRenderSurfaceIntersection.children = SoVascularSystem.self
+  FieldListener1.inImage = SubImage1.output0
+  OrthoReformat3.input0 = SetWorldMatrix1.output0
+  Info4.input0 = SetWorldMatrix1.output0
+  MatrixArithmetic1.matrixA = Info4.worldMatrix
+  Info5.input0 = SubImage1.output0
+  MatrixArithmetic2.matrixA = MatrixArithmetic3.outputMatrixC
+  MatrixArithmetic2.matrixB = Info5.worldMatrix
+  MatrixArithmetic3.matrixA = Info1.worldMatrix
+  SoView2DCSOExtensibleEditor.inCSOList = WEMClipPlaneToCSO.outCSOList
+}
+networkModel = ""

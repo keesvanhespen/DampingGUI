@@ -1,0 +1,910 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module SubImage {
+  internal  {
+    frame = "4253 -307 88 56"
+    moduleGroupName = Mirror_function_for_out_of_bounds_lower
+    windows  {
+      window _default {
+        geometry = "2479 461 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 32
+    modifyX = FALSE
+    y = 0
+    sy = 32
+    modifyY = FALSE
+    z = 0
+    sz = 3
+    modifyZ = TRUE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = FALSE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelCenterWidth
+    autoApply = TRUE
+  }
+}
+module Info {
+  internal  {
+    frame = "3877 -503 88 80"
+    moduleGroupName = Mirror_function_for_out_of_bounds_lower
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2105 330 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info1
+  }
+}
+module PythonArithmetic {
+  internal  {
+    frame = "4177 -547 128 56"
+    moduleGroupName = Mirror_function_for_out_of_bounds_lower
+    windows  {
+      window _default {
+        geometry = "69 406 1655 512"
+        sizeHint = "486 512"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = PythonArithmetic
+    calculateOutputSubImage = "*center = ctx.parent().field("Center").intValue()
+width = ctx.parent().field("Arithmetic04.resultX").intValue() 
+
+if (width-1)/2>center:
+  out = numpy.concatenate((numpy.flip(in0[:,:,:,1:numpy.abs(center - int((width-1)/2))+1,...],axis=3),in1[:,:,:,(int((width-1)/2)-center):,...]),axis=3)
+else:
+  out = in1
+
+  *"
+    calculateInputSubImageBox = "
+"
+    calculateOutputImageProperties = ""
+    numberOfInputs = 2
+    doubleConstant0 = 0
+    doubleConstant1 = 0
+    doubleConstant2 = 0
+    doubleConstant3 = 0
+    doubleConstant4 = 0
+    doubleConstant5 = 0
+    doubleConstantName0 = ""
+    doubleConstantName1 = ""
+    doubleConstantName2 = ""
+    doubleConstantName3 = ""
+    doubleConstantName4 = ""
+    doubleConstantName5 = ""
+    intConstant0 = 0
+    intConstant1 = 0
+    intConstant2 = 0
+    intConstant3 = 0
+    intConstant4 = 0
+    intConstant5 = 0
+    intConstantName0 = ""
+    intConstantName1 = ""
+    intConstantName2 = ""
+    intConstantName3 = ""
+    intConstantName4 = ""
+    intConstantName5 = ""
+    setMinMaxValues = FALSE
+    minVoxelValue = 0
+    maxVoxelValue = 0
+    setDataType = FALSE
+    dataType = "unsigned int8"
+    inputDataType0 = "input type"
+    inputDataType1 = "input type"
+    inputDataType2 = "output type"
+    inputDataType3 = "output type"
+    inputDataType4 = "output type"
+    inputHandling0 = AllowAny
+    inputHandling1 = AllowAny
+    inputHandling2 = AllowAny
+    inputHandling3 = AllowAny
+    inputHandling4 = AllowAny
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "4217 -427 160 72"
+    moduleGroupName = Mirror_function_for_out_of_bounds_lower
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "804 315 326 631"
+        sizeHint = "326 631"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert3
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = FALSE
+    datatype = "unsigned int8"
+    changePageSize = TRUE
+    pageSizeX = 80
+    pageSizeY = 80
+    pageSizeZ = 3
+    pageSizeC = 1
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGrayValue = FALSE
+    minGrayValue = 0
+    changeMaxGrayValue = FALSE
+    maxGrayValue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "4025 -363 160 72"
+    moduleGroupName = Mirror_function_for_out_of_bounds_lower
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2422 385 326 631"
+        sizeHint = "326 631"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert4
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = FALSE
+    datatype = "unsigned int8"
+    changePageSize = TRUE
+    pageSizeX = 80
+    pageSizeY = 80
+    pageSizeZ = 4
+    pageSizeC = 1
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGrayValue = FALSE
+    minGrayValue = 0
+    changeMaxGrayValue = FALSE
+    maxGrayValue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4437 -155 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1330 312 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic04
+    debugLevel = 0
+    arg1 = "2 0 0"
+    arg1X = 2
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "1 0 0"
+    arg2X = 1
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "4057 -107 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1140 522 700 296"
+        sizeHint = "635 296"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener1
+    mode = MLImage
+    inParameter = ""
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "4777 -51 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3090 362 373 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage2
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 32
+    modifyX = FALSE
+    y = 0
+    sy = 32
+    modifyY = FALSE
+    z = 0
+    sz = 3
+    modifyZ = TRUE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = FALSE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelCenterWidth
+    autoApply = TRUE
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "5097 -366 160 72"
+    moduleGroupName = Mirror_function_for_out_of_bounds_higher
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "3403 388 326 631"
+        sizeHint = "326 631"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert5
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = FALSE
+    datatype = "unsigned int8"
+    changePageSize = TRUE
+    pageSizeX = 80
+    pageSizeY = 80
+    pageSizeZ = 4
+    pageSizeC = 1
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGrayValue = FALSE
+    minGrayValue = 0
+    changeMaxGrayValue = FALSE
+    maxGrayValue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "4873 -358 160 72"
+    moduleGroupName = Mirror_function_for_out_of_bounds_higher
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2954 358 326 631"
+        sizeHint = "326 631"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert6
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = FALSE
+    datatype = "unsigned int8"
+    changePageSize = TRUE
+    pageSizeX = 80
+    pageSizeY = 80
+    pageSizeZ = 4
+    pageSizeC = 1
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGrayValue = FALSE
+    minGrayValue = 0
+    changeMaxGrayValue = FALSE
+    maxGrayValue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "5105 -641 96 56"
+    moduleGroupName = Mirror_function_for_out_of_bounds_higher
+    windows  {
+      window _default {
+        geometry = "1137 477 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage3
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 80
+    modifyX = FALSE
+    y = 0
+    sy = 80
+    modifyY = FALSE
+    z = 0
+    sz = 3
+    modifyZ = TRUE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = FALSE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelCenterWidth
+    autoApply = TRUE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "5381 -531 104 72"
+    moduleGroupName = Mirror_function_for_out_of_bounds_higher
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2320 342 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic07
+    debugLevel = 0
+    arg1 = "1 0 0"
+    arg1X = 1
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "1 0 0"
+    arg2X = 1
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "5357 -259 104 72"
+    moduleGroupName = Mirror_function_for_out_of_bounds_higher
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1325 697 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic06
+    debugLevel = 0
+    arg1 = "2 0 0"
+    arg1X = 2
+    arg1XAsVec = FALSE
+    operation = Divide
+    arg2 = "2 0 0"
+    arg2X = 2
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Switch {
+  internal  {
+    frame = "4365 -1019 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1356 594 200 64"
+        sizeHint = "200 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch2
+    currentInput = 0
+    numberOfInputs = 2
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4325 -867 136 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "3233 560 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic08
+    debugLevel = 0
+    arg1 = "1 0 0"
+    arg1X = 1
+    arg1XAsVec = FALSE
+    operation = SmallerOrEq
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module PythonArithmetic {
+  internal  {
+    frame = "5061 -529 136 56"
+    moduleGroupName = Mirror_function_for_out_of_bounds_higher
+    windows  {
+      window _default {
+        geometry = "2195 625 1655 512"
+        sizeHint = "486 512"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = PythonArithmetic1
+    calculateOutputSubImage = "*center = ctx.parent().field("Center").intValue()
+width = ctx.parent().field("Arithmetic04.resultX").intValue() 
+fullsize = ctx.parent().field("Info.sizeZ").intValue()
+
+if int((width-1)/2+center)+1>fullsize:
+  out = numpy.concatenate((in0[:,:,:,int((width-1)/2)-1:,...],numpy.flip(in0[:,:,:,fullsize  - int((width-1)/2):-1,...],axis=3)),axis=3)
+
+
+*"
+    calculateInputSubImageBox = "
+"
+    calculateOutputImageProperties = ""
+    numberOfInputs = 2
+    doubleConstant0 = 0
+    doubleConstant1 = 0
+    doubleConstant2 = 0
+    doubleConstant3 = 0
+    doubleConstant4 = 0
+    doubleConstant5 = 0
+    doubleConstantName0 = ""
+    doubleConstantName1 = ""
+    doubleConstantName2 = ""
+    doubleConstantName3 = ""
+    doubleConstantName4 = ""
+    doubleConstantName5 = ""
+    intConstant0 = 5
+    intConstant1 = 6
+    intConstant2 = 7
+    intConstant3 = 0
+    intConstant4 = 0
+    intConstant5 = 0
+    intConstantName0 = ""
+    intConstantName1 = ""
+    intConstantName2 = ""
+    intConstantName3 = ""
+    intConstantName4 = ""
+    intConstantName5 = ""
+    setMinMaxValues = FALSE
+    minVoxelValue = 0
+    maxVoxelValue = 0
+    setDataType = FALSE
+    dataType = "unsigned int8"
+    inputDataType0 = "input type"
+    inputDataType1 = "input type"
+    inputDataType2 = "output type"
+    inputDataType3 = "output type"
+    inputDataType4 = "output type"
+    inputHandling0 = AllowAny
+    inputHandling1 = AllowAny
+    inputHandling2 = AllowAny
+    inputHandling3 = AllowAny
+    inputHandling4 = AllowAny
+  }
+}
+module SubImage {
+  internal  {
+    frame = "4217 -667 96 56"
+    moduleGroupName = Mirror_function_for_out_of_bounds_lower
+    windows  {
+      window _default {
+        geometry = "769 364 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage1
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 80
+    modifyX = FALSE
+    y = 0
+    sy = 80
+    modifyY = FALSE
+    z = 0
+    sz = 3
+    modifyZ = TRUE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = FALSE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module Info {
+  internal  {
+    frame = "3869 -131 56 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "995 641 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info
+  }
+}
+module Bypass {
+  internal  {
+    frame = "4261 5 104 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Bypass
+    noBypass = FALSE
+  }
+}
+module Switch {
+  internal  {
+    frame = "4601 -675 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1133 409 200 64"
+        sizeHint = "200 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch
+    currentInput = 0
+    numberOfInputs = 5
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4653 -875 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2053 459 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic01
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "1 0 0"
+    arg2X = 1
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4837 -899 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2176 308 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic02
+    debugLevel = 0
+    arg1 = "1 0 0"
+    arg1X = 1
+    arg1XAsVec = FALSE
+    operation = GreaterOrEq
+    arg2 = "4 0 0"
+    arg2X = 4
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "5316 -649 104 72"
+    moduleGroupName = Mirror_function_for_out_of_bounds_higher
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2904 474 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic03
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+connections  {
+  SubImage.input0 = Bypass.output0
+  SubImage.sz = Arithmetic04.resultX
+  Info1.input0 = SubImage.output0
+  PythonArithmetic.input0 = ImagePropertyConvert4.output0
+  PythonArithmetic.input1 = ImagePropertyConvert3.output0
+  ImagePropertyConvert3.input0 = SubImage.output0
+  ImagePropertyConvert3.pageSizeX = Info1.sizeX
+  ImagePropertyConvert3.pageSizeY = Info1.sizeY
+  ImagePropertyConvert3.pageSizeZ = Info1.sizeZ
+  ImagePropertyConvert3.pageSizeT = Info1.sizeT
+  ImagePropertyConvert4.input0 = Bypass.output0
+  ImagePropertyConvert4.pageSizeX = Info1.sizeX
+  ImagePropertyConvert4.pageSizeY = Info1.sizeY
+  ImagePropertyConvert4.pageSizeZ = Info.sizeZ
+  ImagePropertyConvert4.pageSizeT = Info1.sizeT
+  FieldListener1.inImage = Bypass.output0
+  SubImage2.input0 = Bypass.output0
+  SubImage2.sz = Arithmetic04.resultX
+  ImagePropertyConvert5.input0 = SubImage2.output0
+  ImagePropertyConvert5.pageSizeX = Info.sizeX
+  ImagePropertyConvert5.pageSizeY = Info.sizeY
+  ImagePropertyConvert5.pageSizeZ = Info.sizeZ
+  ImagePropertyConvert6.input0 = Bypass.output0
+  ImagePropertyConvert6.pageSizeX = Info.sizeX
+  ImagePropertyConvert6.pageSizeY = Info.sizeY
+  ImagePropertyConvert6.pageSizeZ = Info.sizeZ
+  SubImage3.input0 = PythonArithmetic1.output0
+  SubImage3.z = Arithmetic03.resultX
+  SubImage3.sz = SubImage.sz
+  Arithmetic07.arg1X = Arithmetic06.resultX
+  Arithmetic06.arg1X = Arithmetic04.arg1X
+  Switch2.input0 = SubImage1.output0
+  Switch2.input1 = Switch.output0
+  Switch2.currentInput = Arithmetic08.resultX
+  PythonArithmetic1.input0 = ImagePropertyConvert6.output0
+  PythonArithmetic1.input1 = ImagePropertyConvert5.output0
+  SubImage1.input0 = PythonArithmetic.output0
+  SubImage1.sz = SubImage.sz
+  Info.input0 = Bypass.output0
+  Switch.input0 = SubImage2.output0
+  Switch.input1 = SubImage3.output0
+  Switch.currentInput = Arithmetic02.resultX
+  Arithmetic01.arg1X = Arithmetic08.arg2X
+  Arithmetic01.arg2X = Arithmetic08.arg1X
+  Arithmetic02.arg1X = Arithmetic01.resultX
+  Arithmetic02.arg2X = Info.sizeZ
+  Arithmetic03.arg1X = SubImage2.z
+  Arithmetic03.arg2X = Arithmetic07.resultX
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 71
+        objectName = Mirror_function_for_out_of_bounds_lower
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 72
+        objectName = Mirror_function_for_out_of_bounds_higher
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,890 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module View2D {
+  internal  {
+    frame = "5957 601 136 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2847 373 670 611"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "2593 477 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MPR_velocity_ROI
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_NEAREST
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0
+    lutWidth = 1
+    annotationOn = FALSE
+    annotationMode = ANNO_MODE_USER
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "5737 617 128 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1949 271 874 708"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1920 462 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MPR_magnitude
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_CUBIC_POSTCLASS
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "4.76837158203125e-07 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.502499997615814
+    lutWidth = 1
+    annotationOn = FALSE
+    annotationMode = ANNO_MODE_MR
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module SoMouseGrabber {
+  internal  {
+    frame = "6119 863 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1170 201 460 491"
+        sizeHint = "460 491"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMouseGrabber2
+    on = TRUE
+    normalized = FALSE
+    clamp = TRUE
+    button1 = PRESSED
+    button2 = RELEASED
+    button3 = RELEASED
+    shift = RELEASED
+    ctrl = RELEASED
+    alt = PRESSED
+    cursorShape = UNDEFINED_CURSOR
+    xmin = 0
+    xmax = 1
+    ymin = 0
+    ymax = 1
+    setEventHandled = TRUE
+    setWheelEventHandled = FALSE
+    flipX = FALSE
+    flipY = FALSE
+    swapXY = FALSE
+    sensitivity = 1
+    wheelOverflow = FALSE
+    wheel = 94
+    wheelStep = 1
+    wheelMin = 0
+    wheelMax = 100
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "5913 748 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup4
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "5461 717 264 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup5
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "6175 748 88 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup7
+  }
+}
+module SoView2DAnnotation {
+  internal  {
+    frame = "5541 893 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "587 436 777 571"
+        sizeHint = "711 571"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DAnnotation
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = FALSE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = TRUE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    annotationMode = ANNO_MODE_MR
+    showOrientation = ANNO_ORIENTATION_OFF
+    drawNegativeOrientation = FALSE
+    drawPositiveOrientation = FALSE
+    orientationColor = "1 1 1"
+    verticalRuler = FALSE
+    horizontalRuler = FALSE
+    verticalRulerMarginRight = 8
+    horizontalRulerMarginBottom = 8
+    showTechnicalInfo = FALSE
+    showAnnotation = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    minDetailFontSize = 10
+    maxDetailFontSize = 18
+    minShortFontSize = 8
+    maxShortFontSize = 12
+    userDetailFontSize = 12
+    userShortFontSize = 10
+    rulerFontSize = 12
+    textShadow = TRUE
+    rulerShadow = TRUE
+    annotationUserTopLeft = "$(PatientsName)
+$(PatientID) $(PatientsSex)
+$(PatientsBirthDate)"
+    annotationUserTopRight = "$(InstitutionName)
+$(ManufacturersModelName)
+$(Modality)"
+    annotationUserBottomLeft = "slice: $(slice)
+$(SeriesDescription)"
+    annotationUserBottomRight = "User Mode
+acquisition: $(AcquisitionDate)"
+    annotationUserBottomCenter = ""
+    annotationCTTopLeft = "$(PatientsName)
+$(PatientID) $(PatientsSex)
+$(PatientsBirthDate)"
+    annotationCTTopRight = "$(InstitutionName)
+$(ManufacturersModelName)
+$(Modality)"
+    annotationCTBottomLeft = "slice: $(slice)
+timepoint: $(timepoint)
+$(sizex),$(sizey),$(sizez),$(sizec),$(sizet)
+$(voxelx),$(voxely),$(voxelz)
+$(SeriesDescription)"
+    annotationCTBottomRight = "CT Mode
+acquisition: $(AcquisitionDate)"
+    annotationCTBottomCenter = ""
+    annotationMRTopLeft = "$(input00)
+AI:$(numInput1)
+PI:$(numInput2)"
+    annotationMRTopRight = ""
+    annotationMRBottomLeft = "Slice: $(slice)
+Timepoint: $(timepoint)
+"
+    annotationMRBottomRight = ""
+    annotationMRBottomCenter = ""
+    shortTopLeft = "$(PatientsName)
+$(PatientID)"
+    shortTopRight = $(Modality)
+    shortBottomLeft = "Slice: $(slice)"
+    shortBottomRight = ""
+    shortBottomCenter = ""
+    abreviateChars = -1
+    abreviateShortChars = 16
+    input00 = ""
+    input01 = ""
+    input02 = ""
+    input03 = ""
+    input04 = ""
+    input05 = ""
+    input06 = ""
+    input07 = ""
+    input08 = ""
+    input09 = ""
+    numInput00 = 0
+    numInput01 = 0.0709010339734123
+    numInput02 = 0
+    numInput03 = 0
+    numInput04 = 0
+    numInput05 = 0
+    numInput06 = 0
+    numInput07 = 0
+    numInput08 = 0
+    numInput09 = 0
+    fontWidthDummyString = ""
+    targetWidth = 0
+    targetHeight = 0
+    orientationModel = FALSE
+    orientationModelPosition = ANNO_BOTTOM_RIGHT
+    marginTop = 2
+    marginBottom = 2
+    marginLeft = 2
+    marginRight = 2
+    orientationModelRelativeSize = 0.125
+    orientationModelMinSize = 24
+    orientationModelMaxSize = 128
+    orientationModelRelativeVerticalOffset = 0
+    orientationModelMinVerticalOffset = 0
+    orientationModelMaxVerticalOffset = 128
+    orientationModelRelativeHorizontalOffset = 0
+    orientationModelMinHorizontalOffset = 0
+    orientationModelMaxHorizontalOffset = 128
+    orientationModelColor = "1 1 1"
+    orientationAndScaleFromCamera = FALSE
+    drawBackgroundBox = FALSE
+    backgroundColor = "0.200000002980232 0.200000002980232 0.699999988079071"
+    backgroundOpacity = 0.5
+    backgroundEdgeColor = "0.200000002980232 0.200000002980232 0.699999988079071"
+    backgroundEdgeOpacity = 0.5
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "6060 748 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup8
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "5809 749 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module Velocit_at_mouse_position {
+  internal  {
+    frame = "6274 863 184 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = Velocity_at_mouse_position
+  }
+}
+module Show_redraw_edit_text {
+  internal  {
+    frame = "5741 917 168 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = Show_redraw_edit_text
+    StringListContainer1_name = ""
+  }
+}
+module Manual_CSO_edit {
+  internal  {
+    frame = "5549 1037 136 56"
+    moduleGroupName = ""
+    localMacro = 1
+    windows  {
+      window _default {
+        geometry = "717 330 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Manual_CSO_edit
+    Arithmetic09_arg1X = 0
+  }
+}
+module Velocity_Overlay_Creation {
+  internal  {
+    frame = "5757 1085 184 56"
+    moduleGroupName = ""
+    localMacro = 1
+    windows  {
+      window _default {
+        geometry = "717 330 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Velocity_Overlay_Creation
+  }
+}
+module CSO_creation {
+  internal  {
+    frame = "6045 1277 120 56"
+    moduleGroupName = ""
+    localMacro = 1
+    windows  {
+      window _scriptingconsole {
+        geometry = "427 325 600 500"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "2024 338 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSO_creation
+    CSOIsoGenerator2_isoValue = -10
+  }
+}
+module Show_upvector {
+  internal  {
+    frame = "6065 973 128 56"
+    moduleGroupName = ""
+    localMacro = 1
+    windows  {
+      window _default {
+        geometry = "515 256 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Show_upvector
+    SoBypass2_bypass = FALSE
+  }
+}
+module SoView2DVoxelValue {
+  internal  {
+    frame = "6237 1017 152 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "3332 348 330 487"
+        sizeHint = "330 487"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = annoReadPix
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = PRESSED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = TRUE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+  }
+}
+module GetVoxelValue {
+  internal  {
+    frame = "6609 1069 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2562 481 488 281"
+        sizeHint = "488 281"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GetVoxelValue
+    position = "-1 -1 -1 0 0 0"
+    updateMode = AutoClear
+    coordinateType = Voxel
+    interpolation = NearestNeighbor
+  }
+}
+module DecomposeVector3 {
+  internal  {
+    frame = "6789 1061 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "809 600 317 60"
+        sizeHint = "317 60"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DecomposeVector3
+    v = "-1 -1 -1"
+  }
+}
+module ComposeVector3 {
+  internal  {
+    frame = "6905 933 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "809 817 263 64"
+        sizeHint = "263 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComposeVector3
+    x = -1
+    y = -1
+    z = 5
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "7077 989 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "177 690 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert
+    voxelX = -1
+    voxelY = -1
+    voxelZ = 5
+    worldX = -1
+    worldY = -1
+    worldZ = 5
+    voxelPos = "-1 -1 5"
+    worldPos = "-1 -1 5"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module ImageClear {
+  internal  {
+    frame = "6505 1173 128 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "875 552 185 157"
+        sizeHint = "185 157"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageClear
+    autoUpdate = TRUE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "6553 933 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1032 581 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic0
+    debugLevel = 0
+    arg1 = "-1 -1 -1"
+    arg1X = -1
+    arg1XAsVec = FALSE
+    operation = Equal
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module BoolArithmetic {
+  internal  {
+    frame = "6713 901 112 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "871 492 193 276"
+        sizeHint = "193 276"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolArithmetic
+    inputBool1 = FALSE
+    inputBool2 = FALSE
+    operation = Identity
+  }
+}
+module FieldBypass {
+  internal  {
+    frame = "5917 389 136 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "875 446 184 368"
+        sizeHint = "184 368"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldBypass
+    inputString0 = 0
+    inputString1 = ""
+    inputString2 = ""
+    inputString3 = ""
+    inputString4 = ""
+    inputString5 = ""
+    inputString6 = ""
+    inputString7 = ""
+    inputString8 = ""
+    inputString9 = ""
+    inputString10 = ""
+    inputString11 = ""
+    inputString12 = ""
+    inputString13 = ""
+    inputString14 = ""
+    inputString15 = ""
+    inputString16 = ""
+    inputString17 = ""
+    inputString18 = ""
+    inputString19 = ""
+    inputNumber = 0
+    outputString = 0
+    noBypass = FALSE
+    onlyIfChanged = TRUE
+    numberOfInputs = 1
+  }
+}
+module FieldBypass {
+  internal  {
+    frame = "5685 445 136 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1195 437 184 248"
+        sizeHint = "184 248"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldBypass1
+    inputString0 = 0
+    inputString1 = ""
+    inputString2 = ""
+    inputString3 = ""
+    inputString4 = ""
+    inputString5 = ""
+    inputString6 = ""
+    inputString7 = ""
+    inputString8 = ""
+    inputString9 = ""
+    inputString10 = ""
+    inputString11 = ""
+    inputString12 = ""
+    inputString13 = ""
+    inputString14 = ""
+    inputString15 = ""
+    inputString16 = ""
+    inputString17 = ""
+    inputString18 = ""
+    inputString19 = ""
+    inputNumber = 0
+    outputString = 0
+    noBypass = FALSE
+    onlyIfChanged = TRUE
+    numberOfInputs = 1
+  }
+}
+module SubImage {
+  internal  {
+    frame = "5689 1349 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2587 418 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage1
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 80
+    modifyX = FALSE
+    y = 0
+    sy = 80
+    modifyY = FALSE
+    z = 0
+    sz = 6
+    modifyZ = FALSE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = TRUE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module Replicate {
+  internal  {
+    frame = "5521 1165 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1209 658 265 202"
+        sizeHint = "265 202"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Replicate
+    replicationVector = "1.00 1.00 1.00 1.00 1.00 1.00"
+    replicationVectorX = 1
+    replicationVectorY = 1
+    replicationVectorZ = 1
+    replicationVectorC = 1
+    replicationVectorT = 1
+    replicationVectorU = 1
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "5501 1341 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "744 510 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic01
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "1 0 0"
+    arg2X = 1
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module ISIColorbar/Colorbar {
+  internal  {
+    frame = "5237 961 152 64"
+    moduleGroupName = ""
+    localMacro = 1
+    windows  {
+      window _default {
+        geometry = "1155 415 264 670"
+        sizeHint = "264 670"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Colorbar
+    tickcount = 3
+  }
+}
+connections  {
+  MPR_velocity_ROI.inInvPreLUT = SoGroup8.self
+  MPR_velocity_ROI.inInvPostViewer = SoGroup7.self
+  MPR_velocity_ROI.startSlice = MPR_magnitude.startSlice
+  MPR_velocity_ROI.timePoint = MPR_magnitude.timePoint
+  MPR_magnitude.inImage = Velocity_Overlay_Creation.output0
+  MPR_magnitude.inInvPreLUT = SoGroup5.self
+  MPR_magnitude.inInvPostLUT = SoGroup.self
+  MPR_magnitude.inInvPostViewer = SoGroup4.self
+  MPR_magnitude.startSlice = FieldBypass.outputString
+  MPR_magnitude.timePoint = FieldBypass1.outputString
+  SoGroup4.children = "Show_upvector.nodeOut0 SoMouseGrabber2.self"
+  SoGroup5.children = "Colorbar.inImage1 Colorbar.inImage2 Velocity_Overlay_Creation.nodeOut0 Velocity_Overlay_Creation.nodeOut1 Manual_CSO_edit.nodeOut0 SoView2DAnnotation.self Manual_CSO_edit.nodeOut1 Show_redraw_edit_text.nodeOut0"
+  SoGroup7.children = Show_upvector.nodeOut0
+  SoView2DAnnotation.input00 = Show_redraw_edit_text.StringListContainer1_name
+  SoGroup8.children = "CSO_creation.nodeOut0 Velocity_at_mouse_position.nodeOut0"
+  SoGroup.children = "CSO_creation.nodeOut0 annoReadPix.self"
+  Manual_CSO_edit.input0 = Replicate.output0
+  Manual_CSO_edit.baseIn0 = CSO_creation.baseOut0
+  Manual_CSO_edit.Arithmetic09_arg1X = MPR_magnitude.startSlice
+  Velocity_Overlay_Creation.input0 = CSO_creation.output0
+  GetVoxelValue.input0 = ImageClear.output0
+  GetVoxelValue.position = annoReadPix.voxelPosition
+  DecomposeVector3.v = GetVoxelValue.position
+  ComposeVector3.x = DecomposeVector3.x
+  ComposeVector3.y = DecomposeVector3.y
+  WorldVoxelConvert.voxelPos = ComposeVector3.v
+  Arithmetic0.arg1 = annoReadPix.voxelPosition
+  BoolArithmetic.inputBool1 = Arithmetic0.resultX
+  FieldBypass.inputString0 = MPR_velocity_ROI.startSlice
+  FieldBypass1.inputString0 = MPR_velocity_ROI.timePoint
+  SubImage1.t = MPR_magnitude.timePoint
+  Replicate.input0 = SubImage1.output0
+  Replicate.replicationVectorT = Arithmetic01.resultX
+  Arithmetic01.arg1X = MPR_magnitude.maxTimePoint
+  Colorbar.inImage = Velocity_Overlay_Creation.baseOut0
+}
+networkModel = ""

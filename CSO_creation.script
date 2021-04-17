@@ -1,0 +1,34 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = CSOIsoGenerator2.input0
+    }
+    Field input1 {
+      internalName = CSOConvertToImage.input0
+    }
+    Field input0 {
+      internalName = CSOConvertToImage1.input0
+    }
+  }
+  Outputs  {
+    Field baseOut0 {
+      internalName = CSOManager2.outCSOList
+    }
+    Field output0 {
+      internalName = CSOConvertToImage.output0
+    }
+    Field nodeOut0 {
+      internalName = SoView2DCSOEditor.self
+    }
+    Field output1 {
+      internalName = CSOConvertToImage1.output0
+    }
+  }
+  Parameters  {
+    Field CSOIsoGenerator2_isoValue {
+      internalName = CSOIsoGenerator2.isoValue
+    }
+  }
+}
+
+

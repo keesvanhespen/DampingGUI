@@ -1,0 +1,96 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module VectorLine {
+  internal  {
+    frame = "5640 759 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1378 270 318 275"
+        sizeHint = "318 275"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VectorLine
+    show = TRUE
+    start = "-0.7 -0.9 -1"
+    end = "-0.9 -0.9 1"
+    overwriteAppearance = TRUE
+    color = "0 0.666666666666667 0"
+    width = 8
+    pattern = 65535
+    preset = 65535
+    showOutline = FALSE
+    outlineColor = "0 0.666666666666667 0"
+    outlineWidth = 5
+    outlinePattern = 65535
+    outlinePreset = 65535
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "5716 655 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup6
+  }
+}
+module VectorLine {
+  internal  {
+    frame = "5772 775 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "817 240 318 275"
+        sizeHint = "318 275"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VectorLine1
+    show = TRUE
+    start = "-0.7 -0.9005 -1"
+    end = "-0.66 -0.9005 1"
+    overwriteAppearance = TRUE
+    color = "0.76078431372549 0.76078431372549 0.76078431372549"
+    width = 10
+    pattern = 65535
+    preset = 65535
+    showOutline = FALSE
+    outlineColor = "0 0.666666666666667 0"
+    outlineWidth = 57
+    outlinePattern = 65535
+    outlinePreset = 65535
+  }
+}
+module SoBypass {
+  internal  {
+    frame = "5732 583 128 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "838 583 258 94"
+        sizeHint = "258 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoBypass2
+    bypass = FALSE
+    noBypass = TRUE
+  }
+}
+connections  {
+  SoGroup6.children = "VectorLine.soSeparator0self VectorLine1.soSeparator0self"
+  SoBypass2.child = SoGroup6.self
+}
+networkModel = ""

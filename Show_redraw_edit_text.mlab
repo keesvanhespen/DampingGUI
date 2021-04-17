@@ -1,0 +1,135 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module SoKeyGrabber {
+  internal  {
+    frame = "6289 589 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "380 588 369 246"
+        sizeHint = "369 246"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoKeyGrabber
+    on = TRUE
+    key0 = LEFT_CONTROL
+    key1 = ANY
+    key2 = ANY
+    key3 = ANY
+    key4 = ANY
+  }
+}
+module StringListContainer {
+  internal  {
+    frame = "6249 253 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1141 611 545 377"
+        sizeHint = "424 377"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = StringListContainer1
+    listString = "[#1 :, #2 :Redrawing, #3 :Editing, #4 :]"
+    index = 0
+    persistent = TRUE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "6257 389 112 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "863 509 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt2
+    boolValue = FALSE
+    invBoolValue = TRUE
+    intValue = 0
+    offValue = 0
+    onValue = 1
+    defaultBool = Unchanged
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "6409 389 112 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "863 505 208 247"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt3
+    boolValue = FALSE
+    invBoolValue = TRUE
+    intValue = 0
+    offValue = 0
+    onValue = 2
+    defaultBool = Unchanged
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "6481 261 112 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1097 290 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic010
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+connections  {
+  StringListContainer1.index = Arithmetic010.resultX
+  BoolInt2.boolValue = SoKeyGrabber.ctrlPressed
+  BoolInt3.boolValue = SoKeyGrabber.altPressed
+  Arithmetic010.arg1X = BoolInt3.intValue
+  Arithmetic010.arg2X = BoolInt2.intValue
+}
+networkModel = ""

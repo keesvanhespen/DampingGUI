@@ -1,0 +1,28 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = Bypass.input0
+    }
+
+  }
+  Outputs  {
+    Field baseOut0 {
+      internalName = WEMIsoSurface1.outWEM
+    }
+    Field baseOut1 {
+      internalName = DtfSkeletonization.outBase1
+    }
+    Field baseOut2 {
+      internalName = MaskToMarkers.outputXMarkerList
+    }
+  }
+  Parameters {
+    Field Thresholdvesselness {
+      internalName = Switch.currentInput
+    }
+    Field OverrideT1usage {
+      internalName = BoolInt.boolValue
+    }
+    
+  }
+}

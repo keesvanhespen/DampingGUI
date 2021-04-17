@@ -1,0 +1,13 @@
+Interface  {
+  Inputs {}
+  Outputs  {
+    Field nodeOut0 {
+      internalName = SoBypass2.self
+    }
+  }
+  Parameters  {
+    Field SoBypass2_bypass {
+      internalName = SoBypass2.bypass
+    }
+  }
+}

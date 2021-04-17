@@ -1,0 +1,32 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = Bypass.input0
+    }
+  }
+  Outputs  {
+    Field output0 {
+      internalName = Switch2.output0
+    }
+  }
+  Parameters  {
+    Field Center {
+      type = int value = 0
+     
+    }
+    Field Width {
+      type = int value = 2
+     
+    }
+
+  }
+  
+}
+Commands {
+  source =  $(LOCAL_BASENAME).py
+  Fieldlistener Width { command = "*py: ctx.field("Arithmetic08.arg1X").setValue(ctx.field("Width").value); ctx.field("Arithmetic04.arg1X").setValue(ctx.field("Width").value*2); autorun()*" }
+  FieldListener Center { command = "*py: ctx.field("SubImage2.z").setValue(ctx.field("Center").value); ctx.field("Arithmetic08.arg2X").setValue(ctx.field("Center").value); ctx.field("SubImage.z").setValue(ctx.field("Center").value); autorun()*"}
+  FieldListener input0 {command = autorun}
+  
+  initCommand = "*py: ctx.field("Width").setValue(ctx.field("Width").value);*"
+}

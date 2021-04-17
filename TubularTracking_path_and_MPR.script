@@ -1,0 +1,38 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = TubularTracking.input0
+    }
+    Field input0 {
+      internalName = MPRPath2.input0
+    }
+    Field baseIn0 {
+      internalName = XMarkerListFilter.inXMarkerList
+    }
+  }
+  Outputs  {
+    Field output0 {
+      internalName = MPRPath2.output1
+    }
+    Field baseOut0 {
+      internalName = PathToKeyFrame1.outputKeys
+    }
+    Field baseOut1 {
+      internalName = PathToKeyFrame1.outputResampledPath
+    }
+    Field nodeOut0 {
+      internalName = SoSeparator1.self
+    }
+  }
+  Parameters  {
+    Field MPRPath2_currentKeyFrame {
+      internalName = MPRPath2.currentKeyFrame
+    }
+    Field XMarkerShortestPath1_startPoint {
+      internalName = XMarkerShortestPath1.startPoint
+    }
+    Field XMarkerShortestPath1_endPoint {
+      internalName = XMarkerShortestPath1.endPoint
+    }
+  }
+}

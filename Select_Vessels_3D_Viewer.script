@@ -1,0 +1,56 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = View3D.inImage
+    }
+    Field input1 {
+      internalName = WEMIsoSurface.input0
+    }
+    Field input1 {
+      internalName = FieldListener.inImage
+    }
+    Field nodeIn0 {
+      internalName = SoSeparator.child
+    }
+    Field nodeIn1 {
+      internalName = SoSeparator3.child
+    }
+    Field nodeIn2 {
+      internalName = SoSeparator3.child
+    }
+    Field nodeIn3 {
+      internalName = viewer.child
+    }
+    Field nodeIn4 {
+      internalName = SoGroup3.child
+    }
+    Field nodeIn5 {
+      internalName = SoGroup3.child
+    }
+  }
+  Outputs {
+    Field nodeOut0{
+      internalName = viewer.self
+    }
+  }
+  Parameters  {
+    Field viewer_height {
+      internalName = viewer.height
+    }
+    Field viewer_position {
+      internalName = viewer.position
+    }
+    Field viewer_orientation {
+      internalName = viewer.orientation
+    }
+    Field viewer_nearDistance {
+      internalName = viewer.nearDistance
+    }
+    Field viewer_farDistance {
+      internalName = viewer.farDistance
+    }
+    Field viewer_focalDistance {
+      internalName = viewer.focalDistance
+    }
+  }
+}

@@ -1,0 +1,17 @@
+Interface  {
+  Inputs  {
+    Field baseIn0 {
+      internalName = Visualized_pulsatility_spheres.inXMarkerList
+    }
+  }
+  Outputs  {
+    Field nodeOut0 {
+      internalName = So3DMarkerEditor4.self
+    }
+  }
+  Parameters  {
+    Field FieldBypass4_outputString {
+      internalName = FieldBypass4.outputString
+    }
+  }
+}

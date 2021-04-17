@@ -1,0 +1,51 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = Bypass.input0
+    }
+    Field baseIn0 {
+      internalName = XMarkerListContainer.inXMarkerList
+    }
+    Field input1 {
+      internalName = Bypass1.input0
+    }
+  }
+  Outputs  {
+    Field output0 {
+      internalName = MPRPath1.output1
+    }
+    Field output2 {
+      internalName = MPRPath4.output1
+    }
+
+    Field baseOut0 {
+      internalName = PathToKeyFrame.outputKeys
+    }
+    Field baseOut1 {
+      internalName = XMarkerListContainer2.outXMarkerList
+    }
+
+
+    
+  }
+  Parameters  {
+    Field XMarkerShortestPath_startPoint {
+      internalName = XMarkerShortestPath.startPoint
+    }
+    Field XMarkerShortestPath_endPoint {
+      internalName = XMarkerShortestPath.endPoint
+    }
+    Field MPRPath1_currentKeyFrame {
+      internalName = MPRPath1.currentKeyFrame
+    }
+    Field MPRPath1_showUpVectors {
+      internalName = MPRPath1.showUpVectors
+    }
+    Field pathLength {
+      internalName = PathToKeyFrame.pathLength
+    }  
+    Field FOV {
+      internalName = MPRPath4.fieldOfView
+    }  
+  }
+}

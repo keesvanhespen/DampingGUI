@@ -1,0 +1,19 @@
+//----------------------------------------------------------------------------------
+//! DampingGUI module definition
+/*!
+// \file    DampingGUI.def
+// \author  K.M. van Hespen
+// \date    2019-09-19
+*/
+//----------------------------------------------------------------------------------
+
+
+MacroModule DampingGUI {
+  genre              = ""
+  author             = "K.M. van Hespen"
+  comment            = ""
+  keywords           = "pulsatility damping pca flow velocity area"
+  seeAlso            = ""
+   
+  externalDefinition = "$(LOCAL)/DampingGUI.script"
+}

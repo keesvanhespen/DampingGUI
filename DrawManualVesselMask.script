@@ -1,0 +1,28 @@
+// write your script here!
+Interface {
+  Parameters{
+    Field savetext {type=String value = ""}
+  }
+}
+
+Window Draw{Category{
+  
+    Field ImageLoad.filename {title = "Load T1W" browseButton = True browseMode = open}
+    Panel {module = OrthoView2D  expandY = True}expandY = True
+    Horizontal{ expandY = False
+      Button DrawVoxels3D1.clear {}
+      Button UndoManager.undo {}
+      Field DrawVoxels3D1.drawMode {}
+      Field DrawVoxels3D1.drawSize {}
+      Button {title = "Save" command = "*py: ctx.field("itkImageFileWriter.save").touch(); ctx.field("Counter.autoStep").setValue(True); ctx.field("savetext").setValue("Mask saved")*"}
+      TextView savetext{title = "" maxh = 30 edit = False}
+      FieldListener Counter.currentValue {command = "*py: if ctx.field("Counter.currentValue").value==3: ctx.field("Counter.autoStep").setValue(False); ctx.field("Counter.reset").touch(); ctx.field("savetext").setValue("") *"
+                
+      }
+    }
+  }
+}
+
+Commands {
+  initCommand = "*py: ctx.field("ImageLoad.filename").setValue(""); ctx.field("DrawVoxels3D1.clear").touch()*"
+}

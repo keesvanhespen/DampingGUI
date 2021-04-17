@@ -1,0 +1,19 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = OtsuThreshold.input0
+    }
+    Field input0 {
+      internalName = ImageStatistics.input0
+    }
+    Field input0 {
+      internalName = Histogram.input0
+    }
+  }
+  Outputs  {
+    Field nodeOut0 {
+      internalName = SoLUTEditor.outInventorLUT
+    }
+  }
+  Parameters {}
+}

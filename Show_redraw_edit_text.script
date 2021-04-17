@@ -1,0 +1,13 @@
+Interface  {
+  Inputs {}
+  Outputs  {
+    Field nodeOut0 {
+      internalName = SoKeyGrabber.self
+    }
+  }
+  Parameters  {
+    Field StringListContainer1_name {
+      internalName = StringListContainer1.name
+    }
+  }
+}

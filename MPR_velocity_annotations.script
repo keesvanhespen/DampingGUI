@@ -1,0 +1,18 @@
+Interface  {
+  Inputs {}
+  Outputs  {
+    Field nodeOut0 {
+      internalName = posMouse.self
+    }
+    Field nodeOut1 {
+      internalName = position.self
+    }
+    Field nodeOut2 {
+      internalName = annotation.self
+    }
+    Field nodeOut3 {
+      internalName = annoReadPix.self
+    }
+  }
+  Parameters {}
+}

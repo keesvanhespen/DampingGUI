@@ -1,0 +1,32 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = MPRPath1.input0
+    }
+    Field baseIn0 {
+      internalName = MPRPath1.frames
+    }
+    Field baseIn1 {
+      internalName = MPRPath1.inputMarkerList
+    }
+    Field baseIn2 {
+      internalName = CSOManager.inCSOList
+    }
+    Field input1 {
+      internalName = CSOConvertTo3DMask.input0
+    }
+  }
+  Outputs  {
+    Field output0 {
+      internalName = Switch.output0
+    }
+    Field nodeOut0 {
+      internalName = SoSeparator2.self
+    }
+  }
+  Parameters {
+    Field FOV {
+      internalName = MPRPath1.fieldOfView
+    }
+  }
+}

@@ -1,0 +1,45 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = MPR_velocity_ROI.inImage
+    }
+    Field input1 {
+      internalName = SubImage1.input0
+    }
+    Field input1 {
+      internalName = ImageClear.input0
+    }
+    Field input1 {
+      internalName = WorldVoxelConvert.input0
+    }
+    Field input1 {
+      internalName = Velocity_Overlay_Creation.input1
+    }
+    Field input1 {
+      internalName = CSO_creation.input0
+    }
+    Field input0 {
+      internalName = CSO_creation.input1
+    }
+  }
+  Outputs  {
+    Field baseOut0 {
+      internalName = Velocity_Overlay_Creation.baseOut0
+    }
+    Field csocontours0 {
+      internalName = CSO_creation.baseOut0
+    }
+
+  }
+  Parameters  {
+    Field MPR_magnitude_startSlice {
+      internalName = MPR_magnitude.startSlice
+    }
+    Field CSO_creation_CSOIsoGenerator2_isoValue {
+      internalName = CSO_creation.CSOIsoGenerator2_isoValue
+    }
+    Field Show_upvector_SoBypass2_bypass {
+      internalName = Show_upvector.SoBypass2_bypass
+    }
+  }
+}

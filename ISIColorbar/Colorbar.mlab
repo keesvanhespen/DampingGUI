@@ -1,0 +1,1353 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "4729 1301 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1105 835 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert4
+    voxelX = 0
+    voxelY = 881
+    voxelZ = 0
+    worldX = 0.5
+    worldY = 881.5
+    worldZ = 0.5
+    voxelPos = "0 881 0"
+    worldPos = "0.5 881.5 0.5"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = TRUE
+    keepConstant = Voxel
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "4815 1521 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1166 266 904 498"
+        sizeHint = "500 497"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer6
+    listString = ""
+    index = 5
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "0.5 881.5 0.5"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module LUTDuplicate {
+  internal  {
+    frame = "4813 1893 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "883 598 194 64"
+        sizeHint = "169 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LUTDuplicate
+    numberOfDuplicates = 1
+    concatMode = Rows
+  }
+}
+module LUTInfo {
+  internal  {
+    frame = "4625 1525 80 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1352 573 352 189"
+        sizeHint = "304 189"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LUTInfo
+  }
+}
+module LUTToMLImage {
+  internal  {
+    frame = "4589 1909 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2151 707 256 229"
+        sizeHint = "256 229"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LUTToMLImage
+    minIndex = 0
+    maxIndex = 39.7451095581055
+    autoIndexRange = TRUE
+    maxEntry = 300
+    rescale = TRUE
+    rescaleWidth = 901
+  }
+}
+module View2D {
+  internal  {
+    frame = "4329 897 128 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2428 344 761 275"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Dummy_colorbar
+    inventorInputOn = TRUE
+    inventorOutputOn = TRUE
+    view2DExtensionsOn = FALSE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_NEAREST
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 16.9832401275635"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = FALSE
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "4581 1829 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "140 71 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 901
+    modifyX = TRUE
+    y = -450
+    sy = 901
+    modifyY = TRUE
+    z = 0
+    sz = 1
+    modifyZ = FALSE
+    c = 0
+    sc = 4
+    modifyC = TRUE
+    t = 0
+    st = 1
+    modifyT = FALSE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "4244 1502 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1363 322 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage1
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 450
+    sx = 450
+    modifyX = TRUE
+    y = 0
+    sy = 900
+    modifyY = TRUE
+    z = 0
+    sz = 1
+    modifyZ = FALSE
+    c = 0
+    sc = 4
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = FALSE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartEnd
+    autoApply = TRUE
+  }
+}
+module AffineTransformation2D {
+  internal  {
+    frame = "4213 1429 168 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "832 587 207 214"
+        sizeHint = "191 214"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AffineTransformation2D1
+    optParameters = "0 0 0 0 1 1 "
+    translationX = 0
+    translationY = 0
+    rotation = 0
+    shearing = 0
+    scalingX = 1
+    scalingY = 1
+  }
+}
+module Replicate {
+  internal  {
+    frame = "4217 1341 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1178 556 265 202"
+        sizeHint = "265 202"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Replicate
+    replicationVector = "80.00 1.00 1.00 1.00 1.00 1.00"
+    replicationVectorX = 80
+    replicationVectorY = 1
+    replicationVectorZ = 1
+    replicationVectorC = 1
+    replicationVectorT = 1
+    replicationVectorU = 1
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "4445 645 184 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "767 430 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGroup2
+  }
+}
+module SoView2DInfo {
+  internal  {
+    frame = "4357 1237 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "993 430 547 610"
+        sizeHint = "413 610"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DInfo1
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4573 1205 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2327 321 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic011
+    debugLevel = 0
+    arg1 = "80 0 0"
+    arg1X = 80
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "901 0.5 0"
+    arg2X = 901
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module View2D {
+  internal  {
+    frame = "4485 965 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2504 666 761 275"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Rendered_colorbar
+    inventorInputOn = TRUE
+    inventorOutputOn = TRUE
+    view2DExtensionsOn = FALSE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_NEAREST
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "-821 -0.5"
+    useShaders = FALSE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = FALSE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_HIDE
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = TRUE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = FALSE
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module SoView2DMarkerEditor {
+  internal  {
+    frame = "4805 1399 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "990 233 603 583"
+        sizeHint = "603 583"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DMarkerEditor
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = FALSE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = CROSS_PLUS_CURSOR
+    depthVisibility = 1
+    snapToVoxel = TRUE
+    snapToSlice = TRUE
+    currentType = 0
+    deleteOnClick = FALSE
+    addOnClick = TRUE
+    alphaFactor = 0
+    minimumAlpha = 0
+    iconFile = $(MLAB_MeVisLab_Standard)/Modules/Resources/Images/markerIcons.tif
+    useIconFile = FALSE
+    iconIdx = 0
+    drawMarkerShapesWithLines = FALSE
+    selectingOn = TRUE
+    alwaysPerformHitTest = FALSE
+    actOnReleaseOnly = FALSE
+    editorMode = EDIT_MARKER
+    colorMode = COLOR_BY_TYPE
+    textColorMode = COLOR_TEXT
+    textMode = TEXT_ITEMNAME
+    textPosition = TEXT_POSITION_LEFT
+    textColor = "1 1 1"
+    textShadow = FALSE
+    textFontSize = 20
+    showTextOnlyForSelectedMarker = FALSE
+    cutText = FALSE
+    maxNumberOfLines = 1
+    vectorArrow = VECTOR_END_ARROW
+    vectorLineWidth = 1
+    useAntiAlias = TRUE
+    useVectorLengthAsMarkerSize = FALSE
+    depthVectorDrawMode = DRAW_HIGHLIGHT_SLICE_SEGMENT
+    drawMode = DRAW_MARKER
+    highlightSelection = TRUE
+    selectiveDrawing = FALSE
+    selectionBoxesForCurrentOnly = FALSE
+    cooperative = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    depthVisibilityMode = DEPTH_IN_SLICES
+    cursorShapeDragStartPoint = CROSS_MOVE_CURSOR
+    cursorShapeDragEndPoint = CROSS_MOVE_CURSOR
+    cursorShapeDragResize = CROSS_MOVE_CURSOR
+    cursorShapeDragOffset = MOVE_ALL_CURSOR
+    cursorShapeDragMove = MOVE_ALL_CURSOR
+    cursorShapeDelete = CROSS_MINUS_CURSOR
+    listString = ""
+    index = -1
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "0 0 0"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module SoView2DInfo {
+  internal  {
+    frame = "4501 1125 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3074 348 547 610"
+        sizeHint = "413 610"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DInfo2
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "4793 1167 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "766 440 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold3
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 162.85
+    threshWidth = 184.3
+    threshMin = 70.7
+    threshMax = 255
+    lowerUserValue = 0
+    innerUserValue = 0
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module View2D {
+  internal  {
+    frame = "4753 817 128 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "767 430 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Rendered_labels
+    inventorInputOn = TRUE
+    inventorOutputOn = TRUE
+    view2DExtensionsOn = FALSE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "0 0 0"
+    margin = "2 2"
+    sliceOrigin = "-743 -0.5"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = FALSE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = FALSE
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module Info {
+  internal  {
+    frame = "5037 1041 104 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1228 176 569 375"
+        sizeHint = "569 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info1
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4713 973 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2375 742 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic07
+    debugLevel = 0
+    arg1 = "82 0 0"
+    arg1X = 82
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "825 0.5 0"
+    arg2X = 825
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "3933 1021 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "766 440 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold4
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 0
+    threshWidth = 255
+    threshMin = 0
+    threshMax = 255
+    lowerUserValue = 0
+    innerUserValue = 0
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module View2D {
+  internal  {
+    frame = "4013 869 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2504 666 761 275"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D7
+    inventorInputOn = TRUE
+    inventorOutputOn = TRUE
+    view2DExtensionsOn = FALSE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_NEAREST
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "0 0 0"
+    margin = "2 2"
+    sliceOrigin = "0 16.9832401275635"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = FALSE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_HIDE
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = FALSE
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module SoView2DInfo {
+  internal  {
+    frame = "4661 1109 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3255 151 547 610"
+        sizeHint = "413 610"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DInfo4
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "4837 941 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "767 430 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGroup4
+  }
+}
+module View2D {
+  internal  {
+    frame = "4581 829 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "767 430 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Dummy_labels
+    inventorInputOn = TRUE
+    inventorOutputOn = TRUE
+    view2DExtensionsOn = FALSE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "0 0 0"
+    margin = "2 2"
+    sliceOrigin = "0 16.9832401275635"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = FALSE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = FALSE
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4597 1373 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2164 196 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic08
+    debugLevel = 0
+    arg1 = "80 0 0"
+    arg1X = 80
+    arg1XAsVec = FALSE
+    operation = Add
+    arg2 = "2 0 0"
+    arg2X = 2
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module SetWorldMatrix {
+  internal  {
+    frame = "4093 1261 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "743 463 506 335"
+        sizeHint = "449 335"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SetWorldMatrix
+    center = "0 0 0"
+    scaleOrientation = "0 0 1 0"
+    scale = "1 1 1"
+    rotation = "0 0 1 0"
+    translation = "0 0 0"
+    sourceUsage = Ignore
+    referenceUsage = Forward
+    elementaryUsage = Ignore
+    invertResult = FALSE
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module SetWorldMatrix {
+  internal  {
+    frame = "4477 1325 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "743 463 506 335"
+        sizeHint = "449 335"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SetWorldMatrix1
+    center = "0 0 0"
+    scaleOrientation = "0 0 1 0"
+    scale = "1 1 1"
+    rotation = "0 0 1 0"
+    translation = "0 0 0"
+    sourceUsage = Ignore
+    referenceUsage = Forward
+    elementaryUsage = Ignore
+    invertResult = FALSE
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4253 1885 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "744 510 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic01
+    debugLevel = 0
+    arg1 = "901 0 0"
+    arg1X = 901
+    arg1XAsVec = FALSE
+    operation = Subtract
+    arg2 = "1 0 0"
+    arg2X = 1
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4069 1901 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1251 413 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic02
+    debugLevel = 0
+    arg1 = "900 0 0"
+    arg1X = 900
+    arg1XAsVec = FALSE
+    operation = Divide
+    arg2 = "2 0 0"
+    arg2X = 2
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "4021 1757 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "880 732 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic03
+    debugLevel = 0
+    arg1 = "450 0 0"
+    arg1X = 450
+    arg1XAsVec = FALSE
+    operation = Multiply
+    arg2 = "-1 0 0"
+    arg2X = -1
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module SubImage {
+  internal  {
+    frame = "4025 1181 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2170 434 396 533"
+        sizeHint = "396 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage2
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 3
+    modifyX = FALSE
+    y = -20
+    sy = 20
+    modifyY = TRUE
+    z = 0
+    sz = 0
+    modifyZ = FALSE
+    c = 0
+    sc = 3
+    modifyC = FALSE
+    t = 0
+    st = 0
+    modifyT = FALSE
+    u = 0
+    su = 0
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartEndOffset
+    autoApply = TRUE
+  }
+}
+module SetWorldMatrix {
+  internal  {
+    frame = "4213 1677 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "743 463 506 335"
+        sizeHint = "449 335"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SetWorldMatrix2
+    center = "0 0 0"
+    scaleOrientation = "0 0 1 0"
+    scale = "1 1 1"
+    rotation = "0 0 1 0"
+    translation = "0 0 0"
+    sourceUsage = Ignore
+    referenceUsage = Forward
+    elementaryUsage = Ignore
+    invertResult = FALSE
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module PythonArithmetic {
+  internal  {
+    frame = "4217 1597 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2363 420 486 512"
+        sizeHint = "486 512"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = PythonArithmetic
+    calculateOutputSubImage = "out=numpy.flip(numpy.transpose(in0,(0,1,2,3,5,4)),axis=4)"
+    calculateInputSubImageBox = ""
+    calculateOutputImageProperties = ""
+    numberOfInputs = 1
+    doubleConstant0 = 0
+    doubleConstant1 = 0
+    doubleConstant2 = 0
+    doubleConstant3 = 0
+    doubleConstant4 = 0
+    doubleConstant5 = 0
+    doubleConstantName0 = ""
+    doubleConstantName1 = ""
+    doubleConstantName2 = ""
+    doubleConstantName3 = ""
+    doubleConstantName4 = ""
+    doubleConstantName5 = ""
+    intConstant0 = 0
+    intConstant1 = 0
+    intConstant2 = 0
+    intConstant3 = 0
+    intConstant4 = 0
+    intConstant5 = 0
+    intConstantName0 = ""
+    intConstantName1 = ""
+    intConstantName2 = ""
+    intConstantName3 = ""
+    intConstantName4 = ""
+    intConstantName5 = ""
+    setMinMaxValues = FALSE
+    minVoxelValue = 0
+    maxVoxelValue = 0
+    setDataType = FALSE
+    dataType = "unsigned int8"
+    inputDataType0 = "output type"
+    inputDataType1 = "output type"
+    inputDataType2 = "output type"
+    inputDataType3 = "output type"
+    inputDataType4 = "output type"
+    inputHandling0 = AllowAny
+    inputHandling1 = AllowAny
+    inputHandling2 = AllowAny
+    inputHandling3 = AllowAny
+    inputHandling4 = AllowAny
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "4405 1749 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "763 410 326 631"
+        sizeHint = "326 631"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = FALSE
+    datatype = "unsigned int8"
+    changePageSize = TRUE
+    pageSizeX = 901
+    pageSizeY = 901
+    pageSizeZ = 1
+    pageSizeC = 4
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGrayValue = FALSE
+    minGrayValue = 0
+    changeMaxGrayValue = FALSE
+    maxGrayValue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module Info {
+  internal  {
+    frame = "4453 1509 56 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Info
+  }
+}
+connections  {
+  WorldVoxelConvert4.input0 = IntervalThreshold3.output0
+  XMarkerListContainer6.posXYZ = WorldVoxelConvert4.worldPos
+  LUTInfo.inLUT = LUTDuplicate.outLUT
+  LUTToMLImage.inLUT = LUTDuplicate.outLUT
+  Dummy_colorbar.inImage = SubImage2.output0
+  Dummy_colorbar.inInvPostLUT = SoView2DInfo1.self
+  SubImage.input0 = LUTToMLImage.output0
+  SubImage.sx = Arithmetic01.arg1X
+  SubImage.y = Arithmetic03.resultX
+  SubImage.sy = Arithmetic01.arg1X
+  SubImage1.input0 = PythonArithmetic.output0
+  SubImage1.x = Arithmetic03.arg1X
+  SubImage1.sx = Arithmetic03.arg1X
+  SubImage1.sy = Arithmetic01.resultX
+  AffineTransformation2D1.input0 = SubImage1.output0
+  Replicate.input0 = AffineTransformation2D1.output0
+  SoGroup2.children = "Dummy_labels.self Dummy_colorbar.self View2D7.self Rendered_colorbar.self"
+  Arithmetic011.arg1X = Replicate.replicationVectorX
+  Arithmetic011.arg2X = SoView2DInfo1.voxelDeviceCorner1
+  Rendered_colorbar.inImage = SubImage2.output0
+  Rendered_colorbar.inInvPostLUT = SoView2DInfo2.self
+  Rendered_colorbar.sliceOrigin = Arithmetic011.result
+  SoView2DMarkerEditor.inXMarkerList = XMarkerListContainer6.outXMarkerList
+  IntervalThreshold3.input0 = SetWorldMatrix1.output0
+  Rendered_labels.inImage = IntervalThreshold3.output0
+  Rendered_labels.inInvPostLUT = SoGroup4.self
+  Rendered_labels.sliceOrigin = Arithmetic07.result
+  Info1.input0 = IntervalThreshold3.output0
+  Arithmetic07.arg1X = Arithmetic08.resultX
+  Arithmetic07.arg2X = SoView2DInfo4.voxelDeviceCorner1
+  IntervalThreshold4.input0 = SubImage2.output0
+  View2D7.inImage = IntervalThreshold4.output0
+  SoGroup4.children = SoView2DMarkerEditor.self
+  Dummy_labels.inImage = IntervalThreshold3.output0
+  Dummy_labels.inInvPostLUT = SoView2DInfo4.self
+  Arithmetic08.arg1X = Replicate.replicationVectorX
+  SetWorldMatrix.input0 = Replicate.output0
+  SetWorldMatrix1.input0 = AffineTransformation2D1.output0
+  Arithmetic01.arg1X = LUTToMLImage.rescaleWidth
+  Arithmetic02.arg1X = Arithmetic01.resultX
+  Arithmetic03.arg1X = Arithmetic02.resultX
+  SubImage2.input0 = SetWorldMatrix.output0
+  SetWorldMatrix2.input0 = ImagePropertyConvert.output0
+  PythonArithmetic.input0 = SetWorldMatrix2.output0
+  ImagePropertyConvert.input0 = SubImage.output0
+  Info.input0 = SubImage.output0
+}
+networkModel = ""

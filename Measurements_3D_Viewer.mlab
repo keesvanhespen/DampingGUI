@@ -1,0 +1,562 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module View3D {
+  internal  {
+    frame = "4129 2141 144 56"
+    moduleGroupName = ""
+    windows  {
+      window Settings {
+        geometry = "79 101 377 480"
+        sizeHint = "377 480"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "2056 363 1509 645"
+        sizeHint = "1005 645"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "2395 197 1096 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View3D1
+    autoViewAll = TRUE
+    inventorInputOn = TRUE
+    inventorOutputOn = TRUE
+    lutType = Ramp
+    currentTimePoint = 0
+    staticSamplingRate = 1
+    quality = 1
+    filterVolumeData = FilterLinear
+    lutEditorColorPoints = "[ 0 1 1 1, 0 1 1 1, 0 1 1 1 ]"
+    lutEditorAlphaPoints = "[ 0 1, 0 1, 0 0 ]"
+    lutEditorRelativeLut = FALSE
+    lutEditorColorInterpolation = InterpolateRGB
+    lutEditorAlphaFactor = 1
+    orientationProjectionType = PERSPECTIVE
+    orientationLocation = LOWER_RIGHT
+    orientationOn = FALSE
+    orientationModel = MAN
+    greyCenter = 0.565000176429749
+    greyWidth = 0.572499930858612
+    alphaFactor = 0.521
+    colorFactor = "1 1 1"
+    camType = TRUE
+    camPosition = "163.767517089844 614.567321777344 65.142822265625"
+    camOrientation = "0.0188029818236828 0.64753657579422 0.761802315711975 2.78351545333862"
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    camFar = 863.62317
+    camNear = 457.25104
+    camFocal = 660.2345
+    camHeight = 0.78539819
+    decoration = FALSE
+    annotations = FALSE
+    background = FALSE
+    mode = VolumeRendering
+    interactiveQuality = Medium
+  }
+  internalFields  {
+    renderer.gradientQuality = GradientQualityAutomatic
+    renderer.enhancementAlphaMix = 0.25
+    renderer.boundaryEnhancement = FALSE
+    renderer.boundaryEnhancementFactor = 1
+    renderer.boundaryEnhancementExponent = 1
+    renderer.boundaryEnhancementGradientBias = 0
+    renderer.silhouetteEnhancement = FALSE
+    renderer.silhouetteEnhancementExponent = 1
+    renderer.silhouetteEnhancementFactor = 1
+    renderer.toneShading = FALSE
+    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
+    renderer.toneShadingColdColor = "0 0 0.400000005960464"
+    renderer.toneShadingWarmDiffuse = 0.60000002
+    renderer.toneShadingColdDiffuse = 0.2
+    renderer.toneShadingAngle = 45
+    renderer.materialAmbient = 0.58899999
+    renderer.materialDiffuse = 1
+    renderer.materialSpecular = 1
+    renderer.materialSpecularity = 32
+    renderer.light1Enabled = TRUE
+    renderer.light1DiffuseIntensity = 1
+    renderer.light1SpecularIntensity = 1
+    renderer.light1Color = "1 1 1"
+    renderer.light1PolarPhi = 105
+    renderer.light1PolarRho = -60
+    renderer.light2Enabled = FALSE
+    renderer.light2DiffuseIntensity = 1
+    renderer.light2SpecularIntensity = 1
+    renderer.light2Color = "1 1 1"
+    renderer.light2PolarPhi = 0
+    renderer.light2PolarRho = 0
+    renderer.light3Enabled = FALSE
+    renderer.light3DiffuseIntensity = 1
+    renderer.light3SpecularIntensity = 1
+    renderer.light3Color = "1 1 1"
+    renderer.light3PolarPhi = -45
+    renderer.light3PolarRho = 0
+    renderer.sizeOutputX = 190
+    renderer.sizeOutputY = 288
+    renderer.sizeOutputZ = 288
+    renderer.subVolumeStartX = 0
+    renderer.subVolumeStartY = 0
+    renderer.subVolumeStartZ = 0
+    renderer.subVolumeEndX = 190
+    renderer.subVolumeEndY = 288
+    renderer.subVolumeEndZ = 288
+    clip.hideGeometry = FALSE
+    clip.on = FALSE
+    clip.left = FALSE
+    clip.right = FALSE
+    clip.top = FALSE
+    clip.bottom = FALSE
+    clip.rear = FALSE
+    clip.front = FALSE
+    clip.translation0 = "1 0 0"
+    clip.translation1 = "-1 0 0"
+    clip.translation2 = "0 1 0"
+    clip.translation3 = "0 -1 0"
+    clip.translation4 = "0 0 1"
+    clip.translation5 = "0 0 -1"
+    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
+    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
+    clip.rotation2 = "0 0 -1 3.1415901184082"
+    clip.rotation3 = "0 0 1 0"
+    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
+    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "3997 2341 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "1351 423 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGroup1
+  }
+}
+module SoGVRRayCastSettings {
+  internal  {
+    frame = "3765 2493 168 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1250 535 405 268"
+        sizeHint = "263 268"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGVRRayCastSettings
+    enabled = TRUE
+    closestVesselThreshold = 150
+    midaMixValue = 0
+    earlyRayTermination = 1.99
+    integrateOpaqueGeometry = FALSE
+    renderInteractiveToFBO = FALSE
+    renderMode = RayCast_Direct
+    jitterMode = RayCast_JitterOff
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "4253 1957 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "2664 573 400 403"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "2486 587 574 359"
+        sizeHint = "574 359"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "132 118 877 939"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = FALSE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539848
+    position = "320.741241455078 -72.9485626220703 -61.6373977661133"
+    orientation = "0.622712850570679 0.654661953449249 0.428540080785751 1.99373984336853"
+    nearDistance = 178.40628
+    farDistance = 480.62784
+    focalDistance = 350.76468
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module SoBypass {
+  internal  {
+    frame = "4209 2649 128 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "838 583 258 94"
+        sizeHint = "258 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Bypass_tub
+    bypass = FALSE
+    noBypass = TRUE
+  }
+}
+module SoBypass {
+  internal  {
+    frame = "4033 2649 128 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Bypass_dtf
+    bypass = TRUE
+    noBypass = FALSE
+  }
+}
+module MPRPath {
+  internal  {
+    frame = "4625 2489 144 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "860 300 442 680"
+        sizeHint = "442 680"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Draw_Box
+    rotation = "0.906447858434842 -0.408302563474393 -0.107894840465744 2.671390044251"
+    translation = "-8.3771286010743 -12.3330572247461 -37.7148656249034"
+    plane = "-0.651161301649403 -0.576146601808341 0.494008150194868 -6.07094002830127"
+    enablePlaneEdit = FALSE
+    autoCenter = FALSE
+    fillValue = 0
+    outputSizeMode = AspectRatio
+    fieldOfView = 15
+    outputSize = 1
+    aspectRatio = 1
+    fieldOfViewX = 100
+    fieldOfViewY = 100
+    outputSizeX = 256
+    outputSizeY = 256
+    slabMode = SizeInSlicesForward
+    slabSize = 1
+    pageSizeX = 128
+    pageSizeY = 128
+    useUpVector = FALSE
+    upVector = "0 1 0"
+    disableDirectVoxelCopy = FALSE
+    inputSliceNo = 0
+    interpolation = Trilinear
+    borderHandling = UseFillValue
+    memoryAccess = Global
+    enableSlabProjection = FALSE
+    depthSlabRenderMode = Maximum
+    timeSlabRenderMode = Maximum
+    timeSlabStart = 0
+    timeSlabSize = 1
+    enableCurrentSlice = FALSE
+    currentSlice = 0
+    currentSliceRounded = 0
+    numberOfSlices = 0
+    currentSliceMin = 0
+    currentSliceMax = 0
+    snapCurrentSliceToIntegerIfOrthogonal = TRUE
+    currentKeyFrame = 0
+    maxKeyFrame = 0
+    pathAngle = 0
+    alignAlongPath = FALSE
+    curvedMprSlabSize = 1
+    markersOnFrames = TRUE
+    curvedMprSlabMode = SizeInSlices
+    useKeyFrameDistanceForSliceThickness = TRUE
+    showUpVectors = FALSE
+    showFrame = TRUE
+    upVectorColor = "0 0.666666666666667 0"
+    imageColor = "0 1 0"
+    borderColor = "1 1 1"
+    borderOn = TRUE
+    drawImageOn = FALSE
+    manipulatorOn = FALSE
+    clipPlaneOn = FALSE
+    flipClipPlane = FALSE
+    clipPlaneOffset = 0
+    axesOn = FALSE
+    alphaFactor = 1
+    zBuffer = FALSE
+    blendMode = BLEND_ADD
+  }
+}
+module SoDrawStyle {
+  internal  {
+    frame = "3685 2429 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "912 443 183 124"
+        sizeHint = "149 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoDrawStyle
+    style = INVISIBLE
+    pointSize = 0
+    lineWidth = 5
+    linePattern = 65535
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "4329 2245 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "1418 417 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGroup2
+  }
+}
+module WEMIsoSurface {
+  internal  {
+    frame = "4757 2589 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "765 446 405 369"
+        sizeHint = "405 369"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMIsoSurface
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    isoMinValue = 1200
+    isoMaxValue = 2000
+    useMinValue = FALSE
+    useMaxValue = TRUE
+    cellExtend = "1 1 1"
+    useWorldCoords = TRUE
+    useInterpolation = TRUE
+    useQuadrification = FALSE
+    useFaceValueList = FALSE
+    useLUTValueList = TRUE
+    useValenceThreeRemoval = TRUE
+    useZeroLengthEdgeRemoval = TRUE
+    useEdgeRemoval = FALSE
+    timePointIndex = -1
+    taskVerboseLogging = FALSE
+    useVoxelSampling = TRUE
+    voxelSampling = 1
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "4913 2473 192 80"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "855 208 443 500"
+        sizeHint = "443 500"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = page_checker_renderer
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_SINGLE_SIDE
+    allowHits = TRUE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_GENERAL
+    drawFaces = TRUE
+    faceDiffuseColor = "0.792156875133514 0.0235294122248888 0"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.266667008399963 0.266667008399963 0.266667008399963"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
+    faceAlphaValue = 0.48899999
+    faceShininessValue = 1
+    primitiveValueLists = ""
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = FALSE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = -1
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    selectedTab = 0
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "3785 2141 80 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "4981 2629 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "614 341 700 296"
+        sizeHint = "635 296"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener
+    mode = MLImage
+    inParameter = ""
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "4765 2453 136 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = IntervalThreshold1
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 0
+    threshWidth = 200000
+    threshMin = -100000
+    threshMax = 100000
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+connections  {
+  View3D1.inInvPreLUT = SoGroup.self
+  View3D1.inInvPostRenderer = SoGroup2.self
+  SoExaminerViewer.children = "View3D1.self page_checker_renderer.self"
+  SoGroup2.children = "Bypass_dtf.self Bypass_tub.self Draw_Box.outputSlice"
+  WEMIsoSurface.startTaskSynchronous = FieldListener.updateDone
+  page_checker_renderer.inWEM = WEMIsoSurface.outWEM
+  SoGroup.children = "SoGroup1.self SoDrawStyle.self SoGVRRayCastSettings.self"
+}
+networkModel = ""

@@ -1,0 +1,47 @@
+//----------------------------------------------------------------------------------
+//! Macro module Colorbar
+/*!
+// \file    Colorbar.script
+// \author  K.M. van Hespen
+// \date    2018-12-13
+//
+// Color bar function
+*/
+//----------------------------------------------------------------------------------
+
+
+
+Interface {
+  Inputs {
+    Field inImage {
+      internalName = LUTDuplicate.inLUT
+      comment = "Input LUT"
+    }
+  }
+  Outputs {
+    Field inImage1 {
+      internalName = SoGroup2.self
+      comment = "Output colorbar w/o ticks"
+    }
+    Field inImage2 {
+      internalName = Rendered_labels.self
+      comment = "Output ticks"
+    }
+  }
+  Parameters {Field tickcount {type=Int value=3}}
+}
+
+Window{
+  Category Options{
+    TextView SoView2DMarkerEditor.textFontSize{}
+    TextView Replicate.replicationVectorX {}
+    TextView tickcount {}
+  }
+}
+
+Commands {
+  source      = $(LOCAL_BASENAME).py
+  initCommand = init
+  FieldListener AffineTransformation2D1.output0  {command = setlabels}
+  FieldListener tickcount  {command = setlabels}
+}

@@ -1,0 +1,9 @@
+Interface  {
+  Inputs {}
+  Outputs  {
+    Field nodeOut0 {
+      internalName = SoGroup10.self
+    }
+  }
+  Parameters {}
+}

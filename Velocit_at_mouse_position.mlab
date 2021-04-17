@@ -1,0 +1,331 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module SoView2DVoxelValue {
+  internal  {
+    frame = "6244 -108 152 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "92 146 372 399"
+        sizeHint = "372 399"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = annoReadPix
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+  }
+}
+module SoView2DAnnotation {
+  internal  {
+    frame = "6262 11 152 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1926 573 777 571"
+        sizeHint = "711 571"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = annotation
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "0.899999976158142 0.899999976158142 0.899999976158142"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    annotationMode = ANNO_MODE_MR
+    showOrientation = ANNO_ORIENTATION_SIZE_WEIGHTED
+    drawNegativeOrientation = FALSE
+    drawPositiveOrientation = FALSE
+    orientationColor = "1 1 1"
+    verticalRuler = FALSE
+    horizontalRuler = FALSE
+    verticalRulerMarginRight = 8
+    horizontalRulerMarginBottom = 8
+    showTechnicalInfo = FALSE
+    showAnnotation = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    minDetailFontSize = 10
+    maxDetailFontSize = 18
+    minShortFontSize = 8
+    maxShortFontSize = 12
+    userDetailFontSize = 12
+    userShortFontSize = 10
+    rulerFontSize = 12
+    textShadow = TRUE
+    rulerShadow = TRUE
+    annotationUserTopLeft = "$(PatientsName)
+$(PatientID) $(PatientsSex)
+$(PatientsBirthDate)
+($(input00)): $(input01)"
+    annotationUserTopRight = "$(InstitutionName)
+$(ManufacturersModelName)
+$(Modality)"
+    annotationUserBottomLeft = "slice:  $(slice)
+Timepoint: $(timepoint)
+$(sizex),$(sizey),$(sizez),$(sizec),$(sizet)
+$(voxelx),$(voxely)
+$(SeriesDescription)"
+    annotationUserBottomRight = "User Mode
+Scan: $(AcquisitionDate)
+LUT C/W: $(numInput03) / $(numInput04)"
+    annotationUserBottomCenter = ""
+    annotationCTTopLeft = "$(PatientsName)
+$(PatientsBirthDate)  $(PatientsSex)
+$(PatientID)
+($(input00)): 
+$(input02) $(input09)"
+    annotationCTTopRight = "$(InstitutionName)
+$(ManufacturersModelName)
+$(Modality) "
+    annotationCTBottomLeft = "Slice: $(slice)
+Timepoint: $(timepoint)
+$(sizex),$(sizey),$(sizez),$(sizec),$(sizet)
+$(voxelx),$(voxely),$(voxelz)
+$(SeriesDescription)
+$(ImageComments)"
+    annotationCTBottomRight = "CT Mode
+Scan: $(AcquisitionDate)
+LUT C/W: $(numInput07) / $(numInput08)"
+    annotationCTBottomCenter = ""
+    annotationMRTopLeft = "($(input00)):
+$(input01) cm/s"
+    annotationMRTopRight = ""
+    annotationMRBottomLeft = "Slice: $(slice)
+Timepoint: $(timepoint)
+"
+    annotationMRBottomRight = ""
+    annotationMRBottomCenter = ""
+    shortTopLeft = "$(PatientsName)
+($(input00)):
+ $(input01) GV"
+    shortTopRight = $(Modality)
+    shortBottomLeft = "Slice: $(slice)"
+    shortBottomRight = "LUT C/W: $(numInput03) / $(numInput04)"
+    shortBottomCenter = ""
+    abreviateChars = -1
+    abreviateShortChars = 16
+    input00 = "-1 -1 -1"
+    input01 = -1
+    input02 = -1
+    input03 = 48.1810646057129
+    input04 = 91.4255828857422
+    input05 = 1
+    input06 = 1
+    input07 = 48.1810646057129
+    input08 = 91.4255828857422
+    input09 = GV
+    numInput00 = 0
+    numInput01 = 0
+    numInput02 = -1
+    numInput03 = 48.1810646057129
+    numInput04 = 91.4255828857422
+    numInput05 = 1
+    numInput06 = 1
+    numInput07 = 48.1810646057129
+    numInput08 = 91.4255828857422
+    numInput09 = 0
+    fontWidthDummyString = ""
+    targetWidth = 0
+    targetHeight = 0
+    orientationModel = FALSE
+    orientationModelPosition = ANNO_BOTTOM_RIGHT
+    marginTop = 2
+    marginBottom = 2
+    marginLeft = 2
+    marginRight = 2
+    orientationModelRelativeSize = 0.125
+    orientationModelMinSize = 24
+    orientationModelMaxSize = 128
+    orientationModelRelativeVerticalOffset = 0
+    orientationModelMinVerticalOffset = 0
+    orientationModelMaxVerticalOffset = 128
+    orientationModelRelativeHorizontalOffset = 0
+    orientationModelMinHorizontalOffset = 0
+    orientationModelMaxHorizontalOffset = 128
+    orientationModelColor = "1 1 1"
+    orientationAndScaleFromCamera = FALSE
+    drawBackgroundBox = FALSE
+    backgroundColor = "0.200000002980232 0.200000002980232 0.699999988079071"
+    backgroundOpacity = 0.5
+    backgroundEdgeColor = "0.200000002980232 0.200000002980232 0.699999988079071"
+    backgroundEdgeOpacity = 0.5
+  }
+}
+module SoView2DPosition {
+  internal  {
+    frame = "6290 -183 136 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "38 399 473 725"
+        sizeHint = "457 725"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = position
+    interactionProviderID = ""
+    drawingOn = FALSE
+    editingOn = FALSE
+    fixZOn = TRUE
+    color = "0.886206984519958 0.875320017337799 0.560474991798401"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = RELEASED
+    button3 = RELEASED
+    shift = PRESSED
+    control = RELEASED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    worldPosition = "-3.9842700958252 -7.72900009155273 32.6810989379883"
+    drawingModel = DRAWINGMODEL_CROSSHAIRS
+    drawingModelSizeUnit = SIZEUNIT_VOXEL
+    drawingModelSize = -1
+    crossHairSpacing = 0
+    drawEditingRect = TRUE
+    blendOnto = 0.55000001
+    blendOutside = 0.2
+    lineWidth = 1
+    colorAxes = FALSE
+    sagittalColor = "1 0 0"
+    coronalColor = "0 1 0"
+    axialColor = "0 0 1"
+    updateOnPress = TRUE
+    updateOnMotion = TRUE
+    updateOnRelease = FALSE
+    cooperative = FALSE
+    colorBorder = FALSE
+    colorBorderWidth = 2
+  }
+}
+module SoMouseGrabber {
+  internal  {
+    frame = "6222 -263 128 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "766 277 497 416"
+        sizeHint = "497 416"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "70 117 222 445"
+        sizeHint = "222 445"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = posMouse
+    on = FALSE
+    normalized = FALSE
+    clamp = TRUE
+    button1 = PRESSED
+    button2 = RELEASED
+    button3 = RELEASED
+    shift = PRESSED
+    ctrl = RELEASED
+    alt = RELEASED
+    cursorShape = CROSS_CURSOR
+    xmin = 0
+    xmax = 1
+    ymin = 0
+    ymax = 1
+    setEventHandled = FALSE
+    setWheelEventHandled = FALSE
+    flipX = FALSE
+    flipY = FALSE
+    swapXY = FALSE
+    sensitivity = 1
+    wheelOverflow = FALSE
+    wheel = 1
+    wheelStep = 1
+    wheelMin = 0
+    wheelMax = 100
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "6282 -387 152 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup10
+  }
+}
+connections  {
+  annotation.input00 = annoReadPix.integerPosition
+  annotation.input01 = annoReadPix.storedValueString
+  annotation.input02 = annoReadPix.storedValue
+  annotation.numInput02 = annoReadPix.outputValue
+  position.button1 = posMouse.button1
+  position.button2 = posMouse.button2
+  position.button3 = posMouse.button3
+  position.shift = posMouse.shift
+  position.control = posMouse.ctrl
+  posMouse.button1 = position.button1
+  posMouse.button2 = position.button2
+  posMouse.button3 = position.button3
+  posMouse.shift = position.shift
+  posMouse.ctrl = position.control
+  SoGroup10.children = "posMouse.self position.self annotation.self annoReadPix.self"
+}
+networkModel = ""

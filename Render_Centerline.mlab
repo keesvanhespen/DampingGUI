@@ -1,0 +1,996 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module WEMIsoSurface {
+  internal  {
+    frame = "2377 2741 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2827 631 443 395"
+        sizeHint = "405 369"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMIsoSurface1
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    isoMinValue = 1
+    isoMaxValue = 11
+    useMinValue = FALSE
+    useMaxValue = FALSE
+    cellExtend = "1 1 1"
+    useWorldCoords = TRUE
+    useInterpolation = TRUE
+    useQuadrification = FALSE
+    useFaceValueList = FALSE
+    useLUTValueList = FALSE
+    useValenceThreeRemoval = TRUE
+    useZeroLengthEdgeRemoval = TRUE
+    useEdgeRemoval = FALSE
+    timePointIndex = -1
+    taskVerboseLogging = FALSE
+    useVoxelSampling = TRUE
+    voxelSampling = 1
+  }
+}
+module DtfSkeletonization {
+  internal  {
+    frame = "2264 3175 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1156 575 330 321"
+        sizeHint = "328 321"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = DtfSkeletonization
+    updateSkeletonGraph = FALSE
+    compileGraphVoxels = FALSE
+    objectMinValue = 1
+    cavityVolume = 10
+    maxDistance = 10000
+    useMaxDistance = FALSE
+    autoUpdateMode = AutoUpdate
+    skeletonOnly = TRUE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "2284 3071 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3062 191 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold2
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 0.608
+    threshWidth = 0.784
+    threshMin = 0.216
+    threshMax = 1
+    lowerUserValue = 0
+    innerUserValue = 0
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "2288 2975 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "804 315 326 631"
+        sizeHint = "326 631"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert3
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = TRUE
+    datatype = "unsigned int8"
+    changePageSize = FALSE
+    pageSizeX = 32
+    pageSizeY = 32
+    pageSizeZ = 1
+    pageSizeC = 1
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGrayValue = FALSE
+    minGrayValue = 0
+    changeMaxGrayValue = FALSE
+    maxGrayValue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "2375 2865 112 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2901 503 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = TRUE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitDilation
+  }
+}
+module MaskToMarkers {
+  internal  {
+    frame = "2227 2713 152 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1397 566 292 174"
+        sizeHint = "292 174"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MaskToMarkers
+    lowerThreshold = 0
+    setType = User
+    type = 0
+    updateMode = AutoUpdate
+    vectorMode = Zero
+  }
+}
+module Vesselness {
+  internal  {
+    frame = "2625 3421 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1427 780 214 369"
+        sizeHint = "214 369"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Vesselness
+    startSigma = 1
+    endSigma = 2
+    nbrOfScales = 2
+    unit = mm
+    calc2D = FALSE
+    normalizedMeasure = FALSE
+    darkVessels = FALSE
+    autoUpdate = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "2809 3373 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1929 602 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold
+    lowerType = UserDef
+    innerType = ImgOrig
+    upperType = ImgOrig
+    centerWidthSet = FALSE
+    threshCenter = 7237.5
+    threshWidth = 14395
+    threshMin = 40
+    threshMax = 14435
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module BitMorphology {
+  internal  {
+    frame = "2797 2901 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2446 407 339 466"
+        sizeHint = "339 466"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BitMorphology1
+    borderHandling = NoPad
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = TRUE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    filterMode = BitDilation
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "2525 3525 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1512 716 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold1
+    lowerType = UserDef
+    innerType = ImgOrig
+    upperType = ImgOrig
+    centerWidthSet = FALSE
+    threshCenter = 50152
+    threshWidth = 99696
+    threshMin = 304
+    threshMax = 100000
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module OtsuThreshold {
+  internal  {
+    frame = "2609 3109 144 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "864 571 206 118"
+        sizeHint = "206 118"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OtsuThreshold
+    binSize = 512
+    autoApply = TRUE
+    backgroundThreshold = 0
+    threshold = 85
+  }
+}
+module Resample3D {
+  internal  {
+    frame = "2741 2997 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "803 462 329 337"
+        sizeHint = "329 337"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Resample3D
+    keep = "Scale factor"
+    filter = Nearest_Neighbor
+    isotropic = FALSE
+    filterAlways = FALSE
+    filterAlwaysTolerance = 0
+    zoom = "2 2 2"
+    imageSize = "380 640 640"
+    voxelSize = "0.5 0.391877502202985 0.391877502202985"
+    subVoxelShift = "0 0 0"
+    useReferenceImage = FALSE
+  }
+}
+module Switch {
+  internal  {
+    frame = "2709 3269 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1189 582 200 64"
+        sizeHint = "200 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch
+    currentInput = 1
+    numberOfInputs = 2
+  }
+}
+module OtsuThreshold {
+  internal  {
+    frame = "2949 3541 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1405 566 206 118"
+        sizeHint = "206 118"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OtsuThreshold1
+    binSize = 256
+    autoApply = TRUE
+    backgroundThreshold = 0
+    threshold = 304
+  }
+}
+module Bypass {
+  internal  {
+    frame = "2685 3685 104 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Bypass
+    noBypass = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "2837 3109 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "840 465 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold3
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 32810
+    threshWidth = 65450
+    threshMin = 85
+    threshMax = 65535
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "3093 2837 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1341 352 326 631"
+        sizeHint = "326 631"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = TRUE
+    datatype = "unsigned int8"
+    changePageSize = FALSE
+    pageSizeX = 32
+    pageSizeY = 32
+    pageSizeZ = 1
+    pageSizeC = 1
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGrayValue = FALSE
+    minGrayValue = 0
+    changeMaxGrayValue = FALSE
+    maxGrayValue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "2941 2629 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1372 633 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 319
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_NEAREST
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 3.0999992
+    sliceZoomSynced = 3.0999992
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "128.032241821289 216.096771240234"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module FilterConnectedComponents {
+  internal  {
+    frame = "2789 2805 216 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "879 661 350 207"
+        sizeHint = "350 207"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FilterConnectedComponents
+    updateMode = AutoUpdate
+    minClusterSize = 500
+    maxClusterSize = -1
+    clusterSizeInterpretation = Voxels
+    shouldInvertSelection = FALSE
+    selectionMode = AllFiltered
+  }
+}
+module ComputeConnectedComponents {
+  internal  {
+    frame = "2529 2837 240 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2311 337 411 324"
+        sizeHint = "364 324"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComputeConnectedComponents
+    updateMode = AutoUpdate
+    neighborhoodRelation = NBH_3D_26_XYZ
+    backgroundValue = 0
+    useBackgroundValue = TRUE
+    useMask = FALSE
+    clusterMode = IdenticalIntensities
+    userDataDefault = ImageValue
+    similarityToleranceIntensities = 0
+    similarityToleranceVectors = 0.98
+  }
+}
+module ConnectedComponentsToImage {
+  internal  {
+    frame = "2817 2733 240 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "792 546 350 169"
+        sizeHint = "350 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ConnectedComponentsToImage
+    updateMode = AutoUpdate
+    writeToImageMode = FixedValues
+    clusterValue = 1
+    backgroundValue = 0
+    useBoundingBoxOfSelectedClusters = FALSE
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "2997 3205 104 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "863 509 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt
+    boolValue = TRUE
+    invBoolValue = FALSE
+    intValue = 1
+    offValue = 0
+    onValue = 1
+    defaultBool = Unchanged
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "2565 3189 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3357 571 1144 730"
+        sizeHint = "635 296"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener
+    mode = Parameter
+    inParameter = 85
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "3017 3349 192 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = MinMaxScan
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferredIntType = PreferUnsigned
+  }
+}
+module View2D {
+  internal  {
+    frame = "3109 3117 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3060 494 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D2
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 160
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR_POSTCLASS
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 2.5999997
+    sliceZoomSynced = 2.5999997
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "70.5825958251953 118.352767944336"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 1730.13989257812
+    lutWidth = 2971
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module GVROrthoOverlay {
+  internal  {
+    frame = "3125 3245 168 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "772 477 390 307"
+        sizeHint = "390 307"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GVROrthoOverlay
+    on = TRUE
+    clipToSlice = TRUE
+    interpolationMode = FilterNearest
+    blendMode = Blend
+    useSceneLut = FALSE
+    lutCenter = 0.24699999
+    lutWidth = 0
+    baseColor = "0.356862992048264 1 0.058823499828577"
+    baseAlpha = 1
+    currentTimePoint = 0
+  }
+}
+module itkImageFileReader {
+  internal  {
+    frame = "3421 3317 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2723 433 489 503"
+        sizeHint = "328 395"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = itkImageFileReader
+    fileDataType = "unsigned int16"
+    autoDetermineDataType = TRUE
+    correctSubVoxelShift = TRUE
+    fileDimension = 3
+    info = "Invalid path"
+    numDims = 0
+    fileType = TypeNotApplicable
+    componentType = ""
+    pixelType = UNKNOWNPIXELTYPE
+    loaderType = ""
+    outputMetaDataStr = ""
+    suppressErrorPosting = FALSE
+    unresolvedFileName = ""
+  }
+}
+module OrthoReformat3 {
+  internal  {
+    frame = "3413 3221 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2751 502 272 256"
+        sizeHint = "272 256"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoReformat3
+    useGlobalInputImage = TRUE
+    applyModifyPatientOrientationMatrix = FALSE
+    modifyPatientOrientationMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module Arithmetic2 {
+  internal  {
+    frame = "3269 2981 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2711 583 353 94"
+        sizeHint = "353 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic22
+    function = Max
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    constant = 0
+    autoReplicate = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "3285 3133 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "2686 440 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold5
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 0.25
+    threshWidth = 0.5
+    threshMin = 0
+    threshMax = 0.5
+    lowerUserValue = 0
+    innerUserValue = 0
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module Switch {
+  internal  {
+    frame = "3081 2941 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2434 585 200 64"
+        sizeHint = "200 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch1
+    currentInput = 0
+    numberOfInputs = 5
+  }
+}
+module ImageStatistics {
+  internal  {
+    frame = "3405 2941 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "3101 366 458 593"
+        sizeHint = "458 593"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageStatistics
+    innerMin = 0
+    innerMax = 0
+    updateMode = AutoUpdate
+    perSlice = FALSE
+    currentSlice = 0
+    lowerWidth = 0
+    upperWidth = 0
+    useMask = FALSE
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "3297 2861 112 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2783 509 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt1
+    boolValue = FALSE
+    invBoolValue = TRUE
+    intValue = 0
+    offValue = 0
+    onValue = 1
+    defaultBool = Unchanged
+  }
+}
+connections  {
+  WEMIsoSurface1.input0 = ConnectedComponentsToImage.output0
+  DtfSkeletonization.input0 = BitMorphology1.output0
+  IntervalThreshold2.input0 = DtfSkeletonization.output0
+  ImagePropertyConvert3.input0 = IntervalThreshold2.output0
+  BitMorphology.input0 = ImagePropertyConvert3.output0
+  MaskToMarkers.input0 = ImagePropertyConvert3.output0
+  Vesselness.input0 = IntervalThreshold1.output0
+  IntervalThreshold.input0 = Vesselness.output0
+  BitMorphology1.input0 = Resample3D.output0
+  IntervalThreshold1.input0 = Bypass.output0
+  IntervalThreshold1.threshMin = OtsuThreshold1.threshold
+  OtsuThreshold.input0 = Switch.output0
+  Resample3D.input0 = ImagePropertyConvert.output0
+  Switch.input0 = Vesselness.output0
+  Switch.input1 = IntervalThreshold.output0
+  Switch.currentInput = BoolInt.intValue
+  OtsuThreshold1.input0 = Bypass.output0
+  IntervalThreshold3.input0 = Switch.output0
+  IntervalThreshold3.threshMin = OtsuThreshold.threshold
+  ImagePropertyConvert.input0 = Switch1.output0
+  View2D.inImage = ConnectedComponentsToImage.output0
+  FilterConnectedComponents.inClusters = ComputeConnectedComponents.outClusters
+  ComputeConnectedComponents.input0 = BitMorphology.output0
+  ConnectedComponentsToImage.inClusters = FilterConnectedComponents.outClusters
+  FieldListener.inParameter = IntervalThreshold3.threshMin
+  MinMaxScan.input0 = Vesselness.output0
+  View2D2.inImage = Bypass.output0
+  View2D2.inInvPostLUT = GVROrthoOverlay.outScene
+  GVROrthoOverlay.inImage = MinMaxScan.output0
+  OrthoReformat3.input0 = itkImageFileReader.output0
+  Arithmetic22.input0 = IntervalThreshold3.output0
+  Arithmetic22.input1 = IntervalThreshold5.output0
+  IntervalThreshold5.input0 = OrthoReformat3.output1
+  Switch1.input0 = IntervalThreshold3.output0
+  Switch1.input1 = Arithmetic22.output0
+  Switch1.currentInput = BoolInt1.intValue
+  ImageStatistics.input0 = Arithmetic22.output0
+  BoolInt1.boolValue = ImageStatistics.resultsValid
+}
+networkModel = ""

@@ -1,0 +1,884 @@
+// MDL v1 utf8
+mevislabVersion = 3.1
+network  {
+  watchlist = ""
+}
+module So3DMarkerEditor {
+  internal  {
+    frame = "2148 1481 136 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "918 514 542 340"
+        sizeHint = "542 340"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 330 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = So3DMarkerEditor
+    interactionProviderID = ""
+    scaleSize = 7
+    scaleLength = 16
+    color = "0 1 0"
+    ambientColor = "0 0 0"
+    specularColor = "0 1 0"
+    enableVector = FALSE
+    drawingOn = TRUE
+    editingOn = TRUE
+    selectingOn = TRUE
+    deleteOnClick = FALSE
+    addOnClick = TRUE
+    edit3DOn = FALSE
+    edit3DVector = FALSE
+    useManagedInteraction = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    colorMode = COLOR_BY_INDEX
+    markerType = 1
+    textColorMode = COLOR_TEXT
+    textMode = TEXT_STYLENAME
+    textColor = "1 1 1"
+    textShadow = TRUE
+    textBackgroundColor = "0.5 0.5 0.5"
+    textBackgroundAlpha = 0
+    textFontType = SoExtText2::TIMES_ROMAN_24
+    vectorArrow = VECTOR_START_ARROW
+    lineStyle = Solid
+    drawMode = DrawModeGeometry
+    geometryComplexity = VERY_HIGH
+    numMarkersThresholdForFastRendering = 5021
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = RemoveNew
+    maxSize = 2
+    useInsertTemplate = FALSE
+    posXYZ = "9.77731132507324 -11.1098709106445 -30.5934753417969"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "2061 1949 168 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1347 590 443 500"
+        sizeHint = "443 500"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoWEMRenderer1
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_AUTO
+    allowHits = TRUE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_GENERAL
+    drawFaces = TRUE
+    faceDiffuseColor = "0 0 0"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.517647087574005 0.517647087574005 0.517647087574005"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "1 1 1"
+    faceAlphaValue = 1
+    faceShininessValue = 0.017999999
+    primitiveValueLists = LUT
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = TRUE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = 0
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    selectedTab = 0
+  }
+}
+module SoMLLUTChangeColor {
+  internal  {
+    frame = "2417 2045 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "863 361 279 361"
+        sizeHint = "209 184"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMLLUTChangeColor
+    enabled = TRUE
+    visualType = As_Input
+    color = "1 0.333333343267441 0"
+    intensity = 1
+    alpha = 1
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "1901 1917 104 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "863 509 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt
+    boolValue = TRUE
+    invBoolValue = FALSE
+    intValue = 1
+    offValue = 0
+    onValue = 1
+    defaultBool = Unchanged
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "2233 1141 96 56"
+    moduleGroupName = "Marker editing"
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module XMarkerAtIndex {
+  internal  {
+    frame = "2668 1305 120 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "876 115 481 381"
+        sizeHint = "459 381"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerAtIndex
+    index = 0
+    autoUpdate = TRUE
+  }
+}
+module XMarkerAtIndex {
+  internal  {
+    frame = "2888 1305 128 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "1206 126 481 381"
+        sizeHint = "459 381"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerAtIndex1
+    index = 1
+    autoUpdate = TRUE
+  }
+}
+module StylePalette {
+  internal  {
+    frame = "2504 1665 96 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "40 321 1469 526"
+        sizeHint = "636 526"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StylePalette
+    color1 = "0 1 0"
+    color2 = "0 1 0"
+    color3 = "0 0 1"
+    color4 = "0 1 0"
+    color5 = "1 0.5 0"
+    color6 = "1 0 1"
+    color7 = "0 1 1"
+    color8 = "0.5 1 0.5"
+    color9 = "1 0 0.5"
+    color10 = "0.5 1 0"
+    color11 = "0.5 0 1"
+    color12 = "0 1 0.5"
+    lineStyle1 = Solid
+    lineStyle2 = Solid
+    lineStyle3 = Solid
+    lineStyle4 = Solid
+    lineStyle5 = Solid
+    lineStyle6 = Solid
+    lineStyle7 = Solid
+    lineStyle8 = Solid
+    lineStyle9 = Solid
+    lineStyle10 = Solid
+    lineStyle11 = Solid
+    lineStyle12 = Solid
+    lineWidth1 = 1
+    lineWidth2 = 1
+    lineWidth3 = 1
+    lineWidth4 = 1
+    lineWidth5 = 1
+    lineWidth6 = 1
+    lineWidth7 = 1
+    lineWidth8 = 1
+    lineWidth9 = 1
+    lineWidth10 = 1
+    lineWidth11 = 1
+    lineWidth12 = 1
+    markerType1 = Circle
+    markerType2 = Circle
+    markerType3 = None
+    markerType4 = None
+    markerType5 = None
+    markerType6 = None
+    markerType7 = None
+    markerType8 = None
+    markerType9 = None
+    markerType10 = None
+    markerType11 = None
+    markerType12 = None
+    markerSize1 = 2
+    markerSize2 = 0
+    markerSize3 = 0
+    markerSize4 = 4
+    markerSize5 = 4
+    markerSize6 = 4
+    markerSize7 = 4
+    markerSize8 = 4
+    markerSize9 = 4
+    markerSize10 = 4
+    markerSize11 = 4
+    markerSize12 = 4
+    antiAlias1 = TRUE
+    antiAlias2 = TRUE
+    antiAlias3 = FALSE
+    antiAlias4 = FALSE
+    antiAlias5 = FALSE
+    antiAlias6 = FALSE
+    antiAlias7 = FALSE
+    antiAlias8 = FALSE
+    antiAlias9 = FALSE
+    antiAlias10 = FALSE
+    antiAlias11 = FALSE
+    antiAlias12 = FALSE
+    name1 = P
+    name2 = " "
+    name3 = ""
+    name4 = ""
+    name5 = ""
+    name6 = ""
+    name7 = ""
+    name8 = ""
+    name9 = ""
+    name10 = ""
+    name11 = ""
+    name12 = ""
+    currentStyle = 0
+    currentColor = "1 1 1"
+    currentLineStyle = None
+    currentLineWidth = 1
+    currentMarkerType = None
+    currentMarkerSize = 4
+    currentAntiAlias = FALSE
+    currentName = ""
+    reservedEntries = 0
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "2888 1497 96 72"
+    moduleGroupName = "Marker editing"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1407 526 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic0
+    debugLevel = 0
+    arg1 = "0 0 0"
+    arg1X = 0
+    arg1XAsVec = FALSE
+    operation = Equal
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module Arithmetic0 {
+  internal  {
+    frame = "2668 1545 104 72"
+    moduleGroupName = "Marker editing"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "712 206 460 241"
+        sizeHint = "447 241"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic01
+    debugLevel = 0
+    arg1 = "9.77731132507324 -11.1098709106445 -30.5934753417969"
+    arg1X = 9.77731132507324
+    arg1XAsVec = FALSE
+    operation = Equal
+    arg2 = "0 0 0"
+    arg2X = 0
+    arg2XAsVec = FALSE
+    resultsAsPercent = FALSE
+    formatString = ""
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "2699 1679 112 56"
+    moduleGroupName = "Marker editing"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1435 562 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt1
+    boolValue = FALSE
+    invBoolValue = TRUE
+    intValue = 2
+    offValue = 2
+    onValue = 0
+    defaultBool = Unchanged
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "2872 1633 112 56"
+    moduleGroupName = "Marker editing"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "863 509 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt2
+    boolValue = TRUE
+    invBoolValue = FALSE
+    intValue = 0
+    offValue = 2
+    onValue = 0
+    defaultBool = Unchanged
+  }
+}
+module BoolInt {
+  internal  {
+    frame = "2456 1505 112 56"
+    moduleGroupName = "Marker editing"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1150 292 208 243"
+        sizeHint = "208 243"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolInt3
+    boolValue = FALSE
+    invBoolValue = TRUE
+    intValue = 1
+    offValue = 1
+    onValue = 0
+    defaultBool = Unchanged
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "2163 1711 160 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "3319 511 513 497"
+        sizeHint = "500 497"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer1
+    listString = ""
+    index = -1
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 2
+    useInsertTemplate = FALSE
+    posXYZ = "0 0 0"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module FieldListener {
+  internal  {
+    frame = "2500 1337 104 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "925 513 700 296"
+        sizeHint = "635 296"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FieldListener
+    mode = Parameter
+    inParameter = 0
+    enableConsoleLog = FALSE
+    shouldAutoUpdate = TRUE
+  }
+}
+module RunPythonScript {
+  internal  {
+    frame = "2537 1173 160 56"
+    moduleGroupName = "Marker editing"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1530 269 2178 822"
+        sizeHint = "621 300"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RunPythonScript
+    in0 = ""
+    in1 = ""
+    in2 = ""
+    in3 = ""
+    in4 = ""
+    in5 = ""
+    in6 = ""
+    in7 = ""
+    in8 = ""
+    in9 = ""
+    inComment0 = in0
+    inComment1 = in1
+    inComment2 = in2
+    inComment3 = in3
+    inComment4 = in4
+    inComment5 = in5
+    inComment6 = in6
+    inComment7 = in7
+    inComment8 = in8
+    inComment9 = in9
+    autoApply0 = TRUE
+    autoApply1 = TRUE
+    autoApply2 = TRUE
+    autoApply3 = TRUE
+    autoApply4 = TRUE
+    autoApply5 = TRUE
+    autoApply6 = TRUE
+    autoApply7 = TRUE
+    autoApply8 = TRUE
+    autoApply9 = TRUE
+    out0 = ""
+    out1 = ""
+    out2 = ""
+    out3 = ""
+    out4 = ""
+    out5 = ""
+    out6 = ""
+    out7 = ""
+    out8 = ""
+    out9 = ""
+    outComment0 = out0
+    outComment1 = out1
+    outComment2 = out2
+    outComment3 = out3
+    outComment4 = out4
+    outComment5 = out5
+    outComment6 = out6
+    outComment7 = out7
+    outComment8 = out8
+    outComment9 = out9
+    initCode = "# For backward compatibility, set up CTX as alias for ctx
+CTX = ctx # ctx is the network's context, not RunPythonScript's
+already_ran=0"
+    wakeUpCode = ""
+    code = "*if ctx.field("XMarkerListContainer2.numItems").value==2 and ctx.field("XMarkerListContainer.numItems").value==3 and ctx.field("XMarkerAtIndex.position3D").value==(0.0,0.0,0.0): 
+  ##first xmarker is at location 0,0,0. This marker has already been added. Now use the new marker location for the first marker.
+  ctx.field("XMarkerListContainer1.index").setValue(0)
+  ctx.field("XMarkerListContainer1.posXYZ").setValue(ctx.field("XMarkerAtIndex2.position3D").value)
+  ctx.field("XMarkerListContainer.index").setValue(ctx.field("XMarkerListContainer.numItems").value-1)
+  ctx.field("XMarkerListContainer.delete").touch()
+
+elif already_ran:
+  already_ran=0
+  ctx.field("XMarkerListContainer1.index").setValue(ctx.field("So3DMarkerEditor.currentIndex").value)
+  ctx.field("XMarkerListContainer1.posXYZ").setValue([0,0,0])
+
+elif ctx.field("XMarkerListContainer2.numItems").value==2 and ctx.field("XMarkerListContainer.numItems").value==3 and ctx.field("XMarkerAtIndex1.position3D").value==(0.0,0.0,0.0): 
+  ##first xmarker is at location 0,0,0. This marker has already been added. Now use the new marker location for the second marker.
+  ctx.field("XMarkerListContainer1.index").setValue(1)
+  ctx.field("XMarkerListContainer1.posXYZ").setValue(ctx.field("XMarkerAtIndex2.position3D").value)
+  ctx.field("XMarkerListContainer.index").setValue(ctx.field("XMarkerListContainer.numItems").value-1)
+  ctx.field("XMarkerListContainer.delete").touch()
+
+elif ctx.field("XMarkerListContainer2.numItems").value==2 and ctx.field("XMarkerListContainer.numItems").value==3: 
+  ##number of markers is two and clicked number is three = is new clicked marker interaction with two already set markers.
+  ctx.field("XMarkerListContainer.index").setValue(ctx.field("XMarkerListContainer.numItems").value-1)
+  ctx.field("XMarkerListContainer.delete").touch()
+
+elif ctx.field("XMarkerListContainer2.numItems").value==2 and ctx.field("XMarkerListContainer.numItems").value==2  and not (ctx.field("XMarkerAtIndex1.position3D").value==(0.0,0.0,0.0) or ctx.field("XMarkerAtIndex.position3D").value==(0.0,0.0,0.0)):
+  ## selected one of the two markers
+  ctx.field("XMarkerListContainer1.index").setValue(ctx.field("So3DMarkerEditor.currentIndex").value)
+  ctx.field("XMarkerListContainer1.posXYZ").setValue([0,0,0])
+  already_ran=1
+
+elif ctx.field("XMarkerListContainer2.numItems").value==1 and ctx.field("XMarkerListContainer.numItems").value==1:
+  ## selected one of the two markers
+  ctx.field("So3DMarkerEditor.deleteAll").touch()
+  ctx.field("So3DMarkerEditor1.deleteAll").touch()
+  ctx.field("XMarkerListContainer.deleteAll").touch()
+  ctx.field("XMarkerListContainer1.deleteAll").touch()
+
+elif ctx.field("XMarkerListContainer1.numItems").value==2 and ctx.field("XMarkerListContainer.numItems").value==2 and (ctx.field("XMarkerAtIndex1.position3D").value==(0.0,0.0,0.0) or ctx.field("XMarkerAtIndex.position3D").value==(0.0,0.0,0.0)):
+  ## Deleting last marker, after all two markers were initially clicked
+  ctx.field("XMarkerListContainer.deleteAll").touch()
+  ctx.field("XMarkerListContainer1.deleteAll").touch()
+  ctx.field("XMarkerListContainer2.deleteAll").touch()
+  ctx.field("So3DMarkerEditor.deleteAll").touch()
+  ctx.field("So3DMarkerEditor1.deleteAll").touch()
+
+
+   *"
+    finalizeCode = ""
+    showFields = FALSE
+    showInitCode = FALSE
+    showWakeUpCode = FALSE
+    showCode = TRUE
+    showFinalizeCode = FALSE
+    showConsole = TRUE
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "2273 1301 160 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "2049 276 513 497"
+        sizeHint = "500 497"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer2
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 2
+    useInsertTemplate = FALSE
+    posXYZ = "9.77731132507324 -11.1098709106445 -30.5934753417969"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module So3DMarkerEditor {
+  internal  {
+    frame = "2032 1329 144 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "1392 254 542 340"
+        sizeHint = "542 340"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = So3DMarkerEditor1
+    interactionProviderID = ""
+    scaleSize = 0
+    scaleLength = 3.5
+    color = "1 1 1"
+    ambientColor = "0 0 0"
+    specularColor = "0.300000011920929 0.300000011920929 0.300000011920929"
+    enableVector = FALSE
+    drawingOn = TRUE
+    editingOn = TRUE
+    selectingOn = TRUE
+    deleteOnClick = FALSE
+    addOnClick = TRUE
+    edit3DOn = FALSE
+    edit3DVector = FALSE
+    useManagedInteraction = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    colorMode = COLOR_BY_INDEX
+    markerType = 11
+    textColorMode = COLOR_TEXT
+    textMode = TEXT_OFF
+    textColor = "1 1 1"
+    textShadow = TRUE
+    textBackgroundColor = "0.5 0.5 0.5"
+    textBackgroundAlpha = 0.30000001
+    textFontType = SoExtText2::HELVETICA_10
+    vectorArrow = VECTOR_BOTH_ARROWS
+    lineStyle = Solid
+    drawMode = DrawModeGeometry
+    geometryComplexity = VERY_HIGH
+    numMarkersThresholdForFastRendering = 5000
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = FALSE
+    posXYZ = "9.77731132507324 -11.1098709106445 -30.5934753417969"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 11
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "1852 1137 152 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "1371 580 513 497"
+        sizeHint = "500 497"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListContainer
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = -1
+    useInsertTemplate = FALSE
+    posXYZ = "9.77731132507324 -11.1098709106445 -30.5934753417969"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 11
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module XMarkerAtIndex {
+  internal  {
+    frame = "2032 1137 128 56"
+    moduleGroupName = "Marker editing"
+    windows  {
+      window _default {
+        geometry = "672 443 481 381"
+        sizeHint = "459 381"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerAtIndex2
+    index = -1
+    autoUpdate = TRUE
+  }
+}
+module BoolString {
+  internal  {
+    frame = "2647 1767 120 56"
+    moduleGroupName = "Marker editing"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1160 676 200 206"
+        sizeHint = "200 206"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolString
+    boolValue = FALSE
+    stringValue = P
+    offValue = P
+    onValue = " "
+    defaultBool = Unchanged
+  }
+}
+module BoolString {
+  internal  {
+    frame = "2871 1755 128 56"
+    moduleGroupName = "Marker editing"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1160 676 200 206"
+        sizeHint = "200 206"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BoolString1
+    boolValue = TRUE
+    stringValue = " "
+    offValue = D
+    onValue = " "
+    defaultBool = Unchanged
+  }
+}
+connections  {
+  So3DMarkerEditor.stylePalette = StylePalette.outStylePalette
+  So3DMarkerEditor.inputNode = SoWEMRenderer1.self
+  So3DMarkerEditor.inXMarkerList = XMarkerListContainer1.outXMarkerList
+  So3DMarkerEditor.markerType = BoolInt3.intValue
+  SoWEMRenderer1.inExtensions = SoMLLUTChangeColor.self
+  SoWEMRenderer1.faceAlphaValue = BoolInt.intValue
+  SoGroup.children = "So3DMarkerEditor1.self So3DMarkerEditor.self"
+  XMarkerAtIndex.inputXMarkerList = XMarkerListContainer1.outXMarkerList
+  XMarkerAtIndex1.inputXMarkerList = XMarkerListContainer1.outXMarkerList
+  StylePalette.markerSize1 = BoolInt1.intValue
+  StylePalette.markerSize2 = BoolInt2.intValue
+  StylePalette.name1 = BoolString.stringValue
+  StylePalette.name2 = BoolString1.stringValue
+  Arithmetic0.arg1 = XMarkerAtIndex1.position3D
+  Arithmetic01.arg1 = XMarkerAtIndex.position3D
+  BoolInt1.boolValue = Arithmetic01.resultX
+  BoolInt2.boolValue = Arithmetic0.resultX
+  BoolInt3.boolValue = Arithmetic01.resultX
+  FieldListener.inParameter = So3DMarkerEditor.currentIndex
+  RunPythonScript.execute = FieldListener.updateDone
+  XMarkerListContainer2.inXMarkerList = So3DMarkerEditor.outXMarkerList
+  So3DMarkerEditor1.inputNode = SoWEMRenderer1.self
+  XMarkerListContainer.inXMarkerList = So3DMarkerEditor1.outXMarkerList
+  XMarkerListContainer.deleteAll = XMarkerListContainer2.deleteAll
+  XMarkerAtIndex2.inputXMarkerList = So3DMarkerEditor1.outXMarkerList
+  BoolString.boolValue = Arithmetic01.resultX
+  BoolString1.boolValue = Arithmetic0.resultX
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 159
+        objectName = "Marker editing"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}

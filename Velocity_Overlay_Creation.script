@@ -1,0 +1,28 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = Arithmetic13.input0
+    }
+    Field input1 {
+      internalName = Mask.input0
+    }
+    Field input1 {
+      internalName = ImageSwitch.input0
+    }
+  }
+  Outputs  {
+    Field baseOut0 {
+      internalName = SoLUTEditor2.outLUT
+    }
+    Field nodeOut0 {
+      internalName = SoLUTEditor2.outInventorLUT
+    }
+    Field nodeOut1 {
+      internalName = SoView2DOverlay.self
+    }
+    Field output0 {
+      internalName = ImageSwitch.output0
+    }
+  }
+  Parameters {}
+}

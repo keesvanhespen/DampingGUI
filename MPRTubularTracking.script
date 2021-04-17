@@ -1,0 +1,12 @@
+Interface  {
+  Inputs  {
+    Field input1 {
+      internalName = SubImage1.input0
+    }
+    Field input0 {
+      internalName = Info1.input0
+    }
+  }
+  Outputs {}
+  Parameters {}
+}
